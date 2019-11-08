@@ -5,7 +5,7 @@ layout: default
 <h1>BizDay.LA</h1>
 <p>
 An exciting event for current and aspiring business owners.<br/>
-Arriving in January 2020.<br/>&bnsp;<br/>
+Arriving in January 2020.<br/>&nbsp;<br/>
 Los Angeles, California<br/>
 USA
 </p>
