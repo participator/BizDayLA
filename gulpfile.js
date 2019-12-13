@@ -9,6 +9,10 @@ const autoprefixer = require('gulp-autoprefixer'),
   del = require('del'),
   eslint = require('gulp-eslint'),
   gulp = require('gulp'),
+  handlebars = require('gulp-handlebars'),
+  wrap = require('gulp-wrap'),
+  declare = require('gulp-declare'),
+  concat = require('gulp-concat'),
   log = require('fancy-log'),
   newer = require('gulp-newer'),
   path = require('path'),
@@ -69,6 +73,10 @@ getPaths = () => {
       includes: 'pages/include/',
       layouts: 'pages/layouts'
     },
+    source: {
+      all: ['source/**/*'],
+      templates: 'source/**/*.hbs',
+    },
     js: {
       all: "js/**/*",
       bootstrap: {
@@ -123,6 +131,7 @@ getPaths = () => {
       packageFolder: '',
       folder: 'dist',
       pages: 'dist/pages',
+      templates: 'dist/assets/js/templates',
       all: 'dist/**/*',
       assets: 'dist/assets',
       img: 'dist/assets/img',
@@ -157,6 +166,22 @@ gulp.task('html', function () {
     })
     .pipe(newer(paths.dist.folder))
     .pipe(gulp.dest(paths.dist.folder))
+    .pipe(reload({
+      stream: true
+    }));
+});
+
+// Copy handlebar templates to dist
+gulp.task('templates', function() {
+  gulp.src(paths.source.templates)
+    .pipe(handlebars())
+    .pipe(wrap('Handlebars.template(<%= contents %>)'))
+    .pipe(declare({
+      namespace: 'BizDayLA.templates',
+      noRedeclare: true, // Avoid duplicate declarations
+    }))
+    .pipe(concat('templates.js'))
+    .pipe(gulp.dest(paths.dist.templates))
     .pipe(reload({
       stream: true
     }));
@@ -336,6 +361,13 @@ gulp.task('watch', function (done) {
   gulp.watch([paths.pages.html], {
     cwd: './'
   }, gulp.series('html', function reloadPage(done) {
+    reload();
+    done();
+  }));
+
+  gulp.watch([paths.source.templates], {
+    cwd: './'
+  }, gulp.series('templates', function reloadPage(done) {
     reload();
     done();
   }));
