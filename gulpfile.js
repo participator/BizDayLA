@@ -71,7 +71,8 @@ getPaths = () => {
       liquid: 'pages/**/*.liquid',
       liquidRoot: 'pages/',
       includes: 'pages/include/',
-      layouts: 'pages/layouts'
+      layouts: 'pages/layouts',
+      templates: 'pages/assets/js/templates'
     },
     source: {
       all: ['source/**/*'],
@@ -131,7 +132,6 @@ getPaths = () => {
       packageFolder: '',
       folder: 'dist',
       pages: 'dist/pages',
-      templates: 'dist/assets/js/templates',
       all: 'dist/**/*',
       assets: 'dist/assets',
       img: 'dist/assets/img',
@@ -173,7 +173,7 @@ gulp.task('html', function () {
 
 // Copy handlebar templates to dist
 gulp.task('templates', function() {
-  gulp.src(paths.source.templates)
+  return gulp.src(paths.source.templates)
     .pipe(handlebars())
     .pipe(wrap('Handlebars.template(<%= contents %>)'))
     .pipe(declare({
@@ -181,7 +181,7 @@ gulp.task('templates', function() {
       noRedeclare: true, // Avoid duplicate declarations
     }))
     .pipe(concat('templates.js'))
-    .pipe(gulp.dest(paths.dist.templates))
+    .pipe(gulp.dest(paths.pages.templates))
     .pipe(reload({
       stream: true
     }));
@@ -409,6 +409,6 @@ gulp.task('watch', function (done) {
 
 });
 
-gulp.task('default', gulp.series('clean:dist', 'copy-assets', gulp.series('html', 'sass', 'sass-min', 'bootstrapjs', 'mrarejs'), gulp.series('serve', 'watch')));
+gulp.task('default', gulp.series('clean:dist', 'copy-assets', gulp.series('html', 'templates', 'sass', 'sass-min', 'bootstrapjs', 'mrarejs'), gulp.series('serve', 'watch')));
 
-gulp.task('build', gulp.series('clean:dist', 'copy-assets', gulp.series('html', 'sass', 'sass-min', 'bootstrapjs', 'mrarejs')));
+gulp.task('build', gulp.series('clean:dist', 'copy-assets', gulp.series('html', 'templates', 'sass', 'sass-min', 'bootstrapjs', 'mrarejs', 'templates')));
