@@ -8,6 +8,7 @@ const autoprefixer = require('gulp-autoprefixer'),
   }),
   del = require('del'),
   eslint = require('gulp-eslint'),
+  githubPages = require('gulp-gh-pages'),
   gulp = require('gulp'),
   handlebars = require('gulp-handlebars'),
   wrap = require('gulp-wrap'),
@@ -352,6 +353,14 @@ gulp.task('serve', function (done) {
     }
   });
   done();
+});
+
+/**
+ * Push build to gh-pages
+ */
+gulp.task('deploy', () => {
+  return gulp.src("./dist/**/*")
+    .pipe(githubPages())
 });
 
 gulp.task('watch', function (done) {
