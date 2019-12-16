@@ -8,7 +8,7 @@ const autoprefixer = require('gulp-autoprefixer'),
   }),
   del = require('del'),
   eslint = require('gulp-eslint'),
-  githubPages = require('gulp-gh-pages'),
+  ghPages = require('gulp-gh-pages'),
   gulp = require('gulp'),
   handlebars = require('gulp-handlebars'),
   wrap = require('gulp-wrap'),
@@ -114,6 +114,9 @@ getPaths = () => {
       folder: 'pages/assets',
       allFolders: ['pages/assets/css', 'pages/assets/img', 'pages/assets/fonts', 'pages/assets/video'],
     },
+    configs: {
+      cname: 'CNAME'
+    },
     css: {
       folder: 'assets/css',
     },
@@ -136,6 +139,7 @@ getPaths = () => {
       all: 'dist/**/*',
       assets: 'dist/assets',
       img: 'dist/assets/img',
+      configs: 'dist',
       css: 'dist/assets/css',
       scssSources: 'dist/scss',
       js: 'dist/assets/js',
@@ -327,6 +331,15 @@ gulp.task('copy-assets', function () {
     }));
 });
 
+gulp.task('copy-configs', () => {
+  return gulp.src(paths.configs.cname)
+    .pipe(newer(paths.dist.configs))
+    .pipe(gulp.dest(paths.dist.configs))
+    .pipe(reload({
+      stream: true
+    }));
+})
+
 gulp.task('deps', async (done) => {
   await paths.copyDependencies.forEach(function (filesObj) {
     let files;
@@ -359,8 +372,12 @@ gulp.task('serve', function (done) {
  * Push build to gh-pages
  */
 gulp.task('deploy', () => {
-  return gulp.src("./dist/**/*")
-    .pipe(githubPages())
+  // console.log('[TEST]', gulp.src(paths.configs.cname))
+  return gulp.src(paths.configs.cname)
+    .pipe(ghPages({
+      remoteUrl: 'https://github.com/bridgetownpartners/BizDayLA.git',
+      branch: 'prod'
+    }))
 });
 
 gulp.task('watch', function (done) {
@@ -418,6 +435,6 @@ gulp.task('watch', function (done) {
 
 });
 
-gulp.task('default', gulp.series('clean:dist', 'copy-assets', gulp.series('html', 'templates', 'sass', 'sass-min', 'bootstrapjs', 'mrarejs'), gulp.series('serve', 'watch')));
+gulp.task('default', gulp.series('clean:dist', 'copy-assets', 'copy-configs', gulp.series('html', 'templates', 'sass', 'sass-min', 'bootstrapjs', 'mrarejs'), gulp.series('serve', 'watch')));
 
-gulp.task('build', gulp.series('clean:dist', 'copy-assets', gulp.series('html', 'templates', 'sass', 'sass-min', 'bootstrapjs', 'mrarejs', 'templates')));
+gulp.task('build', gulp.series('clean:dist', 'copy-assets', 'copy-configs', gulp.series('html', 'templates', 'sass', 'sass-min', 'bootstrapjs', 'mrarejs'), gulp.series('deploy')));
