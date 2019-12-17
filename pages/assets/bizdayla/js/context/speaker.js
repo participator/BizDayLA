@@ -54,5 +54,5 @@
         ]
     }
 
-    document.body.innerHTML += BizDayLA.templates.speaker(context);
+    // document.body.innerHTML += BizDayLA.templates.speaker(context);
 })()
