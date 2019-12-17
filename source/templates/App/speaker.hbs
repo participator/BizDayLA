@@ -1,0 +1,37 @@
+<section>
+  <div class="container">
+    <div class="row mb-4">
+      <div class="col">
+        <h2 class="h1">Featuring talks from</h2>
+      </div>
+    </div>
+    <div class="row">
+      {{#each people}}
+      <div class="col-sm-6 col-lg-4 d-flex align-items-center mb-5" data-aos="fade-up" data-aos-delay="100">
+        <img src="{{this.image}}" alt="Benjamin Cameron" class="avatar avatar-xlg mr-3">
+        <div>
+            <h5 class="mb-0">{{this.firstName}} {{this.lastName}}</h5>
+            <h6 class="mb-0">{{this.company}}</h6>
+            <a href="{{this.linkedinUrl}}">
+                <img class="icon undefined" src="assets/img/icons/social/linkedin.svg" alt="instagram social icon" data-inject-svg />
+            </a>
+            <a href="{{this.twitterUrl}}">
+                <img class="icon undefined" src="assets/img/icons/social/twitter.svg" alt="twitter social icon" data-inject-svg />
+            </a>
+            <a href="{{this.facebookUrl}}">
+                <img class="icon undefined" src="assets/img/icons/social/facebook.svg" alt="facebook social icon" data-inject-svg />
+            </a>
+            <a href="{{this.instagramUrl}}">
+                <img class="icon undefined" src="assets/img/icons/social/instagram.svg" alt="instagram social icon" data-inject-svg />
+            </a>
+        </div>
+      </div>
+      {{/each}}
+    </div>
+    <div class="row">
+      <div class="col">
+        <a href="#" class="hover-arrow">View all Speakers</a>
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,4 +1,13 @@
 .header_text {
+    color: white;
+    font-size: 2em;
+    margin: 0;
+}
+
+.bizDay_text {
     font-family: 'Anton', sans-serif;
-    color: black;
+}
+
+.bizDay_text_resetLetterSpacing {
+    letter-spacing: normal;
 }

@@ -4,6 +4,5 @@ const headerContext = {
     orgName: 'BizDay.LA'
 }
 
-const headerElem = document.getElementById('header');
 const template = BizDayLA.templates.header(headerContext);
-headerElem.innerHTML = template;
+document.body.innerHTML += template;
