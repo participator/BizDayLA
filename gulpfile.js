@@ -66,18 +66,23 @@ getPaths = () => {
   return {
     here: './',
     pages: {
-      folder: 'pages',
       all: ['pages/**/*'],
+      configs: 'dist',
+      context: 'pages/assets/bizdayla/js/context',
+      customCss: 'pages/assets/bizdayla/css',
+      folder: 'pages',
       html: 'pages/*.html',
       liquid: 'pages/**/*.liquid',
       liquidRoot: 'pages/',
       includes: 'pages/include/',
       layouts: 'pages/layouts',
-      templates: 'pages/assets/js/templates'
+      templates: 'pages/assets/bizdayla/js/templates'
     },
     source: {
       all: ['source/**/*'],
-      templates: 'source/**/*.hbs',
+      context: 'source/context/**/*.js',
+      customCss: 'source/css/**/*.css',
+      templates: 'source/templates/**/*.hbs',
     },
     js: {
       all: "js/**/*",
@@ -104,8 +109,8 @@ getPaths = () => {
       }
     },
     scss: {
-      folder: 'scss',
       all: 'scss/**/*',
+      folder: 'scss',
       root: 'scss/*.scss',
       themeScss: ['scss/theme.scss', '!scss/user.scss', '!scss/user-variables.scss'],
     },
@@ -121,32 +126,32 @@ getPaths = () => {
       folder: 'assets/css',
     },
     fonts: {
-      folder: 'assets/fonts',
       all: 'assets/fonts/*.*',
+      folder: 'assets/fonts',
     },
     images: {
-      folder: 'assets/img',
       all: 'assets/img/*.*',
+      folder: 'assets/img',
     },
     videos: {
-      folder: 'assets/video',
       all: 'assets/video/*.*',
+      folder: 'assets/video',
     },
     dist: {
-      packageFolder: '',
-      folder: 'dist',
-      pages: 'dist/pages',
       all: 'dist/**/*',
       assets: 'dist/assets',
-      img: 'dist/assets/img',
-      configs: 'dist',
+      bizdayla: 'dist/assets/bizdayla',
       css: 'dist/assets/css',
-      scssSources: 'dist/scss',
+      documentation: 'dist/documentation',
+      folder: 'dist',
+      fonts: 'dist/assets/fonts',
+      img: 'dist/assets/img',
       js: 'dist/assets/js',
       jsSources: 'dist/js',
-      fonts: 'dist/assets/fonts',
+      packageFolder: '',
+      pages: 'dist/pages',
+      scssSources: 'dist/scss',
       video: 'dist/assets/video',
-      documentation: 'dist/documentation',
       exclude: ['!**/desktop.ini', '!**/.DS_store'],
     },
     copyDependencies: copyDeps,
@@ -176,7 +181,26 @@ gulp.task('html', function () {
     }));
 });
 
-// Copy handlebar templates to dist
+// Copy caname to pages
+gulp.task('configs', () => {
+  return gulp.src(paths.configs.cname)
+    .pipe(newer(paths.pages.configs))
+    .pipe(gulp.dest(paths.pages.configs));
+})
+
+// Copy handlebar data to pages
+gulp.task('context', () => {
+  return gulp.src(paths.source.context)
+    .pipe(gulp.dest(paths.pages.context))
+});
+
+// Copy custom css to pages
+gulp.task('customCss', () => {
+  return gulp.src(paths.source.customCss)
+    .pipe(gulp.dest(paths.pages.customCss))
+});
+
+// Copy handlebar templates to pages
 gulp.task('templates', function() {
   return gulp.src(paths.source.templates)
     .pipe(handlebars())
@@ -331,20 +355,12 @@ gulp.task('copy-assets', function () {
     }));
 });
 
-gulp.task('copy-configs', () => {
-  return gulp.src(paths.configs.cname)
-    .pipe(newer(paths.dist.configs))
-    .pipe(gulp.dest(paths.dist.configs))
-    .pipe(reload({
-      stream: true
-    }));
-})
-
 gulp.task('deps', async (done) => {
   await paths.copyDependencies.forEach(function (filesObj) {
     let files;
     if (typeof filesObj.files == 'object') {
       files = filesObj.files.map((file) => {
+        console.log('[fileName]:', file);
         return `${filesObj.from}/${file}`;
       });
     } else {
@@ -362,7 +378,7 @@ gulp.task('serve', function (done) {
   browserSync({
     server: {
       baseDir: './dist',
-      index: "index.html"
+      index: "bindex.html"
     }
   });
   done();
@@ -394,6 +410,20 @@ gulp.task('watch', function (done) {
   gulp.watch([paths.source.templates], {
     cwd: './'
   }, gulp.series('templates', function reloadPage(done) {
+    reload();
+    done();
+  }));
+
+  gulp.watch([paths.source.context], {
+    cwd: './'
+  }, gulp.series('context', function reloadPage(done) {
+    reload();
+    done();
+  }));
+
+  gulp.watch([paths.source.customCss], {
+    cwd: './'
+  }, gulp.series('customCss', function reloadPage(done) {
     reload();
     done();
   }));
@@ -435,6 +465,6 @@ gulp.task('watch', function (done) {
 
 });
 
-gulp.task('default', gulp.series('clean:dist', 'copy-assets', 'copy-configs', gulp.series('html', 'templates', 'sass', 'sass-min', 'bootstrapjs', 'mrarejs'), gulp.series('serve', 'watch')));
+gulp.task('default', gulp.series('clean:dist', 'copy-assets', gulp.series('html', 'templates', 'context', 'customCss', 'sass', 'sass-min', 'bootstrapjs', 'mrarejs'), gulp.series('serve', 'watch')));
 
-gulp.task('build', gulp.series('clean:dist', 'copy-assets', 'copy-configs', gulp.series('html', 'templates', 'sass', 'sass-min', 'bootstrapjs', 'mrarejs'), gulp.series('deploy')));
+gulp.task('build', gulp.series('clean:dist', 'copy-assets', gulp.series('html', 'templates', 'context', 'customCss', 'sass', 'sass-min', 'bootstrapjs', 'mrarejs'), gulp.series('configs', 'deploy')));
