@@ -2,3 +2,4 @@ node_modules
 dist
 bash.exe.stackdump
 .publish
+.vscode

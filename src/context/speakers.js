@@ -1,6 +1,6 @@
 (function() {
     const context = {
-        people: [
+        speakers: [
             {
                 firstName: 'First',
                 lastName: 'Last',
