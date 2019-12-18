@@ -78,11 +78,11 @@ getPaths = () => {
       layouts: 'pages/layouts',
       templates: 'pages/assets/bizdayla/js/templates'
     },
-    source: {
-      all: ['source/**/*'],
-      context: 'source/context/**/*.js',
-      customCss: 'source/css/**/*.css',
-      templates: 'source/templates/**/*.hbs',
+    src: {
+      all: ['src/**/*'],
+      context: 'src/context/**/*.js',
+      customCss: 'src/css/**/*.css',
+      templates: 'src/templates/**/*.hbs',
     },
     js: {
       all: "js/**/*",
@@ -190,19 +190,19 @@ gulp.task('configs', () => {
 
 // Copy handlebar data to pages
 gulp.task('context', () => {
-  return gulp.src(paths.source.context)
+  return gulp.src(paths.src.context)
     .pipe(gulp.dest(paths.pages.context))
 });
 
 // Copy custom css to pages
 gulp.task('customCss', () => {
-  return gulp.src(paths.source.customCss)
+  return gulp.src(paths.src.customCss)
     .pipe(gulp.dest(paths.pages.customCss))
 });
 
 // Copy handlebar templates to pages
 gulp.task('templates', function() {
-  return gulp.src(paths.source.templates)
+  return gulp.src(paths.src.templates)
     .pipe(handlebars())
     .pipe(wrap('Handlebars.template(<%= contents %>)'))
     .pipe(declare({
@@ -407,21 +407,21 @@ gulp.task('watch', function (done) {
     done();
   }));
 
-  gulp.watch([paths.source.templates], {
+  gulp.watch([paths.src.templates], {
     cwd: './'
   }, gulp.series('templates', function reloadPage(done) {
     reload();
     done();
   }));
 
-  gulp.watch([paths.source.context], {
+  gulp.watch([paths.src.context], {
     cwd: './'
   }, gulp.series('context', function reloadPage(done) {
     reload();
     done();
   }));
 
-  gulp.watch([paths.source.customCss], {
+  gulp.watch([paths.src.customCss], {
     cwd: './'
   }, gulp.series('customCss', function reloadPage(done) {
     reload();
