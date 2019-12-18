@@ -389,11 +389,8 @@ gulp.task('serve', function (done) {
  */
 gulp.task('deploy', () => {
   // console.log('[TEST]', gulp.src(paths.configs.cname))
-  return gulp.src(paths.configs.cname)
-    .pipe(ghPages({
-      remoteUrl: 'https://github.com/bridgetownpartners/BizDayLA.git',
-      branch: 'prod'
-    }))
+  return gulp.src(paths.dist.all)
+    .pipe(ghPages())
 });
 
 gulp.task('watch', function (done) {
