@@ -378,7 +378,7 @@ gulp.task('serve', function (done) {
   browserSync({
     server: {
       baseDir: './dist',
-      index: "bindex.html"
+      index: "index.html"
     }
   });
   done();
