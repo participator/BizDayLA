@@ -19,8 +19,8 @@ this["BizDayLA"]["templates"]["footer"] = Handlebars.template({"compiler":[8,">=
 this["BizDayLA"]["templates"]["header"] = Handlebars.template({"compiler":[8,">= 4.3.0"],"main":function(container,depth0,helpers,partials,data) {
     var helper, alias1=depth0 != null ? depth0 : (container.nullContext || {}), alias2=container.hooks.helperMissing, alias3="function", alias4=container.escapeExpression;
 
-  return "<div class=\"navbar-container\">\r\n  <nav class=\"navbar navbar-expand-lg navbar-dark\" data-overlay data-sticky=\"top\">\r\n    <div class=\"container\">\r\n      <a class=\"navbar-brand fade-page\" href=\"/\">\r\n        <p class=\"header_text bizDay_text\">"
-    + alias4(((helper = (helper = helpers.orgName || (depth0 != null ? depth0.orgName : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"orgName","hash":{},"data":data,"loc":{"start":{"line":5,"column":43},"end":{"line":5,"column":54}}}) : helper)))
+  return "<div class=\"navbar-container\">\r\n  <nav class=\"navbar navbar-expand-lg navbar-dark\" data-overlay data-sticky=\"top\">\r\n    <div class=\"container\">\r\n      <a class=\"navbar-brand fade-page\" href=\"/\">\r\n        <p class=\"xbizDay_header\">"
+    + alias4(((helper = (helper = helpers.orgName || (depth0 != null ? depth0.orgName : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"orgName","hash":{},"data":data,"loc":{"start":{"line":5,"column":34},"end":{"line":5,"column":45}}}) : helper)))
     + "</p>\r\n      </a>\r\n      <a href=\"#\" class=\"btn btn-primary ml-lg-3\">"
     + alias4(((helper = (helper = helpers.ctaText || (depth0 != null ? depth0.ctaText : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"ctaText","hash":{},"data":data,"loc":{"start":{"line":7,"column":50},"end":{"line":7,"column":61}}}) : helper)))
     + "</a>\r\n    </div>\r\n  </nav>\r\n</div>";

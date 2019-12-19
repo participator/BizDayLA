@@ -5,6 +5,11 @@
                 name: "Meetup",
                 time: "6:30 PM - 9:30 PM",
                 presenter: "Various"
+            },
+            {
+                name: "The Home Field Advantage",
+                time: "7:30 PM - 8:00 PM",
+                presenter: "Various"
             }
         ],
         presentation_virtual: [
