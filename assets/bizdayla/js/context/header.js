@@ -6,6 +6,7 @@
         confName: 'BizDay.LA'
     }
     
-    const template = BizDayLA.templates.header(context);
+    const template = Handlebars.partials.header(context);
+    // const template = BizDayLA.templates.header(context);
     document.body.innerHTML += template;
 })()
