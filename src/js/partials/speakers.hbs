@@ -9,21 +9,21 @@
     <div class="row">
       {{#each speakers}}
       <div class="col-sm-6 col-lg-4 d-flex align-items-center mb-5" data-aos="fade-up" data-aos-delay="100">
-        <img src="{{image}}" alt="Benjamin Cameron" class="avatar avatar-xlg mr-3">
+        <a alt="{{firstName}} bio" href="{{../url_speakers}}#{{id}}"><img src="{{image}}" alt="Benjamin Cameron" class="avatar avatar-xlg mr-3"></a>
         <div>
             <h5 class="mb-0">{{firstName}} {{lastName}}</h5>
             <h6 class="mb-0">{{company}}</h6>
-            <a href="{{linkedinUrl}}">
+            <a alt="LinkedIn Profile" href="{{url_linkedin}}" target="_blank">
                 <img class="icon undefined" src="assets/img/icons/social/linkedin.svg" alt="instagram social icon" data-inject-svg />
             </a>
-            <a href="{{twitterUrl}}">
+            <a alt="Twitter Profile" href="{{url_twitter}}" target="_blank">
                 <img class="icon undefined" src="assets/img/icons/social/twitter.svg" alt="twitter social icon" data-inject-svg />
             </a>
-            <a href="{{facebookUrl}}">
-                <img class="icon undefined" src="assets/img/icons/social/facebook.svg" alt="facebook social icon" data-inject-svg />
-            </a>
-            <a href="{{instagramUrl}}">
+            <a alt="Instagram Profile" href="{{url_instagram}}" target="_blank">
                 <img class="icon undefined" src="assets/img/icons/social/instagram.svg" alt="instagram social icon" data-inject-svg />
+            </a>
+            <a alt="Facebook Profile" href="{{url_facebook}}" target="_blank">
+                <img class="icon undefined" src="assets/img/icons/social/facebook.svg" alt="facebook social icon" data-inject-svg />
             </a>
         </div>
       </div>
@@ -31,7 +31,7 @@
     </div>
     <div class="row">
       <div class="col">
-        <a href="#" class="hover-arrow">View all Speakers</a>
+        <a href="{{url_speakers}}" class="hover-arrow">View all Speakers</a>
       </div>
     </div>
   </div>

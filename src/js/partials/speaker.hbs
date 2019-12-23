@@ -1,0 +1,33 @@
+{{#with speaker}}
+<section class="has-divider bg-primary-alt">
+  <div class="divider flip-y">
+    <img src="assets/img/dividers/divider-2.svg" alt="graphical divider" data-inject-svg />
+  </div>
+  {{#each speakers}}
+  <div id={{id}} class="container" data-aos="fade-up">
+    <div class="row align-items-center justify-content-around">
+      <div class="col-md-5">
+        <img src="{{image}}" alt="Image" class="rounded-circle layer-2">
+        <div class="decoration bottom left" data-aos="fade-up">
+          <img class="bg-primary" src="assets/img/decorations/deco-blob-10.svg" alt="deco-blob-10 decoration" data-inject-svg />
+        </div>
+        <div class="decoration bottom left" data-aos="fade-right">
+          <img class="bg-primary-2" src="assets/img/decorations/deco-lines-4.svg" alt="deco-lines-4 decoration" data-inject-svg />
+        </div>
+      </div>
+      <div class="col-xl-5 col-md-6">
+        <div class="h1">
+          <div>Howdy, I'm {{firstName}},</div>
+          <span>A</span>
+          <div class="highlight">
+            <span data-typed-text data-loop="true" data-type-speed="65" data-strings='[{{titles}}]'></span>
+          </div>
+        </div>
+        <p class="lead">{{description}}</p>
+        <a href="{{url_twitter}}" class="lead">@{{name_twitter}}</a>
+      </div>
+    </div>
+  </div>
+  {{/each}}
+</section>
+{{/with}}
