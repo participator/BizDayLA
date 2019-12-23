@@ -115,7 +115,8 @@ window.context = {
         ]
     },
     footer: {
-      tagline: 'Connect with local business owners',
-      email: 'organizers@bizday.la',
+        email: 'organizers@bizday.la',
+        tagline: 'Connect with local business owners',
+        year: new Date().getFullYear()
     }
 }
