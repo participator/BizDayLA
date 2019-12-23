@@ -1,3 +1,6 @@
+:root {
+    --hero_blue: #202055;
+}
 .header_text {
     color: white;
     font-size: 2em;
@@ -11,4 +14,7 @@
 }
 .bizDay_text_resetLetterSpacing {
     letter-spacing: normal;
+}
+.bizday_hero {
+    background-color: var(--hero_blue)!important;
 }

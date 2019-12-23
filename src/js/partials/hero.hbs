@@ -1,13 +1,14 @@
 {{#with hero}}
-<section class="bg-primary-2 text-light p-0 o-hidden">
-    <img src="assets/img/event-1.jpg" alt="Image" class="bg-image blend-mode-multiply">
+<section class="bizday_hero bg-primary-2 text-light p-0 o-hidden">
+    <img src="{{image}}" alt="Image" class="bg-image blend-mode-multiply">
     <div class="container layer-2">
         <div class="row py-6 min-vh-80 align-items-center aos-init aos-animate" data-aos="fade-up">
             <div class="col-lg-9 col-xl-8">
                 <h5>{{eventDate}}</h5>
-                <h1 class="display-1 bizDay_text bizDay_text_resetLetterSpacing">{{../orgName}}</h1>
+                {{!-- <h1 class="display-1 bizDay_text bizDay_text_resetLetterSpacing">{{confName}}</h1> --}}
+                <h1 class="display-1 bizDay_text bizDay_text_resetLetterSpacing"><img src={{logoPath}} alt="Biz Day LA logo" /></h1>
                 <p class="lead mb-4">{{location}}</p>
-                <a href="#" class="btn btn-primary btn-lg">{{../ctaText}}</a>
+                <a href="{{../url_cta}}" class="btn btn-primary btn-lg">{{../ctaText}}</a>
             </div>
         </div>
     </div>
