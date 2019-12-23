@@ -62,7 +62,6 @@
                 facebookUrl: 'https://www.facebook.com/',
             }
         ]
-        ]
     }
 
     document.body.innerHTML += BizDayLA.templates.speaker(context);

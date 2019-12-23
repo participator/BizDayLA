@@ -135,6 +135,6 @@
   from: "node_modules/smartwizard/dist/js"
   to: "pages/assets/js"
 -
-  files: "handlebars.min.js"
+  files: "handlebars.runtime.min.js"
   from: "node_modules/handlebars/dist"
   to: "pages/assets/js"

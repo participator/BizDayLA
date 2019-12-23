@@ -15,6 +15,7 @@ const autoprefixer = require('gulp-autoprefixer'),
   declare = require('gulp-declare'),
   concat = require('gulp-concat'),
   log = require('fancy-log'),
+  merge = require('merge-stream');
   newer = require('gulp-newer'),
   path = require('path'),
   reload = browserSync.reload,
@@ -68,21 +69,25 @@ getPaths = () => {
     pages: {
       all: ['pages/**/*'],
       configs: 'dist',
-      context: 'pages/assets/bizdayla/js/context',
-      customCss: 'pages/assets/bizdayla/css',
+      bizdayla_css: 'pages/assets/bizdayla/css',
+      bizdayla_js_context: 'pages/assets/bizdayla/js/context',
+      bizdayla_js_partials: 'pages/assets/bizdayla/js/partials',
+      bizdayla_js_hbs: 'pages/assets/bizdayla/js/hbs',
       folder: 'pages',
       html: 'pages/*.html',
       liquid: 'pages/**/*.liquid',
       liquidRoot: 'pages/',
       includes: 'pages/include/',
-      layouts: 'pages/layouts',
-      templates: 'pages/assets/bizdayla/js/templates'
+      layouts: 'pages/layouts'
     },
     src: {
       all: ['src/**/*'],
-      context: 'src/context/**/*.js',
-      customCss: 'src/css/**/*.css',
-      templates: 'src/templates/**/*.hbs',
+      bizdayla_css: 'src/css/**/*.css',
+      bizdayla_js_all: 'src/js/**/*',
+      bizdayla_js_context: 'src/js/context/**/*.js',
+      bizdayla_js_partials: 'src/js/partials/**/*.hbs',
+      bizdayla_js_templates: 'src/js/templates/**/*.hbs',
+      html: 'src/*.html'
     },
     js: {
       all: "js/**/*",
@@ -140,7 +145,8 @@ getPaths = () => {
     dist: {
       all: 'dist/**/*',
       assets: 'dist/assets',
-      bizdayla: 'dist/assets/bizdayla',
+      bizdayla_css: 'dist/assets/bizdayla/css',
+      bizdayla_js: 'dist/assets/bizdayla/js',
       css: 'dist/assets/css',
       documentation: 'dist/documentation',
       folder: 'dist',
@@ -188,33 +194,52 @@ gulp.task('configs', () => {
     .pipe(gulp.dest(paths.pages.configs));
 })
 
-// Copy handlebar data to pages
-gulp.task('context', () => {
-  return gulp.src(paths.src.context)
-    .pipe(gulp.dest(paths.pages.context))
-});
-
 // Copy custom css to pages
-gulp.task('customCss', () => {
-  return gulp.src(paths.src.customCss)
-    .pipe(gulp.dest(paths.pages.customCss))
+gulp.task('bizdayla_css', () => {
+  return gulp.src(paths.src.bizdayla_css)
+    .pipe(gulp.dest(paths.pages.bizdayla_css))
 });
 
-// Copy handlebar templates to pages
-gulp.task('templates', function() {
-  return gulp.src(paths.src.templates)
+// Copy template data to pages
+gulp.task('bizdayla_js_context', () => {
+  return gulp.src(paths.src.bizdayla_js_context)
+    .pipe(gulp.dest(paths.pages.bizdayla_js_context))
+});
+
+// Transpile partials and templates and copy into pages
+gulp.task('bizdayla_js_hbs', function() {
+  // Assume all partials start with an underscore
+  // You could also put them in a folder such as source/templates/partials/*.hbs
+  var partials = gulp.src([paths.src.bizdayla_js_partials])
+    .pipe(handlebars())
+    .pipe(wrap('Handlebars.registerPartial(<%= processPartialName(file.relative) %>, Handlebars.template(<%= contents %>));', {}, {
+      imports: {
+        processPartialName: function(fileName) {
+          // Strip the extension and the underscore
+          // Escape the output with JSON.stringify
+          return JSON.stringify(path.basename(fileName, '.js'));
+        }
+      }
+    }));
+
+  var templates = gulp.src(paths.src.bizdayla_js_templates)
     .pipe(handlebars())
     .pipe(wrap('Handlebars.template(<%= contents %>)'))
     .pipe(declare({
-      namespace: 'BizDayLA.templates',
-      noRedeclare: true, // Avoid duplicate declarations
-    }))
-    .pipe(concat('templates.js'))
-    .pipe(gulp.dest(paths.pages.templates))
-    .pipe(reload({
-      stream: true
+      namespace: 'Bizdayla.templates',
+      noRedeclare: true // Avoid duplicate declarations
     }));
+
+  // Output both the partials and the templates as build/js/templates.js
+  return merge(partials, templates)
+    .pipe(concat('templates.js'))
+    .pipe(gulp.dest(paths.pages.bizdayla_js_hbs));
 });
+
+gulp.task('src_html_to_pages_html', () => {
+  return gulp.src(paths.src.html)
+    .pipe(gulp.dest(paths.pages.folder))
+})
 
 gulp.task('sass', function () {
   return gulp.src(paths.scss.themeScss)
@@ -404,23 +429,23 @@ gulp.task('watch', function (done) {
     done();
   }));
 
-  gulp.watch([paths.src.templates], {
+  gulp.watch([paths.src.html], {
     cwd: './'
-  }, gulp.series('templates', function reloadPage(done) {
+  }, gulp.series(['src_html_to_pages_html'], function reloadPage(done) {
     reload();
     done();
   }));
-
-  gulp.watch([paths.src.context], {
+  
+  gulp.watch([paths.src.bizdayla_css], {
     cwd: './'
-  }, gulp.series('context', function reloadPage(done) {
+  }, gulp.series('bizdayla_css', function reloadPage(done) {
     reload();
     done();
   }));
-
-  gulp.watch([paths.src.customCss], {
+  
+  gulp.watch([paths.src.bizdayla_js_all], {
     cwd: './'
-  }, gulp.series('customCss', function reloadPage(done) {
+  }, gulp.series('bizdayla_js_hbs', 'bizdayla_js_context', function reloadPage(done) {
     reload();
     done();
   }));
@@ -462,6 +487,6 @@ gulp.task('watch', function (done) {
 
 });
 
-gulp.task('default', gulp.series('clean:dist', 'copy-assets', gulp.series('html', 'templates', 'context', 'customCss', 'sass', 'sass-min', 'bootstrapjs', 'mrarejs'), gulp.series('serve', 'watch')));
+gulp.task('default', gulp.series('clean:dist', 'deps', gulp.series('src_html_to_pages_html', 'bizdayla_css', 'bizdayla_js_context', 'bizdayla_js_hbs','sass', 'sass-min', 'bootstrapjs', 'mrarejs'), gulp.parallel('html', 'copy-assets'), gulp.series('serve', 'watch')));
 
-gulp.task('build', gulp.series('clean:dist', 'copy-assets', gulp.series('html', 'templates', 'context', 'customCss', 'sass', 'sass-min', 'bootstrapjs', 'mrarejs'), gulp.series('configs', 'deploy')));
+gulp.task('build', gulp.series('clean:dist', 'deps', gulp.series('src_html_to_pages_html', 'bizdayla_css', 'bizdayla_js_context', 'bizdayla_js_hbs', 'sass', 'sass-min', 'bootstrapjs', 'mrarejs'), gulp.parallel('html', 'copy-assets'), gulp.series('configs', 'deploy')));

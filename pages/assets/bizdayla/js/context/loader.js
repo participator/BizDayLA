@@ -1,4 +1,5 @@
 (function() {
-    const template = BizDayLA.templates.loader();
-    document.body.innerHTML += template;
+    Handlebars.partials.loader();
+    // const template = Handlebars.partials.loader();
+    // document.body.innerHTML += template;
 })()
