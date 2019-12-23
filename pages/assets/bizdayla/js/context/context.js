@@ -8,6 +8,7 @@ window.context = {
         image: 'assets/img/event-1.jpg',
         image: 'https://media.istockphoto.com/photos/delivering-informative-presentations-is-what-she-does-best-picture-id1056359814',
         logoPath: 'assets/bizdayla/img/BizDay_Logo_Color_White.svg',
+        logoPath: 'assets/bizdayla/img/BizDay_Logo_AllWhite.svg',
         confName: 'BizDay.LA',
         eventDate: 'Thursday, January 23, 2019',
         location: 'Los Angeles, CA USA'
@@ -57,7 +58,7 @@ window.context = {
             },
             {
                 id: 'speaker1',
-                firstName: 'First',
+                firstName: 'Second',
                 lastName: 'Last',
                 company: 'Company',
                 description: 'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa.',
@@ -74,7 +75,7 @@ window.context = {
             },
             {
                 id: 'speaker2',
-                firstName: 'First',
+                firstName: 'Third',
                 lastName: 'Last',
                 company: 'Company',
                 description: 'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa.',
@@ -87,7 +88,7 @@ window.context = {
             },
             {
                 id: 'speaker3',
-                firstName: 'First',
+                firstName: 'Fourth',
                 lastName: 'Last',
                 company: 'Company',
                 description: 'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa.',
@@ -100,7 +101,7 @@ window.context = {
             },
             {
                 id: 'speaker4',
-                firstName: 'First',
+                firstName: 'Fifth',
                 lastName: 'Last',
                 company: 'Company',
                 description: 'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa.',
