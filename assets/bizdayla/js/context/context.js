@@ -1,15 +1,14 @@
-var context = {
+window.context = {
+    ctaText: 'Register',
+    orgName: 'BizDay',
+    url_cta: 'https://www.eventbrite.com/e/bizdayla-tickets-85448796651',
     header: {
-        ctaText: 'Sign Up',
         logoPath: '/assets/img/app-icon.svg',
-        orgName: 'BizDay',
-        confName: 'BizDay.LA'
     },
     hero: {
-        ctaText: 'Sign Up',
+        confName: 'BizDay.LA',
         eventDate: 'Thursday, January 23, 2019',
-        location: 'Los Angeles, CA USA',
-        orgName: 'BizDay.LA'
+        location: 'Los Angeles, CA USA'
     },
     schedule: {
         tab1_name: 'Physical Space',
@@ -114,7 +113,6 @@ var context = {
     },
     footer: {
       tagline: 'Connect with local business owners',
-      ctaText: 'Sign Up',
       email: 'organizers@bizday.la',
     }
 }
