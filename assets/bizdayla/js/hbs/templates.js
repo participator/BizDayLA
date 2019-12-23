@@ -59,12 +59,14 @@ Handlebars.registerPartial("header", Handlebars.template({"1":function(container
 Handlebars.registerPartial("hero", Handlebars.template({"1":function(container,depth0,helpers,partials,data,blockParams,depths) {
     var helper, alias1=depth0 != null ? depth0 : (container.nullContext || {}), alias2=container.hooks.helperMissing, alias3="function", alias4=container.escapeExpression, alias5=container.lambda;
 
-  return "<section class=\"bg-primary-2 text-light p-0 o-hidden\">\r\n    <img src=\"assets/img/event-1.jpg\" alt=\"Image\" class=\"bg-image blend-mode-multiply\">\r\n    <div class=\"container layer-2\">\r\n        <div class=\"row py-6 min-vh-80 align-items-center aos-init aos-animate\" data-aos=\"fade-up\">\r\n            <div class=\"col-lg-9 col-xl-8\">\r\n                <h5>"
+  return "<section class=\"bizday_hero bg-primary-2 text-light p-0 o-hidden\">\r\n    <img src=\""
+    + alias4(((helper = (helper = helpers.image || (depth0 != null ? depth0.image : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"image","hash":{},"data":data,"loc":{"start":{"line":3,"column":14},"end":{"line":3,"column":23}}}) : helper)))
+    + "\" alt=\"Image\" class=\"bg-image blend-mode-multiply\">\r\n    <div class=\"container layer-2\">\r\n        <div class=\"row py-6 min-vh-80 align-items-center aos-init aos-animate\" data-aos=\"fade-up\">\r\n            <div class=\"col-lg-9 col-xl-8\">\r\n                <h5>"
     + alias4(((helper = (helper = helpers.eventDate || (depth0 != null ? depth0.eventDate : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"eventDate","hash":{},"data":data,"loc":{"start":{"line":7,"column":20},"end":{"line":7,"column":33}}}) : helper)))
-    + "</h5>\r\n                <h1 class=\"display-1 bizDay_text bizDay_text_resetLetterSpacing\">"
-    + alias4(((helper = (helper = helpers.confName || (depth0 != null ? depth0.confName : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"confName","hash":{},"data":data,"loc":{"start":{"line":8,"column":81},"end":{"line":8,"column":93}}}) : helper)))
-    + "</h1>\r\n                <p class=\"lead mb-4\">"
-    + alias4(((helper = (helper = helpers.location || (depth0 != null ? depth0.location : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"location","hash":{},"data":data,"loc":{"start":{"line":9,"column":37},"end":{"line":9,"column":49}}}) : helper)))
+    + "</h5>\r\n                <h1 class=\"display-1 bizDay_text bizDay_text_resetLetterSpacing\"><img src="
+    + alias4(((helper = (helper = helpers.logoPath || (depth0 != null ? depth0.logoPath : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"logoPath","hash":{},"data":data,"loc":{"start":{"line":9,"column":90},"end":{"line":9,"column":102}}}) : helper)))
+    + " alt=\"Biz Day LA logo\" /></h1>\r\n                <p class=\"lead mb-4\">"
+    + alias4(((helper = (helper = helpers.location || (depth0 != null ? depth0.location : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"location","hash":{},"data":data,"loc":{"start":{"line":10,"column":37},"end":{"line":10,"column":49}}}) : helper)))
     + "</p>\r\n                <a href=\""
     + alias4(alias5((depths[1] != null ? depths[1].url_cta : depths[1]), depth0))
     + "\" class=\"btn btn-primary btn-lg\">"
@@ -73,7 +75,7 @@ Handlebars.registerPartial("hero", Handlebars.template({"1":function(container,d
 },"compiler":[8,">= 4.3.0"],"main":function(container,depth0,helpers,partials,data,blockParams,depths) {
     var stack1;
 
-  return ((stack1 = helpers["with"].call(depth0 != null ? depth0 : (container.nullContext || {}),(depth0 != null ? depth0.hero : depth0),{"name":"with","hash":{},"fn":container.program(1, data, 0, blockParams, depths),"inverse":container.noop,"data":data,"loc":{"start":{"line":1,"column":0},"end":{"line":309,"column":9}}})) != null ? stack1 : "");
+  return ((stack1 = helpers["with"].call(depth0 != null ? depth0 : (container.nullContext || {}),(depth0 != null ? depth0.hero : depth0),{"name":"with","hash":{},"fn":container.program(1, data, 0, blockParams, depths),"inverse":container.noop,"data":data,"loc":{"start":{"line":1,"column":0},"end":{"line":310,"column":9}}})) != null ? stack1 : "");
 },"useData":true,"useDepths":true}));
 Handlebars.registerPartial("loader", Handlebars.template({"compiler":[8,">= 4.3.0"],"main":function(container,depth0,helpers,partials,data) {
     return "<div class=\"loader\">\r\n  <div class=\"loading-animation\"></div>\r\n</div>";

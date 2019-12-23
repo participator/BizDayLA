@@ -3,9 +3,11 @@ window.context = {
     orgName: 'BizDay',
     url_cta: 'https://www.eventbrite.com/e/bizdayla-tickets-85448796651',
     header: {
-        logoPath: '/assets/img/app-icon.svg',
     },
     hero: {
+        image: 'assets/img/event-1.jpg',
+        image: 'https://media.istockphoto.com/photos/delivering-informative-presentations-is-what-she-does-best-picture-id1056359814',
+        logoPath: 'assets/bizdayla/img/BizDay_Logo_Color_White.svg',
         confName: 'BizDay.LA',
         eventDate: 'Thursday, January 23, 2019',
         location: 'Los Angeles, CA USA'
