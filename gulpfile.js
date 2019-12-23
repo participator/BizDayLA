@@ -84,6 +84,7 @@ getPaths = () => {
     src: {
       all: ['src/**/*'],
       bizdayla_css: 'src/css/**/*.css',
+      bizdayla_favicon: ['src/*.ico', 'src/*.svg'],
       bizdayla_js_all: 'src/js/**/*',
       bizdayla_js_context: 'src/js/context/**/*.js',
       bizdayla_js_partials: 'src/js/partials/**/*.hbs',
@@ -200,6 +201,12 @@ gulp.task('configs', () => {
 gulp.task('bizdayla_css', () => {
   return gulp.src(paths.src.bizdayla_css)
     .pipe(gulp.dest(paths.pages.bizdayla_css))
+});
+
+// Copy favicon files to pages
+gulp.task('bizdayla_favicon', () => {
+  return gulp.src(paths.src.bizdayla_favicon)
+    .pipe(gulp.dest(paths.pages.folder))
 });
 
 // Copy template data to pages
@@ -501,6 +508,6 @@ gulp.task('watch', function (done) {
 
 });
 
-gulp.task('default', gulp.series('clean:dist', 'deps', gulp.series('src_html_to_pages_html', 'src_img_to_pages_img', 'bizdayla_css', 'bizdayla_js_context', 'bizdayla_js_hbs','sass', 'sass-min', 'bootstrapjs', 'mrarejs'), gulp.parallel('html', 'copy-assets'), gulp.series('serve', 'watch')));
+gulp.task('default', gulp.series('clean:dist', 'deps', gulp.series('src_html_to_pages_html', 'src_img_to_pages_img', 'bizdayla_css', 'bizdayla_favicon', 'bizdayla_js_context', 'bizdayla_js_hbs','sass', 'sass-min', 'bootstrapjs', 'mrarejs'), gulp.parallel('html', 'copy-assets'), gulp.series('serve', 'watch')));
 
-gulp.task('build', gulp.series('clean:dist', 'deps', gulp.series('src_html_to_pages_html', 'src_img_to_pages_img', 'bizdayla_css', 'bizdayla_js_context', 'bizdayla_js_hbs', 'sass', 'sass-min', 'bootstrapjs', 'mrarejs'), gulp.parallel('html', 'copy-assets'), gulp.series('configs', 'deploy')));
+gulp.task('build', gulp.series('clean:dist', 'deps', gulp.series('src_html_to_pages_html', 'src_img_to_pages_img', 'bizdayla_css', 'bizdayla_favicon', 'bizdayla_js_context', 'bizdayla_js_hbs', 'sass', 'sass-min', 'bootstrapjs', 'mrarejs'), gulp.parallel('html', 'copy-assets'), gulp.series('configs', 'deploy')));

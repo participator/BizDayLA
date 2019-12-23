@@ -1,5 +1,5 @@
 {{#with speaker}}
-<section class="has-divider bg-primary-alt">
+<section class="has-divider bg-primary-alt bizday_speaker_main">
   <div class="divider flip-y">
     <img src="assets/img/dividers/divider-2.svg" alt="graphical divider" data-inject-svg />
   </div>
@@ -16,14 +16,10 @@
         </div>
       </div>
       <div class="col-xl-5 col-md-6">
-        <div class="h1">
-          <div>Howdy, I'm {{firstName}},</div>
-          <span>A</span>
-          <div class="highlight">
-            <span data-typed-text data-loop="true" data-type-speed="65" data-strings='[{{titles}}]'></span>
-          </div>
+        <div class="h1 bizday_speaker_header">
+          <div>{{firstName}} {{lastName}}</div>
         </div>
-        <p class="lead">{{description}}</p>
+        <p class="lead bizday_speaker_description">{{description}}</p>
         <a href="{{url_twitter}}" class="lead">@{{name_twitter}}</a>
       </div>
     </div>
