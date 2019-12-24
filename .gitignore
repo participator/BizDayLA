@@ -3,4 +3,4 @@ dist
 bash.exe.stackdump
 .publish
 .vscode
-pages
+pages/
