@@ -84,7 +84,7 @@ getPaths = () => {
     src: {
       all: ['src/**/*'],
       bizdayla_css: 'src/css/**/*.css',
-      bizdayla_favicon: ['src/*.ico', 'src/*.svg'],
+      bizdayla_favicon: ['src/*.ico', 'src/*.svg', 'src/*.png', 'src/*.webmanifest'],
       bizdayla_js_all: 'src/js/**/*',
       bizdayla_js_context: 'src/js/context/**/*.js',
       bizdayla_js_partials: 'src/js/partials/**/*.hbs',
