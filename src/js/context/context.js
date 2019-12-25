@@ -251,6 +251,11 @@ window.context = {
                 image: 'assets/bizdayla/img/vazell_logo.svg',
                 name: 'vazell',
                 url: 'http://www.vazell.com'
+            },
+            {
+                image: 'assets/bizdayla/img/the_metaphor_club_Logo.jpg',
+                name: 'The Metaphor Club',
+                url: 'http://themetaphorclub.com'
             }
         ]
     },

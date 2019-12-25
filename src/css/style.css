@@ -16,12 +16,28 @@
 }
 .bizday_header_nav .navbar-brand {
     color: var(--nav_blue);
+    width: 5em;
+}
+.bizday_header_nav .navbar-brand.bizday_header_logo--transparent {
+    visibility: hidden;
+}
+.bizday_header_nav .navbar-brand .bizday_header_logo--white {
+    display: none;
+}
+.bizday_header_nav.scrolled .navbar-brand .bizday_header_logo--white {
+    display: initial;
 }
 .bizday_header_nav .navbar-brand:hover {
     color: var(--nav_blue);
 }
 .bizday_header_nav.scrolled .navbar-brand {
-    color: var(--white);
+    visibility: visible;
+}
+.bizday_header_nav .navbar-brand .bizday_header_logo--black {
+    display: initial;
+}
+.bizday_header_nav.scrolled .navbar-brand .bizday_header_logo--black {
+    display: none;
 }
 .bizday_header_nav .btn {
     color: var(--nav_blue);
