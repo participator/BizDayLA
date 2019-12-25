@@ -169,12 +169,12 @@ window.context = {
                     site: 'https://www.github.com/',
                 },
                 url_facebook: {
-                    has: false,
-                    site: 'https://www.facebook.com/',
+                    has: true,
+                    site: 'https://www.facebook.com/MedleyInc',
                 },
                 url_instagram: {
-                    has: false,
-                    site: 'https://www.instagram.com/',
+                    has: true,
+                    site: 'https://www.instagram.com/medleyinc/',
                 },
                 url_linkedin: {
                     has: false,
@@ -182,7 +182,7 @@ window.context = {
                 },
                 url_twitter: {
                     has: true,
-                    site: 'https://www.twitter.com/AshleyRSmall',
+                    site: 'https://twitter.com/medleyinc',
                 },
                 website: {
                     has: false,
@@ -193,8 +193,8 @@ window.context = {
                 id: 'speaker4',
                 firstName: 'Joseph',
                 lastName: 'Luckett',
-                company: 'Company',
-                company_website: 'https://medley-inc.com/',
+                company: 'Affluent Solution',
+                company_website: 'https://www.affluentsolution.com/',
                 description: `Reviews, accurate business information, and social media activity impact a business's reputation and influences whether a consumer decides to do business with them. Businesses need a way to manage all of these factors in a scalable way.
 
                 With Reputation Management, you can keep on top of online activity affecting the reputation of a business, including reviews, listings, and social media, helping you make expert recommendations, and provide proof-of-performance.`,
@@ -209,20 +209,24 @@ window.context = {
                     site: 'https://www.github.com/',
                 },
                 url_facebook: {
-                    has: false,
-                    site: 'https://www.facebook.com/',
+                    has: true,
+                    site: 'https://www.facebook.com/affluentsolution/',
                 },
                 url_instagram: {
-                    has: false,
-                    site: 'https://www.instagram.com/',
+                    has: true,
+                    site: 'https://www.instagram.com/affluentsolution/',
                 },
                 url_linkedin: {
-                    has: false,
-                    site: 'https://www.linkedin.com/in/',
+                    has: true,
+                    site: 'https://www.linkedin.com/company/affluent-solution-group',
                 },
                 url_twitter: {
-                    has: false,
-                    site: 'https://www.twitter.com/',
+                    has: true,
+                    site: 'https://twitter.com/affluentsg',
+                },
+                url_youtube: {
+                    has: true,
+                    site: 'https://www.youtube.com/channel/UCG73VP7k3q7tul3DI1ZDoYA?reload=9',
                 },
                 website: {
                     has: false,
@@ -251,6 +255,11 @@ window.context = {
                 image: 'assets/bizdayla/img/vazell_logo.svg',
                 name: 'vazell',
                 url: 'http://www.vazell.com'
+            },
+            {
+                image: 'assets/bizdayla/img/the_metaphor_club_Logo.jpg',
+                name: 'The Metaphor Club',
+                url: 'http://themetaphorclub.com'
             }
         ]
     },
