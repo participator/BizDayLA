@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="357px" height="105px" viewBox="0 0 357 105" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 59.1 (86144) - https://sketch.com -->
+    <!-- <title>vazell_logo_color</title> -->
+    <!-- <desc>Created with Sketch.</desc> -->
+    <defs>
+        <linearGradient x1="53.9951248%" y1="-16.8124474%" x2="53.9951248%" y2="150.74645%" id="linearGradient-1">
+            <stop stop-color="#FF002B" offset="0%"></stop>
+            <stop stop-color="#EB0067" offset="100%"></stop>
+        </linearGradient>
+        <path d="M254.897129,25.5550239 C276.566986,25.5550239 285.844498,44.1100478 285.811095,60.2200957 C285.813375,63.0267285 285.572441,65.8282842 285.090909,68.5933014 L242.57177,68.5933014 C244.078947,73.7344498 249.086124,77.2177033 256.722488,77.2344498 C263.052747,77.0159777 269.256833,75.4034872 274.892344,72.5119617 L281.808612,89.2583732 C273.958488,94.70032 264.560513,97.4609751 255.014354,97.1291866 C235.249695,97.1615574 219.201031,81.165377 219.168611,61.4007177 C219.13629,41.6360584 235.13247,25.5873947 254.897129,25.5550239 Z M83.0956938,22.5239234 L53.5885167,97.1291866 L29.507177,97.1291866 L59.0143541,22.5239234 L83.0956938,22.5239234 Z M132.296651,29.1052632 L132.296651,26.1913876 L151.889952,26.1913876 L151.739234,96.3755981 L133.669856,96.3755981 L133.669856,91.9210526 C128.237812,95.1362501 122.029676,96.8041076 115.717703,96.7440191 C96.6129879,95.7848354 81.6257673,79.9967374 81.6614831,60.8679919 C81.6973268,41.7392464 96.7435047,26.0073249 115.851675,25.1196172 C121.580584,25.0502629 127.235181,26.4207254 132.296651,29.1052632 Z M316.339713,-7.10542736e-15 L316.12201,96.0406699 L294.854067,96.0406699 L295.07177,-7.10542736e-15 L316.339713,-7.10542736e-15 Z M348.442584,-7.10542736e-15 L348.22488,96.0406699 L326.956938,96.0406699 L327.174641,-7.10542736e-15 L348.442584,-7.10542736e-15 Z M163.19378,26.2583732 L212.679426,26.3588517 L212.679426,41.430622 L189.535885,74.5885167 L212.595694,74.5885167 L212.595694,95.722488 L163.110048,95.6052632 L163.110048,79.3444976 L185.885167,47.291866 L163.19378,47.2416268 L163.19378,26.2583732 Z M108.365753,47.8905469 C103.754961,50.6222858 101.000771,55.6509637 101.181818,61.007177 C101.132591,64.9001326 102.643513,68.6508507 105.377526,71.4226183 C108.11154,74.1943859 111.841185,75.7566018 115.73445,75.7607656 L115.73445,75.8444976 C119.684313,75.913807 123.491886,74.3706394 126.278965,71.5709213 C129.066043,68.7712032 130.591966,64.9566867 130.504785,61.007177 C130.685832,55.6509637 127.931642,50.6222858 123.32085,47.8905469 C118.710058,45.1588081 112.976545,45.1588081 108.365753,47.8905469 Z M242.688995,52.4162679 L264.45933,52.4162679 C264.04067,49.2177033 260.440191,45.7177033 253.909091,45.7177033 C249.183912,45.5758045 244.806004,48.1894809 242.688995,52.4162679 Z" id="path-2"></path>
+        <filter x="-2.2%" y="-5.1%" width="104.4%" height="114.4%" filterUnits="objectBoundingBox" id="filter-3">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.246339598 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <polygon id="path-4" points="8.0215311 22.5239234 12.007177 22.5239234 34.1124402 78.4401914 32.0023923 83.1961722"></polygon>
+        <filter x="-26.8%" y="-8.2%" width="153.7%" height="123.1%" filterUnits="objectBoundingBox" id="filter-5">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.25 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <polygon id="path-6" points="1.08357767e-13 22.5239234 3.98564593 22.5239234 31.5502392 92.1052632 29.507177 97.1291866"></polygon>
+        <filter x="-22.2%" y="-6.7%" width="144.4%" height="118.8%" filterUnits="objectBoundingBox" id="filter-7">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.25 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <polygon id="path-8" points="16.0430622 22.5239234 20.0956938 22.5239234 38.0980861 68.2416268 36.138756 73.3660287"></polygon>
+        <filter x="-31.7%" y="-9.8%" width="163.5%" height="127.5%" filterUnits="objectBoundingBox" id="filter-9">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.25 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="01_SurveyStyleGuide" transform="translate(-55.000000, -196.000000)">
+            <g id="vazell_logo_color" transform="translate(59.000000, 198.000000)">
+                <g id="Combined-Shape-Copy" fill-rule="nonzero">
+                    <use fill="black" fill-opacity="1" filter="url(#filter-3)" xlink:href="#path-2"></use>
+                    <use fill="url(#linearGradient-1)" xlink:href="#path-2"></use>
+                </g>
+                <g id="Path-Copy-10">
+                    <use fill="black" fill-opacity="1" filter="url(#filter-5)" xlink:href="#path-4"></use>
+                    <use fill="#9200EB" fill-rule="evenodd" xlink:href="#path-4"></use>
+                </g>
+                <g id="Path-Copy-11">
+                    <use fill="black" fill-opacity="1" filter="url(#filter-7)" xlink:href="#path-6"></use>
+                    <use fill="#5900FF" fill-rule="evenodd" xlink:href="#path-6"></use>
+                </g>
+                <g id="Path-Copy-12">
+                    <use fill="black" fill-opacity="1" filter="url(#filter-9)" xlink:href="#path-8"></use>
+                    <use fill="#03B103" fill-rule="evenodd" xlink:href="#path-8"></use>
+                </g>
+                <polygon id="Path-Copy-13" fill="#05C7F2" points="24.0813397 22.5239234 28.0669856 22.5239234 42.0334928 57.8755981 40.0741627 63.1172249"></polygon>
+            </g>
+        </g>
+    </g>
+</svg>

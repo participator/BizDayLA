@@ -87,6 +87,7 @@ getPaths = () => {
       bizdayla_favicon: ['src/*.ico', 'src/*.svg', 'src/*.png', 'src/*.webmanifest'],
       bizdayla_js_all: 'src/js/**/*',
       bizdayla_js_context: 'src/js/context/**/*.js',
+      bizdayla_js_helpers: 'src/js/helpers/**/*.js',
       bizdayla_js_partials: 'src/js/partials/**/*.hbs',
       bizdayla_js_templates: 'src/js/templates/**/*.hbs',
       bizdayla_html: 'src/*.html',
@@ -217,6 +218,11 @@ gulp.task('bizdayla_js_context', () => {
 
 // Transpile partials and templates and copy into pages
 gulp.task('bizdayla_js_hbs', function() {
+
+  let helpers = gulp.src([paths.src.bizdayla_js_helpers])
+    .pipe(handlebars())
+    .pipe(wrap('Handlebars.registerHelper("scriptLoaderFromArray", arr => { let body = document.body; arr.forEach(url => { const script = document.createElement("script"); script.src = url; script.type="text/javascript"; body.append(script); }) });'));
+
   // Assume all partials start with an underscore
   // You could also put them in a folder such as source/templates/partials/*.hbs
   var partials = gulp.src([paths.src.bizdayla_js_partials])
@@ -240,7 +246,7 @@ gulp.task('bizdayla_js_hbs', function() {
     }));
 
   // Output both the partials and the templates as build/js/templates.js
-  return merge(partials, templates)
+  return merge(helpers, partials, templates)
     .pipe(concat('templates.js'))
     .pipe(gulp.dest(paths.pages.bizdayla_js_hbs));
 });
