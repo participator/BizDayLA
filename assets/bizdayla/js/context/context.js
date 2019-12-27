@@ -242,12 +242,12 @@ window.context = {
         ],
         sponsor: [
             {
-                image: 'assets/bizdayla/img/as_Logo.png',
-                name: 'aS',
+                image: 'assets/bizdayla/img/as_logo.png',
+                name: 'Affluent Solution',
                 url: 'https://www.affluentsolution.com/'
             },
             {
-                image: 'assets/bizdayla/img/Medley_Logo.jpg',
+                image: 'assets/bizdayla/img/medley_logo.jpg',
                 name: 'Medley',
                 url: 'https://www.medley-inc.com'
             },
@@ -257,9 +257,14 @@ window.context = {
                 url: 'http://www.vazell.com'
             },
             {
-                image: 'assets/bizdayla/img/the_metaphor_club_Logo.jpg',
+                image: 'assets/bizdayla/img/the_metaphor_club_logo.jpg',
                 name: 'The Metaphor Club',
                 url: 'http://themetaphorclub.com'
+            },
+            {
+                image: 'assets/bizdayla/img/bridgetown_partners_logo.png',
+                name: 'Bridgetown Partners',
+                url: 'https://bridgetownpartners.com/'
             }
         ]
     },
