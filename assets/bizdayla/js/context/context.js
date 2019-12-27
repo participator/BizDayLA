@@ -259,7 +259,7 @@ window.context = {
             {
                 image: 'assets/bizdayla/img/the_metaphor_club_logo.jpg',
                 name: 'The Metaphor Club',
-                url: 'http://themetaphorclub.com'
+                url: 'http://www.themetaphorclub.com'
             },
             {
                 image: 'assets/bizdayla/img/bridgetown_partners_logo.png',
