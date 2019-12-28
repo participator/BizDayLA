@@ -1,0 +1,91 @@
+:root {
+    --dark: #212529;
+    --hero_blue: #202055;
+    --gray: dee2e6;
+    --nav_blue: #020122;
+    --white: #ffffff;
+}
+.bizday_header_nav .navbar-brand {
+    color: var(--nav_blue);
+    width: 5rem;
+}
+.bizday_header_nav .navbar-brand.bizday_header_logo--transparent {
+    visibility: hidden;
+}
+.bizday_header_nav .navbar-brand .bizday_header_logo--white {
+    display: none;
+}
+.bizday_header_nav.scrolled .navbar-brand .bizday_header_logo--white {
+    display: initial;
+}
+.bizday_header_nav .navbar-brand:hover {
+    color: var(--nav_blue);
+}
+.bizday_header_nav.scrolled .navbar-brand {
+    visibility: visible;
+}
+.bizday_header_nav .navbar-brand .bizday_header_logo--black {
+    display: initial;
+}
+.bizday_header_nav.scrolled .navbar-brand .bizday_header_logo--black {
+    display: none;
+}
+.bizday_header_nav .btn {
+    color: var(--nav_blue);
+}
+.bizday_header_nav.scrolled.navbar[data-sticky="top"] {
+    background-color: var(--nav_blue);
+    color: var(--white);
+}
+.bizday_hero {
+    background-color: var(--hero_blue)!important;
+}
+.bizday_hero_date {
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+    margin-top: 1.5rem;
+}
+.bizday_hero_logo {
+    width: 4em;
+}
+.bizday_sponsors_by_text {
+    font-weight: bold;
+}
+.bizday_sponsors_icon {
+    height: 4rem;
+}
+.bizday_sponsors_venue_icon {
+    height: 10rem;
+}
+.bizday_speaker_main {
+    background-color: var(--white);
+}
+.bizday_speaker_header {
+    font-size: 1.88rem;
+}
+.bizday_speaker_description {
+    font-size: 1.125rem;    
+}
+.hr_style {
+    background-color: var(--gray);
+    height: 2px;
+    margin: 1px;
+}
+@font-face {
+    font-family: 'lemonmilkregular';
+    src: url('../fonts/lemonmilk-webfont.woff2') format('woff2'),
+         url('../fonts/lemonmilk-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+.bizday_sponsor_venue_hotAndCool_logo {
+    font-family: 'lemonmilkregular';
+    font-weight: normal;
+    font-style: normal;
+    color: black;
+    padding: 1em 0;
+    font-size: 2.4em;
+    white-space: nowrap;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}

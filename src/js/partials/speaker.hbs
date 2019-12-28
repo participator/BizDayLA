@@ -1,0 +1,29 @@
+{{#with speaker}}
+<section class="has-divider bg-primary-alt bizday_speaker_main">
+  <div class="divider flip-y">
+    <img src="assets/img/dividers/divider-2.svg" alt="graphical divider" data-inject-svg />
+  </div>
+  {{#each speakers}}
+  <div id={{id}} class="container" data-aos="fade-up">
+    <div class="row align-items-center justify-content-around">
+      <div class="col-md-5">
+        <img src="{{image}}" alt="Image" class="rounded-circle layer-2">
+        <div class="decoration bottom left" data-aos="fade-up">
+          <img class="bg-primary" src="assets/img/decorations/deco-blob-10.svg" alt="deco-blob-10 decoration" data-inject-svg />
+        </div>
+        <div class="decoration bottom left" data-aos="fade-right">
+          <img class="bg-primary-2" src="assets/img/decorations/deco-lines-4.svg" alt="deco-lines-4 decoration" data-inject-svg />
+        </div>
+      </div>
+      <div class="col-xl-5 col-md-6">
+        <div class="h1 bizday_speaker_header">
+          <div>{{firstName}} {{lastName}}</div>
+        </div>
+        <p class="lead bizday_speaker_description">{{description}}</p>
+        {{> socials}}
+      </div>
+    </div>
+  </div>
+  {{/each}}
+</section>
+{{/with}}
