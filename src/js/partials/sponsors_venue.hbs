@@ -1,15 +1,24 @@
 <section class="text-dark has-divider">
   <div class="container text-center">
     <div class="row justify-content-between">
-      <div class="col-md-8 mx-auto">
+      <div class="col-md-10 mx-auto">
         <h3 class="text-uppercase mb-4 bizday_sponsors_by_text">Venue Sponsors</h3>
-        <ul class="d-flex flex-wrap list-unstyled">
+        <ul class="d-flex flex-wrap list-unstyled justify-content-center">
             {{#each sponsors_venue}}
+            {{#if has_text_logo}}
+            <li class="mr-4 mb-5 col-md-6 align-self-center" data-aos="fade-up" data-aos-delay="100">
+                <a href="{{url}}">
+                    <p` class="bg-white icon icon-logo bizday_sponsors_venue_icon {{font_style}}">{{name}}</p`>
+                </a>
+            </li>
+            {{/if}}
+            {{#if has_image_logo}}
             <li class="mr-4 mb-5 col-md-5" data-aos="fade-up" data-aos-delay="100">
                 <a href="{{url}}">
                     <img class="bg-white icon icon-logo bizday_sponsors_venue_icon" src="{{image}}" alt="{{name}}" />
                 </a>
             </li>
+            {{/if}}
             {{/each}}
         </ul>
       </div>

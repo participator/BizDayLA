@@ -55,7 +55,7 @@
     height: 4rem;
 }
 .bizday_sponsors_venue_icon {
-    height: 8rem;
+    height: 10rem;
 }
 .bizday_speaker_main {
     background-color: var(--white);
@@ -70,4 +70,22 @@
     background-color: var(--gray);
     height: 2px;
     margin: 1px;
+}
+@font-face {
+    font-family: 'lemonmilkregular';
+    src: url('../fonts/lemonmilk-webfont.woff2') format('woff2'),
+         url('../fonts/lemonmilk-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+.bizday_sponsor_venue_hotAndCool_logo {
+    font-family: 'lemonmilkregular';
+    font-weight: normal;
+    font-style: normal;
+    color: black;
+    padding: 1em 0;
+    font-size: 2.4em;
+    white-space: nowrap;
+    text-transform: uppercase;
+    letter-spacing: 2px;
 }
