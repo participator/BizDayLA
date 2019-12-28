@@ -1,0 +1,67 @@
+{{#with schedule}}
+<section>
+  <div class="container">
+    <div class="row aling-items-center mb-4">
+      <div class="col">
+        <h2 class="h1 mb-sm-0">Schedule</h2>
+      </div>
+      <div class="col-auto">
+        <ul class="nav" role="tablist">
+          <li class="nav-item">
+            <a class="nav-link btn active" href="#in_person" id="in_person-tab" data-toggle="tab" aria-controls="in_person" role="tab" aria-selected="true">{{tab1_name}}</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link btn" href="#virtual" id="virtual-tab" data-toggle="tab" aria-controls="virtual" role="tab" aria-selected="false">{{tab2_name}}</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="row no-gutters d-none d-md-flex bg-white py-3">
+      <div class="col-xl-7 col-md-6">
+        <span class="h6 mb-0 text-muted">Topic</span>
+      </div>
+      <div class="col">
+        <span class="h6 mb-0 text-muted">Time</span>
+      </div>
+      <div class="col">
+        <span class="h6 mb-0 text-muted">Presenter</span>
+      </div>
+    </div>
+    <div class="tab-content" data-aos="fade-up">
+      <div id="in_person" class="list-group list-group-flush tab-pane fade show active" role="tabpanel" aria-labelledby="day-one-tab">
+        {{#each presentation_in_person}}
+        <a href="#" class="list-group-item list-group-item-action row no-gutters align-items-center py-3">
+          <div class="col-xl-7 col-md-6">
+            <h5 class="mb-0">{{name}}</h5>
+          </div>
+          <div class="col-md">
+            <span>{{time}}</span>
+          </div>
+          <div class="col-md">
+            <div class="d-flex align-items-center mt-2 mt-md-0">
+              <img src="assets/img/avatars/male-4.jpg" alt="{{this.presenter}}" class="avatar avatar-sm mr-2">
+              <span class="h6 mb-0">{{presenter}}</span>
+            </div>
+          </div>
+        </a>
+        {{/each}}
+      </div>
+      <div id="virtual" class="list-group list-group-flush tab-pane fade" role="tabpanel" aria-labelledby="day-two-tab">
+        {{#each presentation_virtual}}
+        <a href="#" class="list-group-item list-group-item-action row no-gutters align-items-center py-3">
+          <div class="col-xl-7 col-md-6">
+            <h5 class="mb-0">{{name}}</h5>
+          </div>
+          <div class="col-md">
+            <span>{{time}}</span>
+          </div>
+          <div class="col-md">
+            <span>{{presenter}}</span>
+          </div>
+        </a>
+        {{/each}}
+      </div>
+    </div>
+  </div>
+</section>
+{{/with}}
