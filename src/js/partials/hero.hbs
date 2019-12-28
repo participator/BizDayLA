@@ -4,9 +4,10 @@
     <div class="container layer-2">
         <div class="row py-6 min-vh-80 align-items-center aos-init aos-animate" data-aos="fade-up">
             <div class="col-lg-9 col-xl-8">
-                <h5>{{eventDate}}</h5>
-                {{!-- <h1 class="display-1 bizDay_text bizDay_text_resetLetterSpacing">{{confName}}</h1> --}}
-                <h1 class="display-1 bizDay_text bizDay_text_resetLetterSpacing"><img src={{logoPath}} alt="Biz Day LA logo" /></h1>
+                <h5 class="bizday_hero_date">{{eventDate}}</h5>
+                <h1 class="display-1">
+                    <img class="bizday_hero_logo" src={{logoPath}} alt="BizDay.LA" />
+                </h1>
                 <p class="lead mb-4">{{location}}</p>
                 <a href="{{../url_cta}}" class="btn btn-primary btn-lg">{{../ctaText}}</a>
             </div>

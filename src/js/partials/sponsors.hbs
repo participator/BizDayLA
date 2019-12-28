@@ -1,20 +1,13 @@
-{{#with sponsors}}
 <section class="text-dark has-divider">
   <div class="container">
     <div class="row justify-content-between">
-      <div class="col-md-6 mb-3 mb-md-0">
-        <h2 class="h1">Immerse yourself in one evening of creative discussion.</h2>
-        {{#each description}}
-            <p class="lead">An exciting event for current and aspiring business owners.</p>
-        {{/each}}
-      </div>
-      <div class="col-md-5">
-        <small class="text-uppercase mb-4">Sponsored By</small>
-        <ul class="d-flex flex-wrap list-unstyled">
-            {{#each sponsor}}
-            <li class="mr-4 mb-5" data-aos="fade-up" data-aos-delay="100">
+      <div class="col-md-12 text-center">
+        <h4 class="text-uppercase mb-4 bizday_sponsors_by_text">Sponsors</h4>
+        <ul class="d-flex flex-wrap list-unstyled justify-content-between">
+            {{#each sponsors}}
+            <li class="mr-4 mb-5 col-md-2" data-aos="fade-up" data-aos-delay="100">
                 <a href="{{url}}">
-                    <img class="bg-white icon icon-logo icon-md" src="{{image}}" alt="icon" />
+                    <img class="bg-white icon icon-logo bizday_sponsors_icon" src="{{image}}" alt="{{name}}" />
                 </a>
             </li>
             {{/each}}
@@ -26,4 +19,3 @@
     <img class="bg-white" src="assets/img/dividers/divider-3.svg" alt="divider graphic" data-inject-svg />
   </div>
 </section>
-{{/with}}

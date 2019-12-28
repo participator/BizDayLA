@@ -1,23 +1,13 @@
 :root {
     --dark: #212529;
     --hero_blue: #202055;
+    --gray: dee2e6;
     --nav_blue: #020122;
     --white: #ffffff;
 }
-.header_text {
-    color: white;
-    font-size: 2em;
-    margin: 0;
-}
-.bizDay_text {
-    font-family: 'Anton', sans-serif;
-}
-.bizDay_text_resetLetterSpacing {
-    letter-spacing: normal;
-}
 .bizday_header_nav .navbar-brand {
     color: var(--nav_blue);
-    width: 5em;
+    width: 5rem;
 }
 .bizday_header_nav .navbar-brand.bizday_header_logo--transparent {
     visibility: hidden;
@@ -50,6 +40,23 @@
 .bizday_hero {
     background-color: var(--hero_blue)!important;
 }
+.bizday_hero_date {
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+    margin-top: 1.5rem;
+}
+.bizday_hero_logo {
+    width: 4em;
+}
+.bizday_sponsors_by_text {
+    font-weight: bold;
+}
+.bizday_sponsors_icon {
+    height: 4rem;
+}
+.bizday_sponsors_venue_icon {
+    height: 8rem;
+}
 .bizday_speaker_main {
     background-color: var(--white);
 }
@@ -58,4 +65,9 @@
 }
 .bizday_speaker_description {
     font-size: 1.125rem;    
+}
+.hr_style {
+    background-color: var(--gray);
+    height: 2px;
+    margin: 1px;
 }

@@ -1,0 +1,17 @@
+{{#with description}}
+<section class="text-dark has-divider">
+  <div class="container">
+    <div class="row justify-content-between">
+      <div class="col-md-8 mb-3 mb-md-0 mx-auto text-center">
+        <h2 class="h1">{{header}}</h2>
+        <h3 class="sub_header">{{sub_header}}</h3>
+        <ul class="text-left">
+        {{#each paragraphs}}
+            <li class="lead"><strong>{{label}}:</strong> {{text}}</li>
+        {{/each}}
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+{{/with}}
