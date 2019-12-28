@@ -41,8 +41,8 @@ window.context = {
     hero: {
         image: 'assets/img/event-1.jpg',
         image: 'assets/bizdayla/img/BizDay_background_photo.jpg',
-        logoPath: 'assets/bizdayla/img/BizDay_Logo_Color_White.svg',
         logoPath: 'assets/bizdayla/img/BizDay_Logo_AllWhite.svg',
+        logoPath: 'assets/bizdayla/img/BizDay_Logo_Color_White.svg',
         confName: 'BizDay.LA',
         eventDate: 'Thursday, January 23, 2019',
         location: 'Los Angeles, CA, USA'
