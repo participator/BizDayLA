@@ -3,8 +3,8 @@ window.context = {
     orgName: 'BizDay',
     url_cta: 'https://www.eventbrite.com/e/bizdayla-tickets-85448796651',
     description: {
-        header: 'An exciting event for current and aspiring business owners.',
-        sub_header: 'Join your business peers for a full-day of presentations and discussions focused on the growing your business. Topics such as...',
+        header: 'BizDay.LA is an exciting event for current and aspiring business owners.',
+        sub_header: 'Join your business peers for a full-day of presentations and discussions focused on growing your business. Topics such as...',
         paragraphs: [
             {
                 label: 'Hiring',
@@ -40,12 +40,12 @@ window.context = {
     },
     hero: {
         image: 'assets/img/event-1.jpg',
-        image: 'https://media.istockphoto.com/photos/delivering-informative-presentations-is-what-she-does-best-picture-id1056359814',
+        image: 'assets/bizdayla/img/BizDay_background_photo.jpg',
         logoPath: 'assets/bizdayla/img/BizDay_Logo_Color_White.svg',
         logoPath: 'assets/bizdayla/img/BizDay_Logo_AllWhite.svg',
         confName: 'BizDay.LA',
         eventDate: 'Thursday, January 23, 2019',
-        location: 'Los Angeles, CA USA'
+        location: 'Los Angeles, CA, USA'
     },
     schedule: {
         tab1_name: 'Physical Space',
@@ -244,23 +244,23 @@ window.context = {
                 name_facebook: '',
                 url_github: {
                     has: true,
-                    site: 'https://github.com/bridgetownpartners',
+                    site: 'https://github.com/rayhightower',
                 },
                 url_facebook: {
-                    has: true,
-                    site: 'https://www.facebook.com/BridgetownPartners',
+                    has: false,
+                    site: '',
                 },
                 url_instagram: {
-                    has: true,
-                    site: 'https://www.instagram.com/bridgetownpartners',
+                    has: false,
+                    site: '',
                 },
                 url_linkedin: {
                     has: true,
-                    site: 'https://www.linkedin.com/company/bridgetownpartners',
+                    site: 'https://www.linkedin.com/in/rayhightower/',
                 },
                 url_twitter: {
                     has: true,
-                    site: 'https://www.twitter.com/BridgetownPtrs',
+                    site: 'https://twitter.com/rayhightower',
                 },
                 website: {
                     has: true,
@@ -293,11 +293,14 @@ window.context = {
     ],
     sponsors_venue: [
         {
-            image: 'assets/bizdayla/img/hot_and_cool_cafe_logo.png',
+            font_style: 'bizday_sponsor_venue_hotAndCool_logo',
+            has_text_logo: true,
+            // image: 'assets/bizdayla/img/hot_and_cool_cafe_logo.png',
             name: 'Hot & Cool Cafe',
             url: 'https://hotandcoolcafe.com/'
         },
         {
+            has_image_logo: true,
             image: 'assets/bizdayla/img/the_metaphor_club_logo.jpg',
             name: 'The Metaphor Club',
             url: 'http://www.themetaphorclub.com'
