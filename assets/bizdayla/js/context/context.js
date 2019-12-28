@@ -79,7 +79,7 @@ window.context = {
                 lastName: 'Hawkins',
                 company: 'Vazell',
                 company_website: 'https://www.vazell.com',
-                description: 'Varell is an Entreprenuer and Software Engineer with ten (10) years of experience across the telecom, insurance, and ecommerce industries.  He\'s currently running Vazell LLC, a web development agency that provides tailored web experiences allowing businesses better visibility online and/or easing their processess to better service their customers.',
+                description: 'Varell is an Entreprenuer and Software Engineer with ten (10) years of experience across the telecom, insurance, and ecommerce industries.  He\'s currently running Vazell LLC, a web development agency that provides tailored web experiences allowing businesses better visibility online and easing their processess to better service their customers.',
                 shortDescription: 'Vazell LLC | CEO',
                 image: 'assets/bizdayla/img/cropped_vazell_varell_hawkins.png',
                 name_github: 'participator',
