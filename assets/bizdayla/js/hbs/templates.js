@@ -10,13 +10,57 @@ this["Bizdayla"]["templates"]["App"] = Handlebars.template({"compiler":[8,">= 4.
   return ((stack1 = container.invokePartial(partials.loader,depth0,{"name":"loader","data":data,"helpers":helpers,"partials":partials,"decorators":container.decorators})) != null ? stack1 : "")
     + ((stack1 = container.invokePartial(partials.header_home,depth0,{"name":"header_home","data":data,"helpers":helpers,"partials":partials,"decorators":container.decorators})) != null ? stack1 : "")
     + ((stack1 = container.invokePartial(partials.hero,depth0,{"name":"hero","data":data,"helpers":helpers,"partials":partials,"decorators":container.decorators})) != null ? stack1 : "")
+    + ((stack1 = container.invokePartial(partials.description,depth0,{"name":"description","data":data,"helpers":helpers,"partials":partials,"decorators":container.decorators})) != null ? stack1 : "")
+    + ((stack1 = container.invokePartial(partials.divider,depth0,{"name":"divider","hash":{"hr_style":"hr_style"},"data":data,"helpers":helpers,"partials":partials,"decorators":container.decorators})) != null ? stack1 : "")
+    + ((stack1 = container.invokePartial(partials.sponsors_venue,depth0,{"name":"sponsors_venue","data":data,"helpers":helpers,"partials":partials,"decorators":container.decorators})) != null ? stack1 : "")
+    + ((stack1 = container.invokePartial(partials.sponsors_venue_offers,depth0,{"name":"sponsors_venue_offers","data":data,"helpers":helpers,"partials":partials,"decorators":container.decorators})) != null ? stack1 : "")
+    + ((stack1 = container.invokePartial(partials.divider,depth0,{"name":"divider","hash":{"hr_style":"hr_style"},"data":data,"helpers":helpers,"partials":partials,"decorators":container.decorators})) != null ? stack1 : "")
     + ((stack1 = container.invokePartial(partials.sponsors,depth0,{"name":"sponsors","data":data,"helpers":helpers,"partials":partials,"decorators":container.decorators})) != null ? stack1 : "")
-    + ((stack1 = container.invokePartial(partials.schedule,depth0,{"name":"schedule","data":data,"helpers":helpers,"partials":partials,"decorators":container.decorators})) != null ? stack1 : "")
+    + ((stack1 = container.invokePartial(partials.divider,depth0,{"name":"divider","hash":{"hr_style":"hr_style"},"data":data,"helpers":helpers,"partials":partials,"decorators":container.decorators})) != null ? stack1 : "")
     + ((stack1 = container.invokePartial(partials.speakers,depth0,{"name":"speakers","data":data,"helpers":helpers,"partials":partials,"decorators":container.decorators})) != null ? stack1 : "")
     + ((stack1 = container.invokePartial(partials.footer,depth0,{"name":"footer","data":data,"helpers":helpers,"partials":partials,"decorators":container.decorators})) != null ? stack1 : "")
     + ((stack1 = container.invokePartial(partials.arrow_up,depth0,{"name":"arrow_up","data":data,"helpers":helpers,"partials":partials,"decorators":container.decorators})) != null ? stack1 : "")
-    + container.escapeExpression((helpers.scriptLoaderFromArray||(depth0 && depth0.scriptLoaderFromArray)||container.hooks.helperMissing).call(depth0 != null ? depth0 : (container.nullContext || {}),((stack1 = ((stack1 = (depth0 != null ? depth0.helper : depth0)) != null ? stack1.scriptLoaderFromArray : stack1)) != null ? stack1.arr : stack1),{"name":"scriptLoaderFromArray","hash":{},"data":data,"loc":{"start":{"line":9,"column":0},"end":{"line":9,"column":58}}}));
+    + container.escapeExpression((helpers.scriptLoaderFromArray||(depth0 && depth0.scriptLoaderFromArray)||container.hooks.helperMissing).call(depth0 != null ? depth0 : (container.nullContext || {}),((stack1 = ((stack1 = (depth0 != null ? depth0.helper : depth0)) != null ? stack1.scriptLoaderFromArray : stack1)) != null ? stack1.arr : stack1),{"name":"scriptLoaderFromArray","hash":{},"data":data,"loc":{"start":{"line":15,"column":0},"end":{"line":15,"column":58}}}));
 },"usePartial":true,"useData":true});
+Handlebars.registerPartial("description", Handlebars.template({"1":function(container,depth0,helpers,partials,data) {
+    var stack1, helper, alias1=depth0 != null ? depth0 : (container.nullContext || {}), alias2=container.hooks.helperMissing, alias3="function", alias4=container.escapeExpression;
+
+  return "<section class=\"text-dark has-divider\">\r\n  <div class=\"container\">\r\n    <div class=\"row justify-content-between\">\r\n      <div class=\"col-md-8 mb-3 mb-md-0 mx-auto text-center\">\r\n        <h2 class=\"h1\">"
+    + alias4(((helper = (helper = helpers.header || (depth0 != null ? depth0.header : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"header","hash":{},"data":data,"loc":{"start":{"line":6,"column":23},"end":{"line":6,"column":33}}}) : helper)))
+    + "</h2>\r\n        <h3 class=\"sub_header\">"
+    + alias4(((helper = (helper = helpers.sub_header || (depth0 != null ? depth0.sub_header : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"sub_header","hash":{},"data":data,"loc":{"start":{"line":7,"column":31},"end":{"line":7,"column":45}}}) : helper)))
+    + "</h3>\r\n        <ul class=\"text-left\">\r\n"
+    + ((stack1 = helpers.each.call(alias1,(depth0 != null ? depth0.paragraphs : depth0),{"name":"each","hash":{},"fn":container.program(2, data, 0),"inverse":container.noop,"data":data,"loc":{"start":{"line":9,"column":8},"end":{"line":11,"column":17}}})) != null ? stack1 : "")
+    + "        </ul>\r\n      </div>\r\n    </div>\r\n  </div>\r\n</section>\r\n";
+},"2":function(container,depth0,helpers,partials,data) {
+    var helper, alias1=depth0 != null ? depth0 : (container.nullContext || {}), alias2=container.hooks.helperMissing, alias3="function", alias4=container.escapeExpression;
+
+  return "            <li class=\"lead\"><strong>"
+    + alias4(((helper = (helper = helpers.label || (depth0 != null ? depth0.label : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"label","hash":{},"data":data,"loc":{"start":{"line":10,"column":37},"end":{"line":10,"column":46}}}) : helper)))
+    + ":</strong> "
+    + alias4(((helper = (helper = helpers.text || (depth0 != null ? depth0.text : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"text","hash":{},"data":data,"loc":{"start":{"line":10,"column":57},"end":{"line":10,"column":65}}}) : helper)))
+    + "</li>\r\n";
+},"compiler":[8,">= 4.3.0"],"main":function(container,depth0,helpers,partials,data) {
+    var stack1;
+
+  return ((stack1 = helpers["with"].call(depth0 != null ? depth0 : (container.nullContext || {}),(depth0 != null ? depth0.description : depth0),{"name":"with","hash":{},"fn":container.program(1, data, 0),"inverse":container.noop,"data":data,"loc":{"start":{"line":1,"column":0},"end":{"line":17,"column":9}}})) != null ? stack1 : "");
+},"useData":true}));
+this["Bizdayla"]["templates"]["Speaker"] = Handlebars.template({"compiler":[8,">= 4.3.0"],"main":function(container,depth0,helpers,partials,data) {
+    var stack1;
+
+  return ((stack1 = container.invokePartial(partials.loader,depth0,{"name":"loader","data":data,"helpers":helpers,"partials":partials,"decorators":container.decorators})) != null ? stack1 : "")
+    + ((stack1 = container.invokePartial(partials.header,depth0,{"name":"header","data":data,"helpers":helpers,"partials":partials,"decorators":container.decorators})) != null ? stack1 : "")
+    + ((stack1 = container.invokePartial(partials.speaker,depth0,{"name":"speaker","data":data,"helpers":helpers,"partials":partials,"decorators":container.decorators})) != null ? stack1 : "")
+    + ((stack1 = container.invokePartial(partials.arrow_up,depth0,{"name":"arrow_up","data":data,"helpers":helpers,"partials":partials,"decorators":container.decorators})) != null ? stack1 : "")
+    + container.escapeExpression((helpers.scriptLoaderFromArray||(depth0 && depth0.scriptLoaderFromArray)||container.hooks.helperMissing).call(depth0 != null ? depth0 : (container.nullContext || {}),((stack1 = ((stack1 = (depth0 != null ? depth0.helper : depth0)) != null ? stack1.scriptLoaderFromArray : stack1)) != null ? stack1.arr : stack1),{"name":"scriptLoaderFromArray","hash":{},"data":data,"loc":{"start":{"line":5,"column":0},"end":{"line":5,"column":58}}}));
+},"usePartial":true,"useData":true});
+Handlebars.registerPartial("divider", Handlebars.template({"compiler":[8,">= 4.3.0"],"main":function(container,depth0,helpers,partials,data) {
+    var helper;
+
+  return "<hr class="
+    + container.escapeExpression(((helper = (helper = helpers.hr_style || (depth0 != null ? depth0.hr_style : depth0)) != null ? helper : container.hooks.helperMissing),(typeof helper === "function" ? helper.call(depth0 != null ? depth0 : (container.nullContext || {}),{"name":"hr_style","hash":{},"data":data,"loc":{"start":{"line":1,"column":10},"end":{"line":1,"column":22}}}) : helper)))
+    + ">";
+},"useData":true}));
 Handlebars.registerPartial("footer", Handlebars.template({"1":function(container,depth0,helpers,partials,data,blockParams,depths) {
     var helper, alias1=depth0 != null ? depth0 : (container.nullContext || {}), alias2=container.hooks.helperMissing, alias3="function", alias4=container.escapeExpression, alias5=container.lambda;
 
@@ -30,23 +74,14 @@ Handlebars.registerPartial("footer", Handlebars.template({"1":function(container
     + alias4(((helper = (helper = helpers.email || (depth0 != null ? depth0.email : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"email","hash":{},"data":data,"loc":{"start":{"line":24,"column":30},"end":{"line":24,"column":39}}}) : helper)))
     + "\">"
     + alias4(((helper = (helper = helpers.email || (depth0 != null ? depth0.email : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"email","hash":{},"data":data,"loc":{"start":{"line":24,"column":41},"end":{"line":24,"column":50}}}) : helper)))
-    + "</a>\r\n            </div>\r\n          </li>\r\n        </ul>\r\n      </div>\r\n      <div class=\"col-lg-5 col-xl-4 mt-3 mt-lg-0\">\r\n        <h5>Subscribe</h5>\r\n        <p>The latest BizDay.LA news, articles, and resources, sent straight to your inbox every month.</p>\r\n        <form action=\"/forms/mailchimp\" data-form-email novalidate>\r\n          <div class=\"form-row\">\r\n            <div class=\"col-12\">\r\n              <input type=\"email\" class=\"form-control mb-2\" placeholder=\"Email Address\" name=\"email\" required>\r\n            </div>\r\n            <div class=\"col-12\">\r\n              <div class=\"d-none alert alert-success\" role=\"alert\" data-success-message>\r\n                Thanks, a member of our team will be in touch shortly.\r\n              </div>\r\n              <div class=\"d-none alert alert-danger\" role=\"alert\" data-error-message>\r\n                Please fill all fields correctly.\r\n              </div>\r\n              <div data-recaptcha data-sitekey=\"INSERT_YOUR_RECAPTCHA_V2_SITEKEY_HERE\" data-size=\"invisible\" data-badge=\"bottomleft\">\r\n              </div>\r\n              <button type=\"submit\" class=\"btn btn-primary btn-loading btn-block\" data-loading-text=\"Sending\">\r\n                <img class=\"icon\" src=\"assets/img/icons/theme/code/loading.svg\" alt=\"loading icon\" data-inject-svg />\r\n                <span>Subscribe</span>\r\n              </button>\r\n            </div>\r\n          </div>\r\n        </form>\r\n        <small class=\"text-muted form-text\">We’ll never share your details. See our <a href=\"#\">Privacy Policy</a>\r\n        </small>\r\n      </div>\r\n    </div>\r\n    <div class=\"row justify-content-center mb-2\">\r\n      <div class=\"col-auto\">\r\n        <ul class=\"nav\">\r\n          <li class=\"nav-item\">\r\n            <a href=\"https://instagram.com/bizdayla\" class=\"nav-link\">\r\n              <img class=\"icon undefined\" src=\"assets/img/icons/social/instagram.svg\" alt=\"instagram social icon\" data-inject-svg />\r\n            </a>\r\n          </li>\r\n          <li class=\"nav-item\">\r\n            <a href=\"https://twitter.com/bizdayla\" class=\"nav-link\">\r\n              <img class=\"icon undefined\" src=\"assets/img/icons/social/twitter.svg\" alt=\"twitter social icon\" data-inject-svg />\r\n            </a>\r\n          </li>\r\n          <li class=\"nav-item\">\r\n            <a href=\"https://facebook.com/bizdayla\" class=\"nav-link\">\r\n              <img class=\"icon undefined\" src=\"assets/img/icons/social/facebook.svg\" alt=\"facebook social icon\" data-inject-svg />\r\n            </a>\r\n          </li>\r\n        </ul>\r\n      </div>\r\n    </div>\r\n    <div class=\"row justify-content-center\">\r\n      <div class=\"col col-md-auto text-center\">\r\n        <small class=\"text-muted\">&copy;"
-    + alias4(((helper = (helper = helpers.year || (depth0 != null ? depth0.year : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"year","hash":{},"data":data,"loc":{"start":{"line":80,"column":40},"end":{"line":80,"column":48}}}) : helper)))
+    + "</a>\r\n            </div>\r\n          </li>\r\n        </ul>\r\n      </div>\r\n    </div>\r\n    <div class=\"row justify-content-center mb-2\">\r\n      <div class=\"col-auto\">\r\n        <ul class=\"nav\">\r\n          <li class=\"nav-item\">\r\n            <a href=\"https://instagram.com/bizdayla\" class=\"nav-link\">\r\n              <img class=\"icon undefined\" src=\"assets/img/icons/social/instagram.svg\" alt=\"instagram social icon\" data-inject-svg />\r\n            </a>\r\n          </li>\r\n          <li class=\"nav-item\">\r\n            <a href=\"https://twitter.com/bizdayla\" class=\"nav-link\">\r\n              <img class=\"icon undefined\" src=\"assets/img/icons/social/twitter.svg\" alt=\"twitter social icon\" data-inject-svg />\r\n            </a>\r\n          </li>\r\n          <li class=\"nav-item\">\r\n            <a href=\"https://facebook.com/bizdayla\" class=\"nav-link\">\r\n              <img class=\"icon undefined\" src=\"assets/img/icons/social/facebook.svg\" alt=\"facebook social icon\" data-inject-svg />\r\n            </a>\r\n          </li>\r\n        </ul>\r\n      </div>\r\n    </div>\r\n    <div class=\"row justify-content-center\">\r\n      <div class=\"col col-md-auto text-center\">\r\n        <small class=\"text-muted\">&copy;"
+    + alias4(((helper = (helper = helpers.year || (depth0 != null ? depth0.year : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"year","hash":{},"data":data,"loc":{"start":{"line":53,"column":40},"end":{"line":53,"column":48}}}) : helper)))
     + " This page is protected by reCAPTCHA and is subject to the Google <a href=\"https://www.google.com/policies/privacy/\">Privacy Policy</a> and <a href=\"https://policies.google.com/terms\">Terms of Service.</a>\r\n        </small>\r\n      </div>\r\n    </div>\r\n  </div>\r\n</footer>\r\n";
 },"compiler":[8,">= 4.3.0"],"main":function(container,depth0,helpers,partials,data,blockParams,depths) {
     var stack1;
 
-  return ((stack1 = helpers["with"].call(depth0 != null ? depth0 : (container.nullContext || {}),(depth0 != null ? depth0.footer : depth0),{"name":"with","hash":{},"fn":container.program(1, data, 0, blockParams, depths),"inverse":container.noop,"data":data,"loc":{"start":{"line":1,"column":0},"end":{"line":86,"column":9}}})) != null ? stack1 : "");
+  return ((stack1 = helpers["with"].call(depth0 != null ? depth0 : (container.nullContext || {}),(depth0 != null ? depth0.footer : depth0),{"name":"with","hash":{},"fn":container.program(1, data, 0, blockParams, depths),"inverse":container.noop,"data":data,"loc":{"start":{"line":1,"column":0},"end":{"line":59,"column":9}}})) != null ? stack1 : "");
 },"useData":true,"useDepths":true}));
-this["Bizdayla"]["templates"]["Speaker"] = Handlebars.template({"compiler":[8,">= 4.3.0"],"main":function(container,depth0,helpers,partials,data) {
-    var stack1;
-
-  return ((stack1 = container.invokePartial(partials.loader,depth0,{"name":"loader","data":data,"helpers":helpers,"partials":partials,"decorators":container.decorators})) != null ? stack1 : "")
-    + ((stack1 = container.invokePartial(partials.header,depth0,{"name":"header","data":data,"helpers":helpers,"partials":partials,"decorators":container.decorators})) != null ? stack1 : "")
-    + ((stack1 = container.invokePartial(partials.speaker,depth0,{"name":"speaker","data":data,"helpers":helpers,"partials":partials,"decorators":container.decorators})) != null ? stack1 : "")
-    + ((stack1 = container.invokePartial(partials.arrow_up,depth0,{"name":"arrow_up","data":data,"helpers":helpers,"partials":partials,"decorators":container.decorators})) != null ? stack1 : "")
-    + container.escapeExpression((helpers.scriptLoaderFromArray||(depth0 && depth0.scriptLoaderFromArray)||container.hooks.helperMissing).call(depth0 != null ? depth0 : (container.nullContext || {}),((stack1 = ((stack1 = (depth0 != null ? depth0.helper : depth0)) != null ? stack1.scriptLoaderFromArray : stack1)) != null ? stack1.arr : stack1),{"name":"scriptLoaderFromArray","hash":{},"data":data,"loc":{"start":{"line":5,"column":0},"end":{"line":5,"column":58}}}));
-},"usePartial":true,"useData":true});
 Handlebars.registerPartial("header", Handlebars.template({"1":function(container,depth0,helpers,partials,data,blockParams,depths) {
     var alias1=container.lambda, alias2=container.escapeExpression;
 
@@ -63,7 +98,7 @@ Handlebars.registerPartial("header", Handlebars.template({"1":function(container
 Handlebars.registerPartial("header_home", Handlebars.template({"1":function(container,depth0,helpers,partials,data,blockParams,depths) {
     var alias1=container.lambda, alias2=container.escapeExpression;
 
-  return "<div class=\"navbar-container\">\r\n  <nav class=\"navbar navbar-expand-lg navbar-dark bizday_header_nav\" data-overlay data-sticky=\"top\">\r\n    <div class=\"container\">\r\n      <a class=\"navbar-brand fade-page bizday_header_logo--transparent\" href=\"index.html\">\r\n        <img src=\"assets/bizdayla/img/BizDay_Logo_Color_White.svg\" alt=\"BizDay.LA Logo\"/>\r\n      </a>\r\n      <div class=\"collapse navbar-collapse justify-content-end\">\r\n        <a href=\""
+  return "<div class=\"navbar-container\">\r\n  <nav class=\"navbar navbar-expand-lg navbar-dark bizday_header_nav\" data-overlay data-sticky=\"top\">\r\n    <div class=\"container\">\r\n      <a class=\"navbar-brand fade-page bizday_header_logo--transparent\" href=\"index.html\">\r\n        <img src=\"assets/bizdayla/img/BizDay_Logo_Color_White.svg\" alt=\"BizDay.LA\"/>\r\n      </a>\r\n      <div class=\"collapse navbar-collapse justify-content-end\">\r\n        <a href=\""
     + alias2(alias1((depths[1] != null ? depths[1].url_cta : depths[1]), depth0))
     + "\" class=\"btn btn-white ml-lg-3\">"
     + alias2(alias1((depths[1] != null ? depths[1].ctaText : depths[1]), depth0))
@@ -78,12 +113,12 @@ Handlebars.registerPartial("hero", Handlebars.template({"1":function(container,d
 
   return "<section class=\"bizday_hero bg-primary-2 text-light p-0 o-hidden\">\r\n    <img src=\""
     + alias4(((helper = (helper = helpers.image || (depth0 != null ? depth0.image : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"image","hash":{},"data":data,"loc":{"start":{"line":3,"column":14},"end":{"line":3,"column":23}}}) : helper)))
-    + "\" alt=\"Image\" class=\"bg-image blend-mode-multiply\">\r\n    <div class=\"container layer-2\">\r\n        <div class=\"row py-6 min-vh-80 align-items-center aos-init aos-animate\" data-aos=\"fade-up\">\r\n            <div class=\"col-lg-9 col-xl-8\">\r\n                <h5>"
-    + alias4(((helper = (helper = helpers.eventDate || (depth0 != null ? depth0.eventDate : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"eventDate","hash":{},"data":data,"loc":{"start":{"line":7,"column":20},"end":{"line":7,"column":33}}}) : helper)))
-    + "</h5>\r\n                <h1 class=\"display-1 bizDay_text bizDay_text_resetLetterSpacing\"><img src="
-    + alias4(((helper = (helper = helpers.logoPath || (depth0 != null ? depth0.logoPath : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"logoPath","hash":{},"data":data,"loc":{"start":{"line":9,"column":90},"end":{"line":9,"column":102}}}) : helper)))
-    + " alt=\"Biz Day LA logo\" /></h1>\r\n                <p class=\"lead mb-4\">"
-    + alias4(((helper = (helper = helpers.location || (depth0 != null ? depth0.location : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"location","hash":{},"data":data,"loc":{"start":{"line":10,"column":37},"end":{"line":10,"column":49}}}) : helper)))
+    + "\" alt=\"Image\" class=\"bg-image blend-mode-multiply\">\r\n    <div class=\"container layer-2\">\r\n        <div class=\"row py-6 min-vh-80 align-items-center aos-init aos-animate\" data-aos=\"fade-up\">\r\n            <div class=\"col-lg-9 col-xl-8\">\r\n                <h5 class=\"bizday_hero_date\">"
+    + alias4(((helper = (helper = helpers.eventDate || (depth0 != null ? depth0.eventDate : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"eventDate","hash":{},"data":data,"loc":{"start":{"line":7,"column":45},"end":{"line":7,"column":58}}}) : helper)))
+    + "</h5>\r\n                <h1 class=\"display-1\">\r\n                    <img class=\"bizday_hero_logo\" src="
+    + alias4(((helper = (helper = helpers.logoPath || (depth0 != null ? depth0.logoPath : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"logoPath","hash":{},"data":data,"loc":{"start":{"line":9,"column":54},"end":{"line":9,"column":66}}}) : helper)))
+    + " alt=\"BizDay.LA\" />\r\n                </h1>\r\n                <p class=\"lead mb-4\">"
+    + alias4(((helper = (helper = helpers.location || (depth0 != null ? depth0.location : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"location","hash":{},"data":data,"loc":{"start":{"line":11,"column":37},"end":{"line":11,"column":49}}}) : helper)))
     + "</p>\r\n                <a href=\""
     + alias4(alias5((depths[1] != null ? depths[1].url_cta : depths[1]), depth0))
     + "\" class=\"btn btn-primary btn-lg\">"
@@ -92,7 +127,7 @@ Handlebars.registerPartial("hero", Handlebars.template({"1":function(container,d
 },"compiler":[8,">= 4.3.0"],"main":function(container,depth0,helpers,partials,data,blockParams,depths) {
     var stack1;
 
-  return ((stack1 = helpers["with"].call(depth0 != null ? depth0 : (container.nullContext || {}),(depth0 != null ? depth0.hero : depth0),{"name":"with","hash":{},"fn":container.program(1, data, 0, blockParams, depths),"inverse":container.noop,"data":data,"loc":{"start":{"line":1,"column":0},"end":{"line":310,"column":9}}})) != null ? stack1 : "");
+  return ((stack1 = helpers["with"].call(depth0 != null ? depth0 : (container.nullContext || {}),(depth0 != null ? depth0.hero : depth0),{"name":"with","hash":{},"fn":container.program(1, data, 0, blockParams, depths),"inverse":container.noop,"data":data,"loc":{"start":{"line":1,"column":0},"end":{"line":311,"column":9}}})) != null ? stack1 : "");
 },"useData":true,"useDepths":true}));
 Handlebars.registerPartial("loader", Handlebars.template({"compiler":[8,">= 4.3.0"],"main":function(container,depth0,helpers,partials,data) {
     return "<div class=\"loader\">\r\n  <div class=\"loading-animation\"></div>\r\n</div>";
@@ -215,7 +250,7 @@ Handlebars.registerPartial("speaker", Handlebars.template({"1":function(containe
 Handlebars.registerPartial("speakers", Handlebars.template({"1":function(container,depth0,helpers,partials,data,blockParams,depths) {
     var stack1, helper, alias1=depth0 != null ? depth0 : (container.nullContext || {});
 
-  return "<section>\r\n  <div class=\"container\">\r\n    <div class=\"row mb-4\">\r\n      <div class=\"col\">\r\n        <h2 class=\"h1\">Featuring talks from</h2>\r\n      </div>\r\n    </div>\r\n    <div class=\"row\">\r\n"
+  return "<section>\r\n  <div class=\"container mx-auto\">\r\n    <div class=\"row mb-4\">\r\n      <div class=\"col\">\r\n        <h2 class=\"h1\">Featuring talks from</h2>\r\n      </div>\r\n    </div>\r\n    <div class=\"row\">\r\n"
     + ((stack1 = helpers.each.call(alias1,(depth0 != null ? depth0.speakers : depth0),{"name":"each","hash":{},"fn":container.program(2, data, 0, blockParams, depths),"inverse":container.noop,"data":data,"loc":{"start":{"line":10,"column":6},"end":{"line":19,"column":15}}})) != null ? stack1 : "")
     + "    </div>\r\n    <div class=\"row\">\r\n      <div class=\"col\">\r\n        <a href=\""
     + container.escapeExpression(((helper = (helper = helpers.url_speakers || (depth0 != null ? depth0.url_speakers : depth0)) != null ? helper : container.hooks.helperMissing),(typeof helper === "function" ? helper.call(alias1,{"name":"url_speakers","hash":{},"data":data,"loc":{"start":{"line":23,"column":17},"end":{"line":23,"column":33}}}) : helper)))
@@ -231,7 +266,11 @@ Handlebars.registerPartial("speakers", Handlebars.template({"1":function(contain
     + alias4(((helper = (helper = helpers.id || (depth0 != null ? depth0.id : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"id","hash":{},"data":data,"loc":{"start":{"line":12,"column":61},"end":{"line":12,"column":67}}}) : helper)))
     + "\"><img src=\""
     + alias4(((helper = (helper = helpers.image || (depth0 != null ? depth0.image : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"image","hash":{},"data":data,"loc":{"start":{"line":12,"column":79},"end":{"line":12,"column":88}}}) : helper)))
-    + "\" alt=\"Benjamin Cameron\" class=\"avatar avatar-xlg mr-3\"></a>\r\n        <div>\r\n            <h5 class=\"mb-0\">"
+    + "\" alt=\""
+    + alias4(((helper = (helper = helpers.firstName || (depth0 != null ? depth0.firstName : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"firstName","hash":{},"data":data,"loc":{"start":{"line":12,"column":95},"end":{"line":12,"column":108}}}) : helper)))
+    + " "
+    + alias4(((helper = (helper = helpers.lastName || (depth0 != null ? depth0.lastName : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"lastName","hash":{},"data":data,"loc":{"start":{"line":12,"column":109},"end":{"line":12,"column":121}}}) : helper)))
+    + "\" class=\"avatar avatar-xlg mr-3\"></a>\r\n        <div>\r\n            <h5 class=\"mb-0\">"
     + alias4(((helper = (helper = helpers.firstName || (depth0 != null ? depth0.firstName : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"firstName","hash":{},"data":data,"loc":{"start":{"line":14,"column":29},"end":{"line":14,"column":42}}}) : helper)))
     + " "
     + alias4(((helper = (helper = helpers.lastName || (depth0 != null ? depth0.lastName : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"lastName","hash":{},"data":data,"loc":{"start":{"line":14,"column":43},"end":{"line":14,"column":55}}}) : helper)))
@@ -246,25 +285,39 @@ Handlebars.registerPartial("speakers", Handlebars.template({"1":function(contain
   return ((stack1 = helpers["with"].call(depth0 != null ? depth0 : (container.nullContext || {}),(depth0 != null ? depth0.speaker : depth0),{"name":"with","hash":{},"fn":container.program(1, data, 0, blockParams, depths),"inverse":container.noop,"data":data,"loc":{"start":{"line":1,"column":0},"end":{"line":28,"column":9}}})) != null ? stack1 : "");
 },"usePartial":true,"useData":true,"useDepths":true}));
 Handlebars.registerPartial("sponsors", Handlebars.template({"1":function(container,depth0,helpers,partials,data) {
-    var stack1, alias1=depth0 != null ? depth0 : (container.nullContext || {});
-
-  return "<section class=\"text-dark has-divider\">\r\n  <div class=\"container\">\r\n    <div class=\"row justify-content-between\">\r\n      <div class=\"col-md-6 mb-3 mb-md-0\">\r\n        <h2 class=\"h1\">Immerse yourself in one evening of creative discussion.</h2>\r\n"
-    + ((stack1 = helpers.each.call(alias1,(depth0 != null ? depth0.description : depth0),{"name":"each","hash":{},"fn":container.program(2, data, 0),"inverse":container.noop,"data":data,"loc":{"start":{"line":7,"column":8},"end":{"line":9,"column":17}}})) != null ? stack1 : "")
-    + "      </div>\r\n      <div class=\"col-md-5\">\r\n        <small class=\"text-uppercase mb-4\">Sponsored By</small>\r\n        <ul class=\"d-flex flex-wrap list-unstyled\">\r\n"
-    + ((stack1 = helpers.each.call(alias1,(depth0 != null ? depth0.sponsor : depth0),{"name":"each","hash":{},"fn":container.program(4, data, 0),"inverse":container.noop,"data":data,"loc":{"start":{"line":14,"column":12},"end":{"line":20,"column":21}}})) != null ? stack1 : "")
-    + "        </ul>\r\n      </div>\r\n    </div>\r\n  </div>\r\n  <div class=\"divider\">\r\n    <img class=\"bg-white\" src=\"assets/img/dividers/divider-3.svg\" alt=\"divider graphic\" data-inject-svg />\r\n  </div>\r\n</section>\r\n";
-},"2":function(container,depth0,helpers,partials,data) {
-    return "            <p class=\"lead\">An exciting event for current and aspiring business owners.</p>\r\n";
-},"4":function(container,depth0,helpers,partials,data) {
     var helper, alias1=depth0 != null ? depth0 : (container.nullContext || {}), alias2=container.hooks.helperMissing, alias3="function", alias4=container.escapeExpression;
 
-  return "            <li class=\"mr-4 mb-5\" data-aos=\"fade-up\" data-aos-delay=\"100\">\r\n                <a href=\""
-    + alias4(((helper = (helper = helpers.url || (depth0 != null ? depth0.url : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"url","hash":{},"data":data,"loc":{"start":{"line":16,"column":25},"end":{"line":16,"column":32}}}) : helper)))
-    + "\">\r\n                    <img class=\"bg-white icon icon-logo icon-md\" src=\""
-    + alias4(((helper = (helper = helpers.image || (depth0 != null ? depth0.image : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"image","hash":{},"data":data,"loc":{"start":{"line":17,"column":70},"end":{"line":17,"column":79}}}) : helper)))
-    + "\" alt=\"icon\" />\r\n                </a>\r\n            </li>\r\n";
+  return "            <li class=\"mr-4 mb-5 col-md-2\" data-aos=\"fade-up\" data-aos-delay=\"100\">\r\n                <a href=\""
+    + alias4(((helper = (helper = helpers.url || (depth0 != null ? depth0.url : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"url","hash":{},"data":data,"loc":{"start":{"line":9,"column":25},"end":{"line":9,"column":32}}}) : helper)))
+    + "\">\r\n                    <img class=\"bg-white icon icon-logo bizday_sponsors_icon\" src=\""
+    + alias4(((helper = (helper = helpers.image || (depth0 != null ? depth0.image : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"image","hash":{},"data":data,"loc":{"start":{"line":10,"column":83},"end":{"line":10,"column":92}}}) : helper)))
+    + "\" alt=\""
+    + alias4(((helper = (helper = helpers.name || (depth0 != null ? depth0.name : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"name","hash":{},"data":data,"loc":{"start":{"line":10,"column":99},"end":{"line":10,"column":107}}}) : helper)))
+    + "\" />\r\n                </a>\r\n            </li>\r\n";
 },"compiler":[8,">= 4.3.0"],"main":function(container,depth0,helpers,partials,data) {
     var stack1;
 
-  return ((stack1 = helpers["with"].call(depth0 != null ? depth0 : (container.nullContext || {}),(depth0 != null ? depth0.sponsors : depth0),{"name":"with","hash":{},"fn":container.program(1, data, 0),"inverse":container.noop,"data":data,"loc":{"start":{"line":1,"column":0},"end":{"line":29,"column":9}}})) != null ? stack1 : "");
+  return "<section class=\"text-dark has-divider\">\r\n  <div class=\"container\">\r\n    <div class=\"row justify-content-between\">\r\n      <div class=\"col-md-12 text-center\">\r\n        <h4 class=\"text-uppercase mb-4 bizday_sponsors_by_text\">Sponsors</h4>\r\n        <ul class=\"d-flex flex-wrap list-unstyled justify-content-between\">\r\n"
+    + ((stack1 = helpers.each.call(depth0 != null ? depth0 : (container.nullContext || {}),(depth0 != null ? depth0.sponsors : depth0),{"name":"each","hash":{},"fn":container.program(1, data, 0),"inverse":container.noop,"data":data,"loc":{"start":{"line":7,"column":12},"end":{"line":13,"column":21}}})) != null ? stack1 : "")
+    + "        </ul>\r\n      </div>\r\n    </div>\r\n  </div>\r\n  <div class=\"divider\">\r\n    <img class=\"bg-white\" src=\"assets/img/dividers/divider-3.svg\" alt=\"divider graphic\" data-inject-svg />\r\n  </div>\r\n</section>";
+},"useData":true}));
+Handlebars.registerPartial("sponsors_venue", Handlebars.template({"1":function(container,depth0,helpers,partials,data) {
+    var helper, alias1=depth0 != null ? depth0 : (container.nullContext || {}), alias2=container.hooks.helperMissing, alias3="function", alias4=container.escapeExpression;
+
+  return "            <li class=\"mr-4 mb-5 col-md-5\" data-aos=\"fade-up\" data-aos-delay=\"100\">\r\n                <a href=\""
+    + alias4(((helper = (helper = helpers.url || (depth0 != null ? depth0.url : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"url","hash":{},"data":data,"loc":{"start":{"line":9,"column":25},"end":{"line":9,"column":32}}}) : helper)))
+    + "\">\r\n                    <img class=\"bg-white icon icon-logo bizday_sponsors_venue_icon\" src=\""
+    + alias4(((helper = (helper = helpers.image || (depth0 != null ? depth0.image : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"image","hash":{},"data":data,"loc":{"start":{"line":10,"column":89},"end":{"line":10,"column":98}}}) : helper)))
+    + "\" alt=\""
+    + alias4(((helper = (helper = helpers.name || (depth0 != null ? depth0.name : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"name","hash":{},"data":data,"loc":{"start":{"line":10,"column":105},"end":{"line":10,"column":113}}}) : helper)))
+    + "\" />\r\n                </a>\r\n            </li>\r\n";
+},"compiler":[8,">= 4.3.0"],"main":function(container,depth0,helpers,partials,data) {
+    var stack1;
+
+  return "<section class=\"text-dark has-divider\">\r\n  <div class=\"container text-center\">\r\n    <div class=\"row justify-content-between\">\r\n      <div class=\"col-md-8 mx-auto\">\r\n        <h3 class=\"text-uppercase mb-4 bizday_sponsors_by_text\">Venue Sponsors</h3>\r\n        <ul class=\"d-flex flex-wrap list-unstyled\">\r\n"
+    + ((stack1 = helpers.each.call(depth0 != null ? depth0 : (container.nullContext || {}),(depth0 != null ? depth0.sponsors_venue : depth0),{"name":"each","hash":{},"fn":container.program(1, data, 0),"inverse":container.noop,"data":data,"loc":{"start":{"line":7,"column":12},"end":{"line":13,"column":21}}})) != null ? stack1 : "")
+    + "        </ul>\r\n      </div>\r\n    </div>\r\n  </div>\r\n</section>";
+},"useData":true}));
+Handlebars.registerPartial("sponsors_venue_offers", Handlebars.template({"compiler":[8,">= 4.3.0"],"main":function(container,depth0,helpers,partials,data) {
+    return "<section class=\"text-dark has-divider\">\r\n  <div class=\"container\">\r\n    <div class=\"row justify-content-between\">\r\n      <div class=\"col-md-8 mb-3 mb-md-0 mx-auto text-center\">\r\n        <h3>Special Offer</h3>\r\n        <p>Contact <strong>The Metaphor Club</strong> for a tour of their outstanding co-working  space, and use the <a href=\"https://themetaphorclub.gymmasteronline.com/portal/signup/details/1240fa1ba05770b8efb75fb02a22a618\">BizDay.LA Discount Link</a> for a 10% discount on your membership fee.</p>\r\n      </div>\r\n    </div>\r\n  </div>\r\n</section>";
 },"useData":true}));
