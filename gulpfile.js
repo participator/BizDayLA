@@ -196,7 +196,9 @@ gulp.task('html', function () {
 
 // Copy caname to pages
 gulp.task('configs', () => {
-  return gulp.src(paths.configs.cname)
+  return gulp.src(paths.configs.cname, {
+    allowEmpty: true,
+  })
     .pipe(newer(paths.pages.configs))
     .pipe(gulp.dest(paths.pages.configs));
 })
