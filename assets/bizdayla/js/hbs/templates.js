@@ -287,7 +287,7 @@ Handlebars.registerPartial("speakers", Handlebars.template({"1":function(contain
 Handlebars.registerPartial("sponsors", Handlebars.template({"1":function(container,depth0,helpers,partials,data) {
     var helper, alias1=depth0 != null ? depth0 : (container.nullContext || {}), alias2=container.hooks.helperMissing, alias3="function", alias4=container.escapeExpression;
 
-  return "            <li class=\"mr-4 mb-5 col-md-2\" data-aos=\"fade-up\" data-aos-delay=\"100\">\r\n                <a href=\""
+  return "            <li class=\"ml-4 mr-4 mb-5 col-lg-2 col-md-3\" data-aos=\"fade-up\" data-aos-delay=\"100\">\r\n                <a href=\""
     + alias4(((helper = (helper = helpers.url || (depth0 != null ? depth0.url : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"url","hash":{},"data":data,"loc":{"start":{"line":9,"column":25},"end":{"line":9,"column":32}}}) : helper)))
     + "\">\r\n                    <img class=\"bg-white icon icon-logo bizday_sponsors_icon\" src=\""
     + alias4(((helper = (helper = helpers.image || (depth0 != null ? depth0.image : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"image","hash":{},"data":data,"loc":{"start":{"line":10,"column":83},"end":{"line":10,"column":92}}}) : helper)))

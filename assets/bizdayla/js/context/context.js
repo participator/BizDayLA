@@ -275,7 +275,7 @@ window.context = {
             url: 'https://www.affluentsolution.com/'
         },
         {
-            image: 'assets/bizdayla/img/medley_logo.jpg',
+            image: 'assets/bizdayla/img/medley_logo.svg',
             name: 'Medley',
             url: 'https://www.medley-inc.com'
         },
@@ -285,7 +285,7 @@ window.context = {
             url: 'http://www.vazell.com'
         },
         {
-            image: 'assets/bizdayla/img/bridgetown_partners_logo.png',
+            image: 'assets/bizdayla/img/bridgetown_partners_logo.svg',
             name: 'Bridgetown Partners',
             url: 'https://bridgetownpartners.com/'
         }
