@@ -41,7 +41,6 @@ window.context = {
     hero: {
         image: 'assets/img/event-1.jpg',
         image: 'assets/bizdayla/img/BizDay_background_photo.jpg',
-        logoPath: 'assets/bizdayla/img/BizDay_Logo_AllWhite.svg',
         logoPath: 'assets/bizdayla/img/BizDay_Logo_Color_White.svg',
         confName: 'BizDay.LA',
         eventDate: 'Thursday, January 23, 2019',
@@ -276,7 +275,7 @@ window.context = {
             url: 'https://www.affluentsolution.com/'
         },
         {
-            image: 'assets/bizdayla/img/medley_logo.jpg',
+            image: 'assets/bizdayla/img/medley_logo.svg',
             name: 'Medley',
             url: 'https://www.medley-inc.com'
         },
@@ -286,7 +285,7 @@ window.context = {
             url: 'http://www.vazell.com'
         },
         {
-            image: 'assets/bizdayla/img/bridgetown_partners_logo.png',
+            image: 'assets/bizdayla/img/bridgetown_partners_logo.svg',
             name: 'Bridgetown Partners',
             url: 'https://bridgetownpartners.com/'
         }
