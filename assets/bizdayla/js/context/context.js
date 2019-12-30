@@ -148,8 +148,8 @@ window.context = {
                     site: 'https://www.instagram.com/',
                 },
                 url_linkedin: {
-                    has: false,
-                    site: 'https://www.linkedin.com/in/',
+                    has: true,
+                    site: 'https://www.linkedin.com/in/kenetia/',
                 },
                 url_twitter: {
                     has: false,
@@ -189,8 +189,8 @@ window.context = {
                     site: 'https://www.instagram.com/',
                 },
                 url_linkedin: {
-                    has: false,
-                    site: 'https://www.linkedin.com/in/',
+                    has: true,
+                    site: 'https://www.linkedin.com/in/brandon-bailey-3732885b/',
                 },
                 url_twitter: {
                     has: false,
@@ -311,10 +311,6 @@ window.context = {
 
                 ],
                 image: 'assets/bizdayla/img/cropped_dreamfree_michael_evans_.png',
-                name_linkedin: '',
-                name_twitter: '',
-                name_instagram: '',
-                name_facebook: '',
                 url_github: {
                     has: false,
                     site: 'https://www.github.com/',
@@ -328,8 +324,8 @@ window.context = {
                     site: 'https://www.instagram.com/',
                 },
                 url_linkedin: {
-                    has: false,
-                    site: 'https://www.linkedin.com/company/',
+                    has: true,
+                    site: 'https://www.linkedin.com/in/michaelevans215/',
                 },
                 url_twitter: {
                     has: false,
