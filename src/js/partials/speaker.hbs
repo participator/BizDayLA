@@ -19,7 +19,16 @@
         <div class="h1 bizday_speaker_header">
           <div>{{firstName}} {{lastName}}</div>
         </div>
-        <p class="lead bizday_speaker_description">{{description}}</p>
+        <div>
+          {{#each talkDescription}}
+            <p class="lead bizday_speaker_description">{{this}}</p>
+          {{/each}}
+        </div>
+        <div>
+          {{#each personalDescription}}
+            <p class="lead bizday_speaker_description">{{this}}</p>
+          {{/each}}
+        </div>
         {{> socials}}
       </div>
     </div>
