@@ -43,7 +43,7 @@ window.context = {
         image: 'assets/bizdayla/img/BizDay_background_photo.jpg',
         logoPath: 'assets/bizdayla/img/BizDay_Logo_Color_White.svg',
         confName: 'BizDay.LA',
-        eventDate: 'Thursday, January 23, 2019',
+        eventDate: 'Thursday, January 23, 2020',
         location: 'Los Angeles, CA, USA'
     },
     schedule: {
