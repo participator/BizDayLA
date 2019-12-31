@@ -43,7 +43,7 @@ window.context = {
         image: 'assets/bizdayla/img/BizDay_background_photo.jpg',
         logoPath: 'assets/bizdayla/img/BizDay_Logo_Color_White.svg',
         confName: 'BizDay.LA',
-        eventDate: 'Thursday, January 23, 2019',
+        eventDate: 'Thursday, January 23, 2020',
         location: 'Los Angeles, CA, USA'
     },
     schedule: {
@@ -148,8 +148,8 @@ window.context = {
                     site: 'https://www.instagram.com/',
                 },
                 url_linkedin: {
-                    has: true,
-                    site: 'https://www.linkedin.com/in/kenetia/',
+                    has: false,
+                    site: 'https://www.linkedin.com/in/',
                 },
                 url_twitter: {
                     has: false,
@@ -189,8 +189,8 @@ window.context = {
                     site: 'https://www.instagram.com/',
                 },
                 url_linkedin: {
-                    has: true,
-                    site: 'https://www.linkedin.com/in/brandon-bailey-3732885b/',
+                    has: false,
+                    site: 'https://www.linkedin.com/in/',
                 },
                 url_twitter: {
                     has: false,
@@ -311,6 +311,10 @@ window.context = {
 
                 ],
                 image: 'assets/bizdayla/img/cropped_dreamfree_michael_evans_.png',
+                name_linkedin: '',
+                name_twitter: '',
+                name_instagram: '',
+                name_facebook: '',
                 url_github: {
                     has: false,
                     site: 'https://www.github.com/',
@@ -324,8 +328,8 @@ window.context = {
                     site: 'https://www.instagram.com/',
                 },
                 url_linkedin: {
-                    has: true,
-                    site: 'https://www.linkedin.com/in/michaelevans215/',
+                    has: false,
+                    site: 'https://www.linkedin.com/company/',
                 },
                 url_twitter: {
                     has: false,
