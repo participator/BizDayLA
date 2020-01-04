@@ -134,7 +134,6 @@ window.context = {
 
                 ],
                 image: 'assets/bizdayla/img/cropped_popup_cleanup_kenetia_lee.png',
-                image: 'assets/bizdayla/img/placeholder_user.png',
                 url_github: {
                     has: false,
                     site: 'https://www.github.com/',
