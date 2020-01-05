@@ -13,10 +13,16 @@
         <div>
             <h5 class="mb-0">{{firstName}} {{lastName}}</h5>
               <h6 class="mb-1">
-                <a class="bizday_speakers_company_website_icon" href="{{company_website}}">
-                  <img class="icon bg-primary" src="assets/img/icons/theme/general/attachment-1.svg" alt="{{company}} website" data-inject-svg />
-                  {{company}}
-                </a>
+                {{#with company}}
+                  {{#if has_site}}
+                    <a class="bizday_speakers_company_website_icon" href="{{site}}">
+                      <img class="icon bg-primary" src="assets/img/icons/theme/general/attachment-1.svg" alt="{{name}} website" data-inject-svg />
+                      {{~name~}}
+                    </a>
+                   {{else}}
+                    <span>{{name}}</span>
+                  {{/if}}
+                {{/with}}
               </h6>
             {{> socials}}
         </div>
