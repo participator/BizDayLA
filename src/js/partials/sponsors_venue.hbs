@@ -6,14 +6,16 @@
         <ul class="d-flex flex-wrap list-unstyled justify-content-center">
             {{#each sponsors_venue}}
             {{#if has_text_logo}}
-            <li class="mr-4 mb-5 col-md-6 align-self-center" data-aos="fade-up" data-aos-delay="100">
+            <li class="mr-3 mb-5 col-md-5 align-self-center" data-aos="fade-up" data-aos-delay="100">
                 <a href="{{url}}">
-                    <p` class="bg-white icon icon-logo bizday_sponsors_venue_icon {{font_style}}">{{name}}</p`>
+                    <svg` class="bg-white icon icon-logo bizday_sponsors_venue_icon">
+                      <text class="{{font_style}}">{{name}}</text>
+                    </svg`>
                 </a>
             </li>
             {{/if}}
             {{#if has_image_logo}}
-            <li class="mr-4 mb-5 col-md-5" data-aos="fade-up" data-aos-delay="100">
+            <li class="mr-3 mb-5 col-md-5 bizday_sponsors_venue_list_item" data-aos="fade-up" data-aos-delay="100">
                 <a href="{{url}}">
                     <img class="bg-white icon icon-logo bizday_sponsors_venue_icon" src="{{image}}" alt="{{name}}" />
                 </a>

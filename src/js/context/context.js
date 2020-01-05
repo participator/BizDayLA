@@ -39,7 +39,6 @@ window.context = {
     header: {
     },
     hero: {
-        image: 'assets/img/event-1.jpg',
         image: 'assets/bizdayla/img/BizDay_background_photo.jpg',
         logoPath: 'assets/bizdayla/img/BizDay_Logo_Color_White.svg',
         confName: 'BizDay.LA',
@@ -139,12 +138,12 @@ window.context = {
                     site: 'https://www.github.com/',
                 },
                 url_facebook: {
-                    has: false,
-                    site: 'https://www.facebook.com/',
+                    has: true,
+                    site: 'https://www.facebook.com/popupcleanupwest/',
                 },
                 url_instagram: {
-                    has: false,
-                    site: 'https://www.instagram.com/',
+                    has: true,
+                    site: 'https://www.instagram.com/popupcleanup/',
                 },
                 url_linkedin: {
                     has: false,
@@ -419,9 +418,8 @@ window.context = {
     ],
     sponsors_venue: [
         {
-            font_style: 'bizday_sponsor_venue_hotAndCool_logo',
-            has_text_logo: true,
-            // image: 'assets/bizdayla/img/hot_and_cool_cafe_logo.png',
+            has_image_logo: true,
+            image: 'assets/bizdayla/img/hot_and_cool_cafe_logo.svg',
             name: 'Hot & Cool Cafe',
             url: 'https://hotandcoolcafe.com/'
         },

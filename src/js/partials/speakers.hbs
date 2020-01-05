@@ -12,7 +12,12 @@
         <a alt="{{firstName}} bio" href="{{../url_speakers}}#{{id}}"><img src="{{image}}" alt="{{firstName}} {{lastName}}" class="avatar avatar-xlg mr-3"></a>
         <div>
             <h5 class="mb-0">{{firstName}} {{lastName}}</h5>
-            <h6 class="mb-0">{{company}}</h6>
+              <h6 class="mb-1">
+                <a class="bizday_speakers_company_website_icon" href="{{company_website}}">
+                  <img class="icon bg-primary" src="assets/img/icons/theme/general/attachment-1.svg" alt="{{company}} website" data-inject-svg />
+                  {{company}}
+                </a>
+              </h6>
             {{> socials}}
         </div>
       </div>
