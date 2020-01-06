@@ -39,7 +39,6 @@ window.context = {
     header: {
     },
     hero: {
-        image: 'assets/img/event-1.jpg',
         image: 'assets/bizdayla/img/BizDay_background_photo.jpg',
         logoPath: 'assets/bizdayla/img/BizDay_Logo_Color_White.svg',
         confName: 'BizDay.LA',
@@ -76,11 +75,12 @@ window.context = {
                 id: 'speaker_vazell_vh',
                 firstName: 'Varell',
                 lastName: 'Hawkins',
-                company: 'Vazell',
-                company_website: 'https://www.vazell.com',
-                companyDescription: [
-
-                ],
+                company: {
+                    has_site: true,
+                    description: '',
+                    name: 'Vazell',
+                    site: 'https://www.vazell.com',
+                },
                 personalDescription: [
                     'Varell is an Entreprenuer and Software Engineer with ten (10) years of experience across the telecom, insurance, and ecommerce industries.  He\'s currently running Vazell LLC, a web development agency that provides tailored web experiences allowing businesses better visibility online and easing their processess to better service their customers.',
                 ],
@@ -121,11 +121,12 @@ window.context = {
                 id: 'speaker_popup_cleanup_kl',
                 firstName: 'Kenetia',
                 lastName: 'Lee',
-                company: 'PopUP CleanUP',
-                company_website: 'https://www.popupcleanup.com/',
-                companyDescription: [
-                    
-                ],
+                company: {
+                    has_site: true,
+                    description: '',
+                    name: 'PopUP CleanUP',
+                    site: 'https://www.popupcleanup.com/',
+                },
                 personalDescription: [
                     'Kenetia Lee is Founder and CEO  of PopUP CleanUP, started in 2016 a hip niche commercial cleaning company offering best-in-cleaning crews to maintain cleanliness at the hottest events, festivals, races, and concerts, in Greater Los Angeles. PopUP CleanUP offers pre-event production set-up/cleaning, cleaning during events, and post-event cleaning in any indoor or outdoor event space. Our roster of events include the 2017 Los Angeles NBA All-Star Games, 2018 ComplexCon in Long Beach, 2019 Blast Pro Series and Los Angeles Marathon, working with clients like Nike, Adidas, Facebook, PopSugar and Lululemon to name a few. Visit us at  https://www.popupcleanup.com/ for all of your event-cleaning needs.',
                 ],
@@ -134,18 +135,17 @@ window.context = {
 
                 ],
                 image: 'assets/bizdayla/img/cropped_popup_cleanup_kenetia_lee.png',
-                image: 'assets/bizdayla/img/placeholder_user.png',
                 url_github: {
                     has: false,
                     site: 'https://www.github.com/',
                 },
                 url_facebook: {
-                    has: false,
-                    site: 'https://www.facebook.com/',
+                    has: true,
+                    site: 'https://www.facebook.com/popupcleanupwest/',
                 },
                 url_instagram: {
-                    has: false,
-                    site: 'https://www.instagram.com/',
+                    has: true,
+                    site: 'https://www.instagram.com/popupcleanup/',
                 },
                 url_linkedin: {
                     has: false,
@@ -164,10 +164,12 @@ window.context = {
                 id: 'speaker_tutord_bb',
                 firstName: 'Brandon',
                 lastName: 'Bailey',
-                company: 'TutorD',
-                companyDescription: [
-
-                ],
+                company: {
+                    has_site: false,
+                    description: '',
+                    name: 'TutorD',
+                    site: '',
+                },
                 personalDescription: [
                     "With over a decade in the field of Software Engineering Brandon Bailey has has a broad experience in the tech sector.  Initially in the public sector implementing Infrastructure solutions to operational costs and complexity with their 1040 EZ tax processing systems.  With an insatiable desire to grow Brandon decided to bet on himself and head to the midwest to be one of the bleeding edge adopters of a different educational model that was just emerging at the time called Dev Boot Camp, to continue to hone his Software Engineering skills.  Thereafter transitioning into the private sector as a Software Engineer; where he cut his teeth delivering solutions for clients such as Home Depot, Weight Watchers, and Constellation Brands.  Brandon found his passion for apprenticeship and mentorship while partnering with non profits such as Citizens Schools and Spark.  Inline with this passion Brandon moved to Los Angeles Aug 2017 accepting a role as Senior Data Infrastructure Engineer at GoGuardian an EdTech startup in El Segundo; focusing on DevOps along with full stack product development for 2 years.  Per the course Brandon has again bet on himself and a radical approach to development of today and tomorrows workforce by expanding the educational experience beyond the current boundaries."
                 ],
@@ -205,9 +207,12 @@ window.context = {
                 id: 'speaker_medley_as',
                 firstName: 'Ashley',
                 lastName: 'Small',
-                company: 'Medley Inc.',
-                company_website: 'https://medley-inc.com/',
-                companyDescription: '',
+                company: {
+                    has_site: true,
+                    description: '',
+                    name: 'Medley Inc.',
+                    site: 'https://www.medley-inc.com/',
+                },
                 personalDescription: [
                     "There is a unique place where PR, technology and digital media overlap and in that place is where I thrive. My proven PR and digital marketing strategies have helped brands grow their visibility, amplify their voice and expand their reach across the world.",
                     "In 2009, when social media was newly on the rise, I set out on a mission to marry traditional PR with the latest trends in technology. Since then, I've launched a boutique PR and digital marketing agency, Medley Inc., and have worked with organizations such as Major League Baseball, AT&T, The City of Houston and The Rose Houston to meet their marketing goals, specifically geared towards African American and Latino consumers.",
@@ -251,11 +256,12 @@ window.context = {
                 id: 'speaker_as_jl',
                 firstName: 'Joseph',
                 lastName: 'Luckett',
-                company: 'Affluent Solution',
-                company_website: 'https://www.affluentsolution.com/',
-                companyDescription: [
-                    'Affluent Solution is an all in one software that provides businesses with marketing and advertising tools needed to thrive in a culture influenced by agile technological advancements. We give SMB’s the tools to plan and manage innovative digital marketing development strategies to deliver engaging new material, drive quality leads, and increase social engagement with a targeted demographic. We maximize key analytics to build organic promotional content pertinent to clients’ brands, and grow in the cloud.',
-                ],
+                company: {
+                    has_site: true,
+                    description: 'Affluent Solution is an all in one software that provides businesses with marketing and advertising tools needed to thrive in a culture influenced by agile technological advancements. We give SMB’s the tools to plan and manage innovative digital marketing development strategies to deliver engaging new material, drive quality leads, and increase social engagement with a targeted demographic. We maximize key analytics to build organic promotional content pertinent to clients’ brands, and grow in the cloud.',
+                    name: 'Affluent Solution',
+                    site: 'https://www.affluentsolution.com/',
+                },
                 personalDescription: [
                     'Joseph Luckett is a Los Angeles native, and the Founder/CEO of Affluent Solution Group, a Digital Marketing Agency that provides SMBs with a all in one online marketing platform. Due to his notable effectiveness in the space of digital marketing, Joseph has had the opportunity to transition from working in-house for brands to taking them on as clients. After several years of executing countless successful marketing campaigns for influencers, sports professionals & SMBs, Joseph decided to transition from the service side of the business to the software side and founded Affluent Solution.'
                 ],
@@ -301,9 +307,12 @@ window.context = {
                 id: 'speaker_dreamfree_me',
                 firstName: 'Michael',
                 lastName: 'Evans',
-                company: 'Dreamfree',
-                company_website: '',
-                companyDescription: '',
+                company: {
+                    has_site: false,
+                    description: '',
+                    name: 'Dreamfree',
+                    site: '',
+                },
                 personalDescription: [
                     'A Philadelphia native who relocated to Los Angeles in 2012 after graduating from Jackson State University studying entrepreneurship on a full athletic scholarship.  Since residing in Los Angeles, Michael has made an impact in music education, technology, and as a mentor. His work experience inside of technology start-ups inspired him to create the consultant company, Dreamfree LLC, which focuses on brand strategies for small and mid-size businesses.  He is currently working with the TheLeagueLA as its brand ambassador and is also a board member and operations manager of TutorD, a non-profit that is teaching coding skills to youth of South Central Los Angeles.'
                 ],
@@ -348,11 +357,12 @@ window.context = {
                 id: 'speaker_bp_rh',
                 firstName: 'Ray',
                 lastName: 'Hightower',
-                company: 'Bridgetown Partners',
-                website_company: 'https://bridgetownpartners.com/',
-                companyDescription: [
-
-                ],
+                company: {
+                    has_site: true,
+                    description: '',
+                    name: 'Bridgetown Partners',
+                    site: 'https://bridgetownpartners.com/',
+                },
                 personalDescription: [
                     'Ray Hightower founded and ran a technology company for twenty-one years before selling the company in 2016. Today, Hightower is CEO of Bridgetown Partners, builders of software for the commercial real estate industry. Hightower is a perpetual student, currently exploring parallelism and IoT. He studied Computer Science and Engineering at the University of Illinois at Urbana-Champaign, and completed his BS in Computer Science at the University of Illinois at Chicago.',
                 ],
@@ -420,9 +430,8 @@ window.context = {
     ],
     sponsors_venue: [
         {
-            font_style: 'bizday_sponsor_venue_hotAndCool_logo',
-            has_text_logo: true,
-            // image: 'assets/bizdayla/img/hot_and_cool_cafe_logo.png',
+            has_image_logo: true,
+            image: 'assets/bizdayla/img/hot_and_cool_cafe_logo.svg',
             name: 'Hot & Cool Cafe',
             url: 'https://hotandcoolcafe.com/'
         },

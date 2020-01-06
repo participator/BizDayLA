@@ -68,6 +68,15 @@ svg.bizday_hero_svg_right * {
 .bizday_sponsors_icon {
     height: 4rem;
 }
+.bizday_sponsors_venue_list_item {
+    max-width: 80%;
+    min-width: 40%;
+}
+@media screen and (max-width: 575px) {
+    .bizday_sponsors_venue_list_item {
+        margin-right: 0 !important;
+    }
+}
 .bizday_sponsors_venue_icon {
     height: 10rem;
 }
@@ -84,22 +93,4 @@ svg.bizday_hero_svg_right * {
     background-color: var(--gray);
     height: 2px;
     margin: 1px;
-}
-@font-face {
-    font-family: 'lemonmilkregular';
-    src: url('../fonts/lemonmilk-webfont.woff2') format('woff2'),
-         url('../fonts/lemonmilk-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-.bizday_sponsor_venue_hotAndCool_logo {
-    font-family: 'lemonmilkregular';
-    font-weight: normal;
-    font-style: normal;
-    color: black;
-    padding: 1em 0;
-    font-size: 2.4em;
-    white-space: nowrap;
-    text-transform: uppercase;
-    letter-spacing: 2px;
 }
