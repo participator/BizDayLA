@@ -1,0 +1,30 @@
+{{#with codeOfConduct}}
+<section class="has-divider bizday_code-of-conduct">
+    <div class="divider flip-y">
+        <img src="assets/img/dividers/divider-2.svg" alt="graphical divider" data-inject-svg />
+    </div>
+    {{>page_title class="bizday_code-of-conduct_page_title" text="Code of Conduct"}}
+    <div>
+        <h2>Summary</h2>
+        {{#each summary}}
+            <p>{{this}}</p>
+        {{/each}}
+    </div>
+    <div>
+        <h2>What Defines Harassment?</h2>
+        {{#each harassmentDecription}}
+            <p>{{this}}</p>
+        {{/each}}
+    </div>
+    <div>
+        <h2>If You Need Help</h2>
+        {{#each locatingHelp}}
+            <p>{{this}}</p>
+        {{/each}}
+    </div>
+    <div>
+        <h2>Feedback</h2>
+        <p>{{feedback}} <a href="mailto:{{./email}}">{{./email}}</a>.</p>
+    </div>
+</section>
+{{/with}}

@@ -1,10 +1,11 @@
 {{#with speaker}}
-<section class="has-divider bg-primary-alt bizday_speaker_main">
+<section class="has-divider">
   <div class="divider flip-y">
     <img src="assets/img/dividers/divider-2.svg" alt="graphical divider" data-inject-svg />
   </div>
+  {{>page_title class="bizday_speaker_page_title" text="Organizers and Speakers"}}
   {{#each speakers}}
-  <div id={{id}} class="container" data-aos="fade-up">
+  <div id={{id}} class="container bizday_speaker_container" data-aos="fade-up">
     <div class="row align-items-center justify-content-around">
       <div class="col-md-5">
         <img src="{{image}}" alt="Image" class="rounded-circle layer-2">
@@ -16,7 +17,7 @@
         </div>
       </div>
       <div class="col-xl-5 col-md-6">
-        <div class="h1 bizday_speaker_header">
+        <div class="bizday_speaker_header">
           <div>{{firstName}} {{lastName}}</div>
         </div>
         <div>

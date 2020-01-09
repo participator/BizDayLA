@@ -80,8 +80,11 @@ svg.bizday_hero_svg_right * {
 .bizday_sponsors_venue_icon {
     height: 10rem;
 }
-.bizday_speaker_main {
-    background-color: var(--white);
+.bizday_speaker_page_title {
+    text-align: center;
+}
+section.has-divider .bizday_speaker_container {
+    padding-top: 4em;
 }
 .bizday_speaker_header {
     font-size: 1.88rem;
@@ -89,8 +92,52 @@ svg.bizday_hero_svg_right * {
 .bizday_speaker_description {
     font-size: 1.125rem;    
 }
+.bizday_code-of-conduct{
+    margin-bottom: 1em;
+}
+.bizday_code-of-conduct > div {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 915px;
+}
+.bizday_code-of-conduct_page_title {
+    text-align: center;
+
+}
+.bizday_code-of-conduct div {
+    line-height: 200%;
+    padding: 2em;
+}
+.bizday_code-of-conduct div:nth-child(2n+2) {
+    background-color: var(--nav_blue);
+    color: white;
+}
+.bizday_code-of-conduct h2 {
+    margin-bottom: 2rem;
+    text-align: center;
+}
+.bizday_code-of-conduct div:nth-child(2n+2) h2 {
+    color: white;
+}
+.bizday_code-of-conduct div p {
+    font-size: 16px;
+}
+.bizday_code-of-conduct div:last-child p {
+    margin-bottom: 0;
+}
+.bizday_code-of-conduct div:last-child a {
+    color: white;
+}
+/** General */
+a:hover,
+a:focus {
+    text-decoration: underline;
+}
 .hr_style {
     background-color: var(--gray);
     height: 2px;
     margin: 1px;
+}
+.divider.flip-y {
+    padding: 0;
 }
