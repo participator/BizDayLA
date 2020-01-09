@@ -506,7 +506,7 @@ window.context = {
         tagline: 'Connect with local business owners',
         year: new Date().getFullYear(),
         codeOfConduct: {
-            url_page: '/code-of-conduct.html',
+            url_page: './code-of-conduct.html',
             title: 'Code of Conduct',
             description: 'View our Code of Conduct'
         }
