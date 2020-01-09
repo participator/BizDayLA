@@ -2,6 +2,21 @@ window.context = {
     ctaText: 'Register',
     orgName: 'BizDay',
     url_cta: 'https://www.eventbrite.com/e/bizdayla-tickets-85448796651',
+    codeOfConduct: {
+        email: 'organizers@bizdayla.com',
+        feedback: 'If you have questions or comments regarding our code of conduct, please email us at',
+        summary: [
+            'BizDay.LA is dedicated to providing a welcoming and harassment-free experience for everyone, regardless of gender, gender identity and expression, age, sexual orientation, disability, physical appearance, body size, race, or religion. Sexual language and imagery is not appropriate for any event venue, including talks, workshops, the vendor hall, parties, Twitter and other forms of social media.'
+        ],
+        harassmentDecription: [
+            'Harassment includes offensive verbal comments related to gender, age, sexual orientation, disability, physical appearance, body size, race, religion, sexual images in public spaces, deliberate intimidation, stalking, following, harassing photography or recording, sustained disruption of talks or other events, inappropriate physical contact, and unwelcome sexual attention.',
+            'Participants asked to stop any harassing behavior are expected to comply immediately. Any event participant who engages in harassing behavior will be asked to leave the event, and may be expelled from future events.'
+        ],
+        locatingHelp: [
+            'If you are being harassed, notice that someone else is being harassed, or have any other concerns, please contact a member of the organizer team immediately. Members of the organizer team are introduced at the start of each event.',
+            'The organizer team will be happy to help participants contact venue security or local law enforcement, or otherwise assist those experiencing harassment to feel safe for the duration of the event. We value your attendance and are committed to your safety and security.'
+        ],
+    },
     description: {
         header: 'BizDay.LA is an exciting event for current and aspiring business owners.',
         sub_header: 'Join your business peers for a full-day of presentations and discussions focused on growing your business. Topics such as...',
@@ -118,6 +133,101 @@ window.context = {
                 }
             },
             {
+                id: 'speaker_dawn_dc',
+                firstName: 'Dawn',
+                lastName: 'Comer',
+                company: {
+                    has_site: false,
+                    description: '',
+                    name: '',
+                    site: '',
+                },
+                personalDescription: [
+                    'DAWN M. COMER enjoys working at the intersection of technology, data and civic engagement.  Dawn has over 20 years experience across PricewaterhouseCoopers and IBM Global Business Services as a management consultant working with Fortune 500 consumer products, technology and media and entertainment companies.  During her FUSE Corps Executive Fellowship with the City of Los Angeles’ Information Technology Agency (ITA), Dawn’s experience expanded to the Public Sector.  As a Fellow, she collaborated across City departments to develop a smart city strategic roadmap to improve City services using technology and data, with a strong focus on equity and user experience design.  She has continued in the Public Sector, working for the Mayor’s Fund for Los Angeles to localize the U.N. Sustainable Development Goals (SDGs) and develop and implement an open data platform to track the City’s progress towards the goals.  She is excited to continue with the City in her most recent role as Broadband and Digital Inclusion Coordinator.',
+                    'Dawn earned a BS in Electrical Engineering from North Carolina Agricultural & Technical State University (NCAT) and an MBA from the University of Southern California Marshall School of Business.  Her additional interests include supporting the Performing Arts and traveling the world.'
+                ],
+                shortDescription: '',
+                talkDescription: [
+
+                ],
+                image: 'assets/bizdayla/img/cropped_dawn_comer.png',
+                url_github: {
+                    has: false,
+                    site: 'https://www.github.com/',
+                },
+                url_facebook: {
+                    has: false,
+                    site: 'https://www.facebook.com/',
+                },
+                url_instagram: {
+                    has: false,
+                    site: 'https://www.instagram.com/',
+                },
+                url_linkedin: {
+                    has: false,
+                    site: 'https://www.linkedin.com/in/',
+                },
+                url_twitter: {
+                    has: false,
+                    site: 'https://www.twitter.com/',
+                },
+                website: {
+                    has: false,
+                    site: ''
+                }
+            },
+            {
+                id: 'speaker_as_jl',
+                firstName: 'Joseph',
+                lastName: 'Luckett',
+                company: {
+                    has_site: true,
+                    description: 'Affluent Solution is an all in one software that provides businesses with marketing and advertising tools needed to thrive in a culture influenced by agile technological advancements. We give SMB’s the tools to plan and manage innovative digital marketing development strategies to deliver engaging new material, drive quality leads, and increase social engagement with a targeted demographic. We maximize key analytics to build organic promotional content pertinent to clients’ brands, and grow in the cloud.',
+                    name: 'Affluent Solution',
+                    site: 'https://www.affluentsolution.com/',
+                },
+                personalDescription: [
+                    'Joseph Luckett is a Los Angeles native, and the Founder/CEO of Affluent Solution Group, a Digital Marketing Agency that provides SMBs with a all in one online marketing platform. Due to his notable effectiveness in the space of digital marketing, Joseph has had the opportunity to transition from working in-house for brands to taking them on as clients. After several years of executing countless successful marketing campaigns for influencers, sports professionals & SMBs, Joseph decided to transition from the service side of the business to the software side and founded Affluent Solution.'
+                ],
+                talkDescription: [
+                    "Reviews, accurate business information, and social media activity impact a business's reputation and influences whether a consumer decides to do business with them. Businesses need a way to manage all of these factors in a scalable way.",
+                    "With Reputation Management, you can keep on top of online activity affecting the reputation of a business, including reviews, listings, and social media, helping you make expert recommendations, and provide proof-of-performance."
+                ],
+                image: 'assets/bizdayla/img/cropped_as_joseph_luckett.png',
+                name_linkedin: '',
+                name_twitter: '',
+                name_instagram: '',
+                name_facebook: '',
+                url_github: {
+                    has: false,
+                    site: 'https://www.github.com/',
+                },
+                url_facebook: {
+                    has: true,
+                    site: 'https://www.facebook.com/affluentsolution/',
+                },
+                url_instagram: {
+                    has: true,
+                    site: 'https://www.instagram.com/affluentsolution/',
+                },
+                url_linkedin: {
+                    has: true,
+                    site: 'https://www.linkedin.com/company/affluent-solution-group',
+                },
+                url_twitter: {
+                    has: true,
+                    site: 'https://twitter.com/affluentsg',
+                },
+                url_youtube: {
+                    has: true,
+                    site: 'https://www.youtube.com/channel/UCG73VP7k3q7tul3DI1ZDoYA?reload=9',
+                },
+                website: {
+                    has: false,
+                    site: 'http://'
+                }
+            },
+            {
                 id: 'speaker_popup_cleanup_kl',
                 firstName: 'Kenetia',
                 lastName: 'Lee',
@@ -171,11 +281,11 @@ window.context = {
                     site: '',
                 },
                 personalDescription: [
-                    "With over a decade in the field of Software Engineering Brandon Bailey has has a broad experience in the tech sector.  Initially in the public sector implementing Infrastructure solutions to operational costs and complexity with their 1040 EZ tax processing systems.  With an insatiable desire to grow Brandon decided to bet on himself and head to the midwest to be one of the bleeding edge adopters of a different educational model that was just emerging at the time called Dev Boot Camp, to continue to hone his Software Engineering skills.  Thereafter transitioning into the private sector as a Software Engineer; where he cut his teeth delivering solutions for clients such as Home Depot, Weight Watchers, and Constellation Brands.  Brandon found his passion for apprenticeship and mentorship while partnering with non profits such as Citizens Schools and Spark.  Inline with this passion Brandon moved to Los Angeles Aug 2017 accepting a role as Senior Data Infrastructure Engineer at GoGuardian an EdTech startup in El Segundo; focusing on DevOps along with full stack product development for 2 years.  Per the course Brandon has again bet on himself and a radical approach to development of today and tomorrows workforce by expanding the educational experience beyond the current boundaries."
+                    "Brandon Bailey is a Software Engineer, and the Founder and CEO of TutorD and TutorD Scholars. TutorD an educational platform geared towards enhancing the learning experience, and TutorD Scholars a nonprofit organization exposing youth to hands-on experience within the tech space.",
+                    "Before starting TutorD and TutorD Scholars, Brandon spent the last 10 years in tech as a Software Engineer for Slalom, a consulting firm focused on strategy, technology, and business transformation, based in Chicago. Also, Brandon held the position as Senior Data Infrastructure Engineer at GoGuardian, a rapidly growing startup tech company that provides device management solutions for students and teachers, in Los Angeles. After a successful career delivering solutions for Fortune500 clients. Brandon is now meshing his passion for apprenticeship and mentorship with his infinitive knowledge of the technology industry to run TutorD and TutorD Scholars."
                 ],
-                shortDescription: "Brandon Bailey - Founder and CEO of TutorD LLC and TutorD Scholars 501(c)(3) non profit",
+                shortDescription: "Founder and CEO of TutorD and TutorD Scholars",
                 talkDescription: [
-                    "It's fair to say that in the last 15 years the advancement of technology has literally changed the landscape of business irregardless of Industry or Sector.  Throughout history technology has been and will always be one of, if not the most important part of the equation when it comes to advancing ones vision and mission.  With that being said Business Owners have to accept the fact that technology is going to continue to disrupt business per usual.  There seems to be only a few options for a Business Owner who might have the foresight to see how technology can be leveraged to directly support their Business Strategy and Goals; and even open up opps that they were not even aware of.  Building a strong and flexible workforce that can be trained up on current trends that are emerging and the application of those technologies can make all the difference.  As Business Owners we have taken on the journey of Life Long Learning, and understanding todays ever changing landscape to make an impact on our customers and making an impact in this realm and needs to be alway a priority."
                 ],
                 image: 'assets/bizdayla/img/cropped_tutord_brandon_bailey.png',
                 url_github: {
@@ -246,57 +356,6 @@ window.context = {
                 url_twitter: {
                     has: true,
                     site: 'https://twitter.com/medleyinc',
-                },
-                website: {
-                    has: false,
-                    site: 'http://'
-                }
-            },
-            {
-                id: 'speaker_as_jl',
-                firstName: 'Joseph',
-                lastName: 'Luckett',
-                company: {
-                    has_site: true,
-                    description: 'Affluent Solution is an all in one software that provides businesses with marketing and advertising tools needed to thrive in a culture influenced by agile technological advancements. We give SMB’s the tools to plan and manage innovative digital marketing development strategies to deliver engaging new material, drive quality leads, and increase social engagement with a targeted demographic. We maximize key analytics to build organic promotional content pertinent to clients’ brands, and grow in the cloud.',
-                    name: 'Affluent Solution',
-                    site: 'https://www.affluentsolution.com/',
-                },
-                personalDescription: [
-                    'Joseph Luckett is a Los Angeles native, and the Founder/CEO of Affluent Solution Group, a Digital Marketing Agency that provides SMBs with a all in one online marketing platform. Due to his notable effectiveness in the space of digital marketing, Joseph has had the opportunity to transition from working in-house for brands to taking them on as clients. After several years of executing countless successful marketing campaigns for influencers, sports professionals & SMBs, Joseph decided to transition from the service side of the business to the software side and founded Affluent Solution.'
-                ],
-                talkDescription: [
-                    "Reviews, accurate business information, and social media activity impact a business's reputation and influences whether a consumer decides to do business with them. Businesses need a way to manage all of these factors in a scalable way.",
-                    "With Reputation Management, you can keep on top of online activity affecting the reputation of a business, including reviews, listings, and social media, helping you make expert recommendations, and provide proof-of-performance."
-                ],
-                image: 'assets/bizdayla/img/cropped_as_joseph_luckett.png',
-                name_linkedin: '',
-                name_twitter: '',
-                name_instagram: '',
-                name_facebook: '',
-                url_github: {
-                    has: false,
-                    site: 'https://www.github.com/',
-                },
-                url_facebook: {
-                    has: true,
-                    site: 'https://www.facebook.com/affluentsolution/',
-                },
-                url_instagram: {
-                    has: true,
-                    site: 'https://www.instagram.com/affluentsolution/',
-                },
-                url_linkedin: {
-                    has: true,
-                    site: 'https://www.linkedin.com/company/affluent-solution-group',
-                },
-                url_twitter: {
-                    has: true,
-                    site: 'https://twitter.com/affluentsg',
-                },
-                url_youtube: {
-                    has: true,
-                    site: 'https://www.youtube.com/channel/UCG73VP7k3q7tul3DI1ZDoYA?reload=9',
                 },
                 website: {
                     has: false,
@@ -445,7 +504,12 @@ window.context = {
     footer: {
         email: 'organizers@bizday.la',
         tagline: 'Connect with local business owners',
-        year: new Date().getFullYear()
+        year: new Date().getFullYear(),
+        codeOfConduct: {
+            url_page: './code-of-conduct.html',
+            title: 'Code of Conduct',
+            description: 'View our Code of Conduct'
+        }
     },
     helper: {
         scriptLoaderFromArray: {
