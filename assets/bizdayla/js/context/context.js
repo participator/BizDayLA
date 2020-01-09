@@ -6,7 +6,7 @@ window.context = {
         email: 'organizers@bizdayla.com',
         feedback: 'If you have questions or comments regarding our code of conduct, please email us at',
         summary: [
-            'Polyglot.LA is dedicated to providing a welcoming and harassment-free experience for everyone, regardless of gender, gender identity and expression, age, sexual orientation, disability, physical appearance, body size, race, or religion. Sexual language and imagery is not appropriate for any event venue, including talks, workshops, the vendor hall, parties, Twitter and other forms of social media.'
+            'BizDay.LA is dedicated to providing a welcoming and harassment-free experience for everyone, regardless of gender, gender identity and expression, age, sexual orientation, disability, physical appearance, body size, race, or religion. Sexual language and imagery is not appropriate for any event venue, including talks, workshops, the vendor hall, parties, Twitter and other forms of social media.'
         ],
         harassmentDecription: [
             'Harassment includes offensive verbal comments related to gender, age, sexual orientation, disability, physical appearance, body size, race, religion, sexual images in public spaces, deliberate intimidation, stalking, following, harassing photography or recording, sustained disruption of talks or other events, inappropriate physical contact, and unwelcome sexual attention.',
