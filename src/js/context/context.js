@@ -150,7 +150,7 @@ window.context = {
                 talkDescription: [
 
                 ],
-                image: 'assets/bizdayla/img/placeholder_user.png',
+                image: 'assets/bizdayla/img/cropped_dawn_comer.png',
                 url_github: {
                     has: false,
                     site: 'https://www.github.com/',
