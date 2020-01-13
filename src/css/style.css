@@ -1,3 +1,7 @@
+/* BizDay.LA */
+.bizday_none {
+    display: none;
+}
 :root {
     --dark: #212529;
     --hero_blue: #202055;
