@@ -414,17 +414,19 @@ Handlebars.registerPartial("speakers", Handlebars.template({"1":function(contain
 Handlebars.registerPartial("sponsors", Handlebars.template({"1":function(container,depth0,helpers,partials,data) {
     var helper, alias1=depth0 != null ? depth0 : (container.nullContext || {}), alias2=container.hooks.helperMissing, alias3="function", alias4=container.escapeExpression;
 
-  return "            <li class=\"mt-5 mr-4 mb-5 ml-4 col-lg-2 col-md-4\" data-aos=\"fade-up\" data-aos-delay=\"100\">\r\n                <a href=\""
+  return "            <li class=\"mt-5 mr-4 mb-5 ml-4 col-lg-3 col-md-4\" data-aos=\"fade-up\" data-aos-delay=\"100\">\r\n                <a href=\""
     + alias4(((helper = (helper = helpers.url || (depth0 != null ? depth0.url : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"url","hash":{},"data":data,"loc":{"start":{"line":9,"column":25},"end":{"line":9,"column":32}}}) : helper)))
-    + "\">\r\n                    <img class=\"bg-white icon icon-logo bizday_sponsors_icon\" src=\""
-    + alias4(((helper = (helper = helpers.image || (depth0 != null ? depth0.image : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"image","hash":{},"data":data,"loc":{"start":{"line":10,"column":83},"end":{"line":10,"column":92}}}) : helper)))
+    + "\">\r\n                    <img class=\"bg-white icon icon-logo bizday_sponsors_icon "
+    + alias4(((helper = (helper = helpers.heightAdjust || (depth0 != null ? depth0.heightAdjust : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"heightAdjust","hash":{},"data":data,"loc":{"start":{"line":10,"column":77},"end":{"line":10,"column":93}}}) : helper)))
+    + "\" src=\""
+    + alias4(((helper = (helper = helpers.image || (depth0 != null ? depth0.image : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"image","hash":{},"data":data,"loc":{"start":{"line":10,"column":100},"end":{"line":10,"column":109}}}) : helper)))
     + "\" alt=\""
-    + alias4(((helper = (helper = helpers.name || (depth0 != null ? depth0.name : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"name","hash":{},"data":data,"loc":{"start":{"line":10,"column":99},"end":{"line":10,"column":107}}}) : helper)))
+    + alias4(((helper = (helper = helpers.name || (depth0 != null ? depth0.name : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"name","hash":{},"data":data,"loc":{"start":{"line":10,"column":116},"end":{"line":10,"column":124}}}) : helper)))
     + " logo\" />\r\n                </a>\r\n            </li>\r\n";
 },"compiler":[8,">= 4.3.0"],"main":function(container,depth0,helpers,partials,data) {
     var stack1;
 
-  return "<section class=\"text-dark has-divider\">\r\n  <div class=\"container\">\r\n    <div class=\"row justify-content-between\">\r\n      <div class=\"col-md-12 text-center\">\r\n        <h4 class=\"text-uppercase mb-4 bizday_sponsors_by_text\">Sponsors</h4>\r\n        <ul class=\"d-flex flex-wrap list-unstyled justify-content-between\">\r\n"
+  return "<section class=\"text-dark has-divider\">\r\n  <div class=\"container\">\r\n    <div class=\"row justify-content-between\">\r\n      <div class=\"col-md-12 text-center\">\r\n        <h4 class=\"text-uppercase mb-4 bizday_sponsors_by_text\">Sponsors</h4>\r\n        <ul class=\"d-flex flex-wrap list-unstyled justify-content-start\">\r\n"
     + ((stack1 = helpers.each.call(depth0 != null ? depth0 : (container.nullContext || {}),(depth0 != null ? depth0.sponsors : depth0),{"name":"each","hash":{},"fn":container.program(1, data, 0),"inverse":container.noop,"data":data,"loc":{"start":{"line":7,"column":12},"end":{"line":13,"column":21}}})) != null ? stack1 : "")
     + "        </ul>\r\n      </div>\r\n    </div>\r\n  </div>\r\n</section>";
 },"useData":true}));

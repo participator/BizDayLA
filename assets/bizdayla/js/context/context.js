@@ -482,7 +482,14 @@ window.context = {
         {
             image: 'assets/bizdayla/img/popup_cleanup_logo.svg',
             name: 'PopUP CleanUP',
-            url: 'https://www.popupcleanup.com/'
+            url: 'https://www.popupcleanup.com/',
+            heightAdjust: 'bizday_sponsors_icon--height_adjust'
+        },
+        {
+            image: 'assets/bizdayla/img/tutord_logo.png',
+            name: 'TutorD',
+            url: 'http://scholars.tutord.io/',
+            heightAdjust: 'bizday_sponsors_icon--height_adjust'
         }
     ],
     sponsors_venue: [

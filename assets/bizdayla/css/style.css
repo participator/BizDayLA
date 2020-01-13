@@ -1,3 +1,7 @@
+/* BizDay.LA */
+.bizday_none {
+    display: none;
+}
 :root {
     --dark: #212529;
     --hero_blue: #202055;
@@ -67,6 +71,9 @@ svg.bizday_hero_svg_right * {
 }
 .bizday_sponsors_icon {
     height: 4rem;
+}
+.bizday_sponsors_icon--height_adjust {
+    height: 5rem;
 }
 .bizday_sponsors_venue_list_item {
     max-width: 80%;
