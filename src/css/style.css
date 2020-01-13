@@ -7,6 +7,14 @@
     --hero_blue: #202055;
     --gray: dee2e6;
     --nav_blue: #020122;
+    --primary-background: #f4442e;
+    --primary-border: #dc3545;;
+    --primary-background--hover: #c33523;
+    --primary-border--hover: #c33523;
+    --secondary-background: #2A2A72;
+    --secondary-border: #2A2A72;
+    --secondary-background--hover: #202056;
+    --secondary-border--hover: #1c1c4d;
     --white: #ffffff;
 }
 .bizday_header_nav .navbar-brand {
@@ -58,10 +66,6 @@ svg.bizday_hero_svg_left * {
 svg.bizday_hero_svg_right * {
     fill: var(--primary-2);
 }
-.bizday_hero_register_btn {
-    background-color: var(--primary-2);
-    border-color: var(--primary-2);
-}
 .bizday_sponsors_by_text {
     font-weight: bold;
 }
@@ -98,7 +102,7 @@ section.has-divider .bizday_speaker_container {
 .bizday_code-of-conduct > div {
     margin-left: auto;
     margin-right: auto;
-    max-width: 915px;
+    max-width: 920px;
 }
 .bizday_code-of-conduct_page_title {
     text-align: center;
@@ -128,6 +132,18 @@ section.has-divider .bizday_speaker_container {
 .bizday_code-of-conduct div:last-child a {
     color: white;
 }
+div.bizday_not-found_actions > * {
+    margin: 1em;
+}
+.bizday_not-found_header {
+    text-align: center;
+}
+a.bizday_not-found_header_link {
+    display: block;
+}
+img.bizday_not-found_header_logo {
+    width: 8em;
+}
 /** General */
 a:hover,
 a:focus {
@@ -140,4 +156,20 @@ a:focus {
 }
 .divider.flip-y {
     padding: 0;
+}
+.bizday_btn-primary {
+    background-color: var(--primary-background);
+    border-color: var(--primary-border);
+}
+.bizday_btn-primary:hover {
+    background-color: var(--primary-background--hover);
+    border-color: var(--primary-border--hover);
+}
+.bizday_btn-secondary {
+    background-color: var(--secondary-background);
+    border-color: var(--secondary-border);
+}
+.bizday_btn-secondary:hover {
+    background-color: var(--secondary-background--hover);
+    border-color: var(--secondary-border--hover);
 }
