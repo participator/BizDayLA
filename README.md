@@ -4,6 +4,8 @@ Repo for the http://BizDay.LA web site. All action happens in the gh-pages branc
 An exciting event for current and aspiring business owners.
 
 ## Get Started
-Run locally by 
-- running npm run-script start
-- **Or** gulp
+### Run locally 
+- npm run-script start
+
+### Deploy to githup-pages branch
+- npm run-script start build

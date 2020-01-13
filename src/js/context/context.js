@@ -324,13 +324,11 @@ window.context = {
                     site: 'https://www.medley-inc.com/',
                 },
                 personalDescription: [
-                    "There is a unique place where PR, technology and digital media overlap and in that place is where I thrive. My proven PR and digital marketing strategies have helped brands grow their visibility, amplify their voice and expand their reach across the world.",
-                    "In 2009, when social media was newly on the rise, I set out on a mission to marry traditional PR with the latest trends in technology. Since then, I've launched a boutique PR and digital marketing agency, Medley Inc., and have worked with organizations such as Major League Baseball, AT&T, The City of Houston and The Rose Houston to meet their marketing goals, specifically geared towards African American and Latino consumers.",
-                    "A Google AdWords certified specialist, I have been nationally recognized by Fast Company Magazine, the Canada Broadcast Network, ABC, FOX and more as an expert in business, technology, social media and public relations. I am an alumnus of the Goldman Sachs 10,000 Small Businesses program and Leadership Houston as well as one of Houston Business Journal’s 2018 40 under 40 leading professionals and the 2019 HYPE Impact Business Leader award winner.",
-                    "I serve on the board of Women Empowering Nations, the Houston City Breakfast Club and the Memorial Park Conservancy. Through my work in the community, I have educated and trained more than 400 hundred girls and budding entrepreneurs in the areas of technology, social media and leadership development. I’m always eager to connect with others! Twitter: @AshleyRSmall.",
+                    "In 2009, when social media was newly on the rise, I set out on a mission to marry traditional PR with the latest trends in technology. Since then, I've launched a boutique PR and digital marketing agency, Medley Inc., and have worked with organizations such as Major League Baseball, AT&T and Kroger to meet their marketing goals, specifically geared towards African American and Latino consumers.",
                 ],
                 talkDescription: [
-                    "Join us to learn how to harness the power of digital media to leverage engagement opportunities this year. This session will cover essential tips to launch or enhance an online marketing campaign. We'll cover essential marketing assets needed prior to launching a campaign, best practices on pitching to the press online, free tools to brand your business and top tips on managing and streamlining social media efforts.",
+                    "Join my session to learn how to harness the power of digital media to leverage engagement opportunities this year. We’ll cover essential tips to launch or enhance an online marketing campaign.",
+                    "A Google AdWords certified specialist, I have been nationally recognized by Fast Company Magazine, the Canada Broadcast Network, ABC, FOX and more as an expert in business, technology, social media and public relations. I am an alumnus of the Goldman Sachs 10,000 Small Businesses program and Leadership Houston as well as one of Houston Business Journal’s 2018 40 under 40 leading professionals and the 2019 HYPE Impact Business Leader award winner."
                 ],
                 image: 'assets/bizdayla/img/cropped_medley_ashley_small.png',
                 name_linkedin: '',
@@ -503,7 +501,7 @@ window.context = {
     ],
     footer: {
         email: 'organizers@bizday.la',
-        tagline: 'Connect with local business owners',
+        tagline: 'Join your business peers at BizDay.LA',
         year: new Date().getFullYear(),
         codeOfConduct: {
             url_page: './code-of-conduct.html',

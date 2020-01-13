@@ -15,50 +15,23 @@
     <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
     <link rel="manifest" href="site.webmanifest">
     <link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bbad5">
-    <link href="assets/css/loaders/loader-typing.css" rel="stylesheet" type="text/css" media="all" />
-    <link href="assets/css/theme.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="assets/css/theme-event.css" rel="stylesheet" type="text/css" media="all" />
     <link rel="preload" as="font" href="assets/fonts/Inter-UI-upright.var.woff2" type="font/woff2" crossorigin="anonymous">
     <link rel="preload" as="font" href="assets/fonts/Inter-UI.var.woff2" type="font/woff2" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Anton&display=swap" rel="stylesheet">
+    <!-- BizDayLA styles-->
+    <link href="assets/bizdayla/css/style.css" rel="stylesheet">
+    <!-- BizDayLA scripts-->
+    <script src="assets/js/handlebars.runtime.min.js"></script>
+    <script src="assets/bizdayla/js/hbs/templates.js"></script>
+    <script src="assets/bizdayla/js/context/context.js"></script>
   </head>
-
   <body>
-    <div class="loader">
-      <div class="loading-animation"></div>
-    </div>
-
-    <section class="min-vh-100 bg-primary-3 text-light py-5 o-hidden">
-      <div class="container">
-        <div class="row justify-content-center mb-md-6">
-          <div class="col-auto">
-            <a href="index.html">
-              <img src="assets/img/logo-white.svg" alt="Leap">
-            </a>
-          </div>
-        </div>
-        <div class="row text-center py-6">
-          <div class="col layer-2">
-            <h1 class="display-1 mb-0">404</h1>
-            <h2 class="h1">Page not found</h2>
-            <div class="lead mb-4">It appears the page you were looking for couldn’t be found.</div>
-            <a class="btn btn-primary btn-lg" href="index.html">Go back to home</a>
-          </div>
-        </div>
-      </div>
-      <div class="decoration-wrapper d-none d-md-block">
-        <div class="decoration right middle-y scale-2" data-jarallax-element="200">
-          <img class="bg-primary-2" src="assets/img/decorations/deco-blob-3.svg" alt="deco-blob-3 decoration" data-inject-svg />
-        </div>
-        <div class="decoration right middle-y" data-jarallax-element="100">
-          <img class="bg-primary" src="assets/img/decorations/deco-lines-3.svg" alt="deco-lines-3 decoration" data-inject-svg />
-        </div>
-        <div class="decoration top left scale-3" data-jarallax-element="50">
-          <img class="bg-white" src="assets/img/decorations/deco-blob-9.svg" alt="deco-blob-9 decoration" data-inject-svg />
-        </div>
-        <div class="decoration top left scale-2 scale-3 blend-mode-multiply" data-jarallax-element="150 50">
-          <img class="bg-primary-2" src="assets/img/decorations/deco-dots-2.svg" alt="deco-dots-2 decoration" data-inject-svg />
-        </div>
-      </div>
-    </section>
+    <script type="text/javascript">
+      // This will render the template defined by App.hbs and the partials it uses
+      const notFound = document.querySelector('body');
+      notFound.innerHTML = Bizdayla.templates.NotFound(context) + notFound.innerHTML;
+    </script>   
 
     <!-- Required vendor scripts (Do not remove) -->
     <script type="text/javascript" src="assets/js/jquery.min.js"></script>
@@ -109,7 +82,5 @@
     <script type="text/javascript">
       window.addEventListener("load", function () {    document.querySelector('body').classList.add('loaded');  });
     </script>
-
   </body>
-
 </html>

@@ -1,19 +1,19 @@
 {{#with speaker}}
 <section class="has-divider">
   <div class="divider flip-y">
-    <img src="assets/img/dividers/divider-2.svg" alt="graphical divider" data-inject-svg />
+    <img src="assets/img/dividers/divider-2.svg" alt="" data-inject-svg />
   </div>
   {{>page_title class="bizday_speaker_page_title" text="Organizers and Speakers"}}
   {{#each speakers}}
   <div id={{id}} class="container bizday_speaker_container" data-aos="fade-up">
     <div class="row align-items-center justify-content-around">
       <div class="col-md-5">
-        <img src="{{image}}" alt="Image" class="rounded-circle layer-2">
+        <img src="{{image}}" alt="Image of {{firstName}} {{lastName}}" class="rounded-circle layer-2">
         <div class="decoration bottom left" data-aos="fade-up">
-          <img class="bg-primary" src="assets/img/decorations/deco-blob-10.svg" alt="deco-blob-10 decoration" data-inject-svg />
+          <img class="bg-primary" src="assets/img/decorations/deco-blob-10.svg" alt="" data-inject-svg />
         </div>
         <div class="decoration bottom left" data-aos="fade-right">
-          <img class="bg-primary-2" src="assets/img/decorations/deco-lines-4.svg" alt="deco-lines-4 decoration" data-inject-svg />
+          <img class="bg-primary-2" src="assets/img/decorations/deco-lines-4.svg" alt="" data-inject-svg />
         </div>
       </div>
       <div class="col-xl-5 col-md-6">
@@ -21,12 +21,12 @@
           <div>{{firstName}} {{lastName}}</div>
         </div>
         <div>
-          {{#each talkDescription}}
+          {{#each personalDescription}}
             <p class="lead bizday_speaker_description">{{this}}</p>
           {{/each}}
         </div>
         <div>
-          {{#each personalDescription}}
+          {{#each talkDescription}}
             <p class="lead bizday_speaker_description">{{this}}</p>
           {{/each}}
         </div>
