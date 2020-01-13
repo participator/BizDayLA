@@ -501,7 +501,7 @@ window.context = {
     ],
     footer: {
         email: 'organizers@bizday.la',
-        tagline: 'Connect with local business owners',
+        tagline: 'Join your business peers at BizDay.LA',
         year: new Date().getFullYear(),
         codeOfConduct: {
             url_page: './code-of-conduct.html',
