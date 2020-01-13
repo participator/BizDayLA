@@ -1,8 +1,9 @@
-# BizDay.LA Repo
-An exciting event for current and
-aspiring business owners.
+# BizDayLA
+Repo for the http://BizDay.LA web site. All action happens in the gh-pages branch.
 
-## README
+An exciting event for current and aspiring business owners.
+
+## Get Started
 ### Run locally 
 - npm run-script start
 
