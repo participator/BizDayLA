@@ -3,6 +3,8 @@ An exciting event for current and
 aspiring business owners.
 
 ## README
-Run locally by 
-- running npm run-script start
-- **Or** gulp
+### Run locally 
+- npm run-script start
+
+### Deploy to githup-pages branch
+- npm run-script start build
