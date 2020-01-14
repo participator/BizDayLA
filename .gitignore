@@ -1,8 +1,5 @@
-pages
-!pages/assets
-pages/assets/bizdayla
 node_modules
-dist
-bash.exe.stackdump
 .publish
-.vscode
+dist
+pages/assets/bizdayla
+pages/*.*
