@@ -324,17 +324,12 @@ window.context = {
                     site: 'https://www.medley-inc.com/',
                 },
                 personalDescription: [
-                    "In 2009, when social media was newly on the rise, I set out on a mission to marry traditional PR with the latest trends in technology. Since then, I've launched a boutique PR and digital marketing agency, Medley Inc., and have worked with organizations such as Major League Baseball, AT&T and Kroger to meet their marketing goals, specifically geared towards African American and Latino consumers.",
+                    "In 2009, I set out on a mission to marry PR with tech and founded Medley Inc. Since then, I’ve been recognized by Fast Company, the Canada Broadcast Network and more as an expert in the field.",
                 ],
                 talkDescription: [
-                    "Join my session to learn how to harness the power of digital media to leverage engagement opportunities this year. We’ll cover essential tips to launch or enhance an online marketing campaign.",
-                    "A Google AdWords certified specialist, I have been nationally recognized by Fast Company Magazine, the Canada Broadcast Network, ABC, FOX and more as an expert in business, technology, social media and public relations. I am an alumnus of the Goldman Sachs 10,000 Small Businesses program and Leadership Houston as well as one of Houston Business Journal’s 2018 40 under 40 leading professionals and the 2019 HYPE Impact Business Leader award winner."
+                    "Learn how to harness the power of digital media to leverage opportunities this year. We will cover essential tips to launch your online campaign, recommended assets, how to pitch to the press online, free tools to brand your business and top tips on managing and streamlining social media efforts.",
                 ],
                 image: 'assets/bizdayla/img/cropped_medley_ashley_small.png',
-                name_linkedin: '',
-                name_twitter: '',
-                name_instagram: '',
-                name_facebook: '',
                 url_github: {
                     has: false,
                     site: 'https://www.github.com/',
