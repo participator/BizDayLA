@@ -275,10 +275,10 @@ window.context = {
                 firstName: 'Brandon',
                 lastName: 'Bailey',
                 company: {
-                    has_site: false,
+                    has_site: true,
                     description: '',
                     name: 'TutorD',
-                    site: '',
+                    site: 'https://scholars.tutord.io/',
                 },
                 personalDescription: [
                     "Brandon Bailey is a Software Engineer, and the Founder and CEO of TutorD and TutorD Scholars. TutorD an educational platform geared towards enhancing the learning experience, and TutorD Scholars a nonprofit organization exposing youth to hands-on experience within the tech space.",
@@ -472,7 +472,7 @@ window.context = {
         {
             image: 'assets/bizdayla/img/vazell_logo.svg',
             name: 'Vazell',
-            url: 'http://www.vazell.com'
+            url: 'https://www.vazell.com'
         },
         {
             image: 'assets/bizdayla/img/bridgetown_partners_logo.svg',
@@ -482,7 +482,14 @@ window.context = {
         {
             image: 'assets/bizdayla/img/popup_cleanup_logo.svg',
             name: 'PopUP CleanUP',
-            url: 'https://www.popupcleanup.com/'
+            url: 'https://www.popupcleanup.com/',
+            heightAdjust: 'bizday_sponsors_icon--height_adjust'
+        },
+        {
+            image: 'assets/bizdayla/img/tutord_logo.png',
+            name: 'TutorD',
+            url: 'https://scholars.tutord.io/',
+            heightAdjust: 'bizday_sponsors_icon--height_adjust'
         }
     ],
     sponsors_venue: [
