@@ -275,10 +275,10 @@ window.context = {
                 firstName: 'Brandon',
                 lastName: 'Bailey',
                 company: {
-                    has_site: false,
+                    has_site: true,
                     description: '',
                     name: 'TutorD',
-                    site: '',
+                    site: 'http://scholars.tutord.io/',
                 },
                 personalDescription: [
                     "Brandon Bailey is a Software Engineer, and the Founder and CEO of TutorD and TutorD Scholars. TutorD an educational platform geared towards enhancing the learning experience, and TutorD Scholars a nonprofit organization exposing youth to hands-on experience within the tech space.",
