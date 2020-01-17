@@ -406,6 +406,53 @@ window.context = {
                 }
             },
             {
+                id: 'speaker_3b-design-co_gp',
+                firstName: 'Georgette',
+                lastName: 'Perry',
+                company: {
+                    has_site: true,
+                    description: '',
+                    name: '3B Design Co.',
+                    site: 'https://www.3bdesignco.com/',
+                },
+                personalDescription: [
+                    'Gette is a South LA native, who studied Electronic Studio at Howard University. Following graduation she started her media production company, 3B Design Co.  Coupling a passion for media with the popularization of various outlets, such as social media platforms; she saw the need to merge digital, visual disciplines including design, photography and video to offer creative branding solutions to businesses and individuals alike. After successfully taking root in Atlanta, she wanted to expand her clientele and bring her skill set back home to Los Angeles, where her initial company has become subsidiary to her larger platform EVOLVE Media House.',
+                    'Her companies currently provide media and content creation services, as well as marketing implementations and consultation, to ensure brands are made visible to who matters most. Her and her team’s expertise ensure that clients have the cohesive, modern aesthetic and market awareness needed to be a viable brand in the the twenty first century.'
+                ],
+                talkDescription: [
+
+                ],
+                image: 'assets/bizdayla/img/cropped_georgette.png',
+                url_github: {
+                    has: false,
+                    site: 'https://www.github.com/',
+                },
+                url_facebook: {
+                    has: false,
+                    site: 'https://www.facebook.com/',
+                },
+                url_instagram: {
+                    has: false,
+                    site: 'https://www.instagram.com/',
+                },
+                url_linkedin: {
+                    has: false,
+                    site: 'https://www.linkedin.com/company/',
+                },
+                url_twitter: {
+                    has: false,
+                    site: 'https://twitter.com/',
+                },
+                url_youtube: {
+                    has: false,
+                    site: 'https://www.youtube.com/channel/UCG73VP7k3q7tul3DI1ZDoYA?reload=9',
+                },
+                website: {
+                    has: false,
+                    site: 'http://'
+                }
+            },
+            {
                 id: 'speaker_bp_rh',
                 firstName: 'Ray',
                 lastName: 'Hightower',
