@@ -406,9 +406,9 @@ window.context = {
                 }
             },
             {
-                id: 'speaker_3b-design-co_gp',
-                firstName: 'Georgette',
-                lastName: 'Perry',
+                id: 'speaker_3b-design-co_gd',
+                firstName: 'Gette',
+                lastName: 'Demi',
                 company: {
                     has_site: true,
                     description: '',
