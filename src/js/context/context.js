@@ -324,17 +324,12 @@ window.context = {
                     site: 'https://www.medley-inc.com/',
                 },
                 personalDescription: [
-                    "In 2009, when social media was newly on the rise, I set out on a mission to marry traditional PR with the latest trends in technology. Since then, I've launched a boutique PR and digital marketing agency, Medley Inc., and have worked with organizations such as Major League Baseball, AT&T and Kroger to meet their marketing goals, specifically geared towards African American and Latino consumers.",
+                    "In 2009, I set out on a mission to marry PR with tech and founded Medley Inc. Since then, I’ve been recognized by Fast Company, the Canada Broadcast Network and more as an expert in the field.",
                 ],
                 talkDescription: [
-                    "Join my session to learn how to harness the power of digital media to leverage engagement opportunities this year. We’ll cover essential tips to launch or enhance an online marketing campaign.",
-                    "A Google AdWords certified specialist, I have been nationally recognized by Fast Company Magazine, the Canada Broadcast Network, ABC, FOX and more as an expert in business, technology, social media and public relations. I am an alumnus of the Goldman Sachs 10,000 Small Businesses program and Leadership Houston as well as one of Houston Business Journal’s 2018 40 under 40 leading professionals and the 2019 HYPE Impact Business Leader award winner."
+                    "Learn how to harness the power of digital media to leverage opportunities this year. We will cover essential tips to launch your online campaign, recommended assets, how to pitch to the press online, free tools to brand your business and top tips on managing and streamlining social media efforts.",
                 ],
                 image: 'assets/bizdayla/img/cropped_medley_ashley_small.png',
-                name_linkedin: '',
-                name_twitter: '',
-                name_instagram: '',
-                name_facebook: '',
                 url_github: {
                     has: false,
                     site: 'https://www.github.com/',
@@ -381,6 +376,53 @@ window.context = {
                 name_twitter: '',
                 name_instagram: '',
                 name_facebook: '',
+                url_github: {
+                    has: false,
+                    site: 'https://www.github.com/',
+                },
+                url_facebook: {
+                    has: false,
+                    site: 'https://www.facebook.com/',
+                },
+                url_instagram: {
+                    has: false,
+                    site: 'https://www.instagram.com/',
+                },
+                url_linkedin: {
+                    has: false,
+                    site: 'https://www.linkedin.com/company/',
+                },
+                url_twitter: {
+                    has: false,
+                    site: 'https://twitter.com/',
+                },
+                url_youtube: {
+                    has: false,
+                    site: 'https://www.youtube.com/channel/UCG73VP7k3q7tul3DI1ZDoYA?reload=9',
+                },
+                website: {
+                    has: false,
+                    site: 'http://'
+                }
+            },
+            {
+                id: 'speaker_3b-design-co_gp',
+                firstName: 'Georgette',
+                lastName: 'Perry',
+                company: {
+                    has_site: true,
+                    description: '',
+                    name: '3B Design Co.',
+                    site: 'https://www.3bdesignco.com/',
+                },
+                personalDescription: [
+                    'Gette is a South LA native, who studied Electronic Studio at Howard University. Following graduation she started her media production company, 3B Design Co.  Coupling a passion for media with the popularization of various outlets, such as social media platforms; she saw the need to merge digital, visual disciplines including design, photography and video to offer creative branding solutions to businesses and individuals alike. After successfully taking root in Atlanta, she wanted to expand her clientele and bring her skill set back home to Los Angeles, where her initial company has become subsidiary to her larger platform EVOLVE Media House.',
+                    'Her companies currently provide media and content creation services, as well as marketing implementations and consultation, to ensure brands are made visible to who matters most. Her and her team’s expertise ensure that clients have the cohesive, modern aesthetic and market awareness needed to be a viable brand in the the twenty first century.'
+                ],
+                talkDescription: [
+
+                ],
+                image: 'assets/bizdayla/img/cropped_georgette.png',
                 url_github: {
                     has: false,
                     site: 'https://www.github.com/',
