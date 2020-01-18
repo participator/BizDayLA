@@ -9,14 +9,11 @@
       </div>
     </div>
     <div class="row no-gutters d-none d-md-flex bg-white py-3">
-      <div class="col-xl-3 col-md-3">
-        <span class="h6 mb-0 text-muted">Topic</span>
-      </div>
-      <div class="col col-md-6">
-        <span class="h6 mb-0 text-muted">Description</span>
-      </div>
       <div class="col">
         <span class="h6 mb-0 text-muted">Time</span>
+      </div>
+      <div class="col-xl-7 col-md-6">
+        <span class="h6 mb-0 text-muted">Topic & Description</span>
       </div>
     </div>
     <div class="tab-content" data-aos="fade-up">
@@ -24,30 +21,26 @@
         {{#each events}}
         {{#if link.has_link}}
         <a href="{{link.url}}" class="list-group-item list-group-item-action row no-gutters align-items-center py-3">
-          <div class="col-xl-3 col-md-3">
-            <h5 class="mb-0">{{name}}</h5>
-          </div>
-          <div class="col-md-6">
-            <div class="d-flex align-items-center mt-2 mt-md-0">
-              <span class="mb-0">{{{description}}}</span>
-            </div>
-          </div>
-          <div class="col-md">
+          <div class="col">
             <span>{{time}}</span>
+          </div>
+          <div class="col-xl-7 col-md-6">
+            <div class="mt-2 mt-md-0">
+              <h5>{{name}}</h5>
+              <p class="mb-0">{{{description}}}</p>
+            </div>
           </div>
         </a>
         {{else}}
-        <div href="{{link.url}}" class="list-group-item list-group-item-action row no-gutters align-items-center py-3">
-          <div class="col-xl-3 col-md-3">
-            <h5 class="mb-0">{{name}}</h5>
-          </div>
-          <div class="col-md-6">
-            <div class="d-flex align-items-center mt-2 mt-md-0">
-              <span class="mb-0">{{{description}}}</span>
-            </div>
-          </div>
-          <div class="col-md">
+        <div class="list-group-item list-group-item-action row no-gutters align-items-center py-3">
+          <div class="col">
             <span>{{time}}</span>
+          </div>
+          <div class="col-xl-7 col-md-6">
+            <div class="mt-2 mt-md-0">
+              <h5 class="mb-0">{{name}}</h5>
+              <p class="mb-0">{{{description}}}</p>
+            </div>
           </div>
         </div>
         {{/if}}
