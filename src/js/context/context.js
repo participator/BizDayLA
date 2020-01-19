@@ -71,7 +71,7 @@ window.context = {
                 link: {
                     has_link: true,
                     title: "BizDay.LA Videos",
-                    url: "https://BizDay.LA/videos",
+                    url: "#",
                 }
             },
             {
