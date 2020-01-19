@@ -18,7 +18,7 @@ window.context = {
         ],
     },
     description: {
-        header: 'BizDay.LA is an exciting event for current and aspiring business owners.',
+        header: 'BizDay.LA is an exciting virtual and in-person event for current and aspiring business owners.',
         sub_header: 'Join your business peers for a full-day of presentations and discussions focused on growing your business. Topics such as...',
         paragraphs: [
             {
@@ -61,25 +61,38 @@ window.context = {
         location: 'Los Angeles, CA, USA'
     },
     schedule: {
-        tab1_name: 'Physical Space',
-        tab2_name: 'Cyberspace',
-        presentation_in_person: [
+        tab1_name: 'In-Person',
+        tab2_name: 'Virtual',
+        events: [
             {
-                name: "Meetup",
-                time: "6:30 PM - 9:30 PM",
-                presenter: "Various"
+                name: "Virtual",
+                time: "9:00 AM - 5:00 PM",
+                description: "Video podcasts will be released here at 9 AM on January 23.",
+                link: {
+                    has_link: true,
+                    title: "BizDay.LA Videos",
+                    url: "https://BizDay.LA/videos",
+                }
             },
             {
-                name: "The Home Field Advantage",
-                time: "7:30 PM - 8:00 PM",
-                presenter: "Various"
-            }
-        ],
-        presentation_virtual: [
+                name: "Arrival",
+                time: "6:30 PM - 7:00 PM",
+                description: "Arrive and network with your peers"
+            },
             {
-                name: "Cyberspace",
-                time: "9:00 AM - 5:00 PM",
-                presenter: "Various"
+                name: "Lighting Talks",
+                time: "7:00 PM - 7:30 PM",
+                description: "Quick talks from our presenters"
+            },
+            {
+                name: "Networking Reception",
+                time: "7:30 PM - 9:00 PM",
+                description: "Network with your peers"
+            },
+            {
+                name: "Goodnight!",
+                time: "9:00 PM",
+                description: "Event ends"
             }
         ]
     },
@@ -281,8 +294,7 @@ window.context = {
                     site: 'https://scholars.tutord.io/',
                 },
                 personalDescription: [
-                    "Brandon Bailey is a Software Engineer, and the Founder and CEO of TutorD and TutorD Scholars. TutorD an educational platform geared towards enhancing the learning experience, and TutorD Scholars a nonprofit organization exposing youth to hands-on experience within the tech space.",
-                    "Before starting TutorD and TutorD Scholars, Brandon spent the last 10 years in tech as a Software Engineer for Slalom, a consulting firm focused on strategy, technology, and business transformation, based in Chicago. Also, Brandon held the position as Senior Data Infrastructure Engineer at GoGuardian, a rapidly growing startup tech company that provides device management solutions for students and teachers, in Los Angeles. After a successful career delivering solutions for Fortune500 clients. Brandon is now meshing his passion for apprenticeship and mentorship with his infinitive knowledge of the technology industry to run TutorD and TutorD Scholars."
+                    "Brandon Bailey is a Software Engineer, and the Founder and CEO of TutorD and TutorD Scholars. TutorD an educational platform geared towards enhancing the learning experience, and TutorD Scholars a nonprofit organization exposing youth to hands-on experience within the tech space.  With over 10 years in tech, and last position as Senior Data Infrastructure Engineer at GoGuardian; an EdTech startup, in Los Angeles Brandon is now meshing his passion for apprenticeship and mentorship with his infinitive knowledge of the technology industry to run TutorD and TutorD Scholars."
                 ],
                 shortDescription: "Founder and CEO of TutorD and TutorD Scholars",
                 talkDescription: [
@@ -549,13 +561,15 @@ window.context = {
         }        
     ],
     footer: {
-        email: 'organizers@bizday.la',
-        tagline: 'Join your business peers at BizDay.LA',
+        email: {
+            url: 'organizers@bizday.la',
+            title: 'Email Us'
+        },
+        tagline: 'Join your business peers at BizDay.LA!',
         year: new Date().getFullYear(),
         codeOfConduct: {
-            url_page: './code-of-conduct.html',
-            title: 'Code of Conduct',
-            description: 'View our Code of Conduct'
+            url: './code-of-conduct.html',
+            title: 'Code of Conduct'
         }
     },
     helper: {

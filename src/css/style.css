@@ -159,6 +159,7 @@ a:focus {
 }
 .divider.flip-y {
     padding: 0;
+    height: 70px;
 }
 .bizday_btn-primary {
     background-color: var(--primary-background);
