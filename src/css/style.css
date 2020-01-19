@@ -87,7 +87,8 @@ svg.bizday_hero_svg_right * {
 .bizday_sponsors_venue_icon {
     height: 10rem;
 }
-.bizday_speaker_page_title {
+.bizday_speaker_page_title,
+.bizday_videos_page_title {
     text-align: center;
 }
 section.has-divider .bizday_speaker_container {
@@ -146,6 +147,36 @@ a.bizday_not-found_header_link {
 }
 img.bizday_not-found_header_logo {
     width: 8em;
+}
+section.bizday_videos {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.bizday_videos_player {
+
+}
+.bizday_videos_player_viewer {
+    height: 400px;
+    width: 600px;
+}
+.bizday_videos_items {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+.bizday_videos_item {
+    margin: 0.5em;
+    padding: 0.5em;
+}
+.bizday_videos_item:hover,
+.bizday_videos_item:focus {
+    background-color: var(--secondary-background);
+    color: var(--white);
+}
+.bizday_videos_item--active {
+    background-color: var(--secondary-background--hover);
+    color: var(--white);
 }
 /** General */
 a:hover,

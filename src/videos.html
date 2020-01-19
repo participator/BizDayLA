@@ -32,12 +32,13 @@
   <script src="assets/js/handlebars.runtime.min.js"></script>
   <script src="assets/bizdayla/js/hbs/templates.js"></script>
   <script src="assets/bizdayla/js/context/context.js"></script>
+  <script async src="assets/bizdayla/js/video_player.js"></script>
 </head>
 <body>
   <script type="text/javascript">
-    // This will render the template defined by App.hbs and the partials it uses
-    const app = document.querySelector('body');
-    app.innerHTML = Bizdayla.templates.App(context) + app.innerHTML;
+    // This will render the template defined by Videos.hbs and the partials it uses
+    const videos = document.querySelector('body');
+    videos.innerHTML = Bizdayla.templates.Videos(context) + videos.innerHTML;
   </script>
   <!-- Required vendor scripts (Do not remove) -->
   <script type="text/javascript" src="assets/js/jquery.min.js"></script>

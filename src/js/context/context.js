@@ -71,7 +71,7 @@ window.context = {
                 link: {
                     has_link: true,
                     title: "BizDay.LA Videos",
-                    url: "https://BizDay.LA/videos",
+                    url: "videos.html",
                 }
             },
             {
@@ -309,12 +309,12 @@ window.context = {
                     site: 'https://www.facebook.com/',
                 },
                 url_instagram: {
-                    has: false,
-                    site: 'https://www.instagram.com/',
+                    has: true,
+                    site: 'https://www.instagram.com/dammitBrandon/',
                 },
                 url_linkedin: {
-                    has: false,
-                    site: 'https://www.linkedin.com/in/',
+                    has: true,
+                    site: 'https://www.linkedin.com/in/brandon-bailey-3732885b/',
                 },
                 url_twitter: {
                     has: false,
@@ -419,8 +419,8 @@ window.context = {
             },
             {
                 id: 'speaker_3b-design-co_gp',
-                firstName: 'Georgette',
-                lastName: 'Perry',
+                firstName: 'Gette',
+                lastName: 'Demi',
                 company: {
                     has_site: true,
                     description: '',
@@ -560,6 +560,42 @@ window.context = {
             url: 'http://www.themetaphorclub.com'
         }        
     ],
+    video: {
+        header: "sollicitudin mi sit amet",
+        url_initial_video: "https://www.youtube.com/embed/Up0zcet90oI",
+        videos: [{
+                title: "They Might Be Giants",
+                presenter: "Vasily Chree",
+                url_image: "https://i.ytimg.com/an_webp/YJR-OeKzBtk/mqdefault_6s.webp?du=3000&sqp=CMr5jvEF&rs=AOn4CLAdLYANSQbE8qQ3YQNcLoFjiUYsUA",
+                url_video: "https://www.youtube.com/embed/YJR-OeKzBtk"
+            }, {
+                title: "British Intelligence",
+                presenter: "Paula Gawen",
+                url_image: "https://i.ytimg.com/an_webp/fYotx1Np908/mqdefault_6s_480x270.webp?du=3000&sqp=CLrXjvEF&rs=AOn4CLAwRIi2XkeoyesGiorvl5veSsICBA",
+                url_video: "https://www.youtube.com/embed/fYotx1Np908"
+            }, {
+                title: "Swing",
+                presenter: "Cassie O'Cannovane",
+                url_image: "https://i.ytimg.com/an_webp/YlHMo6tUpFY/mqdefault_6s_480x270.webp?du=3000&sqp=CNiNj_EF&rs=AOn4CLBDZwMQgri8ncTDTyiFV78dPVXjSw",
+                url_video: "https://www.youtube.com/embed/YlHMo6tUpFY"
+            }, {
+                title: "Baxter",
+                presenter: "Ricki Coltart",
+                url_image: "https://i.ytimg.com/an_webp/4mbwLP-NM1M/mqdefault_6s.webp?du=3000&sqp=COaGj_EF&rs=AOn4CLAjsH9OldJlSQLLVsfH5RqCuLloSg",
+                url_video: "https://www.youtube.com/embed/4mbwLP-NM1M"
+            }, {
+                title: "Thirteen Days",
+                presenter: "Ivonne Marson",
+                url_image: "https://i.ytimg.com/an_webp/ki9oY-dBqp8/mqdefault_6s.webp?du=3000&sqp=CK_2jvEF&rs=AOn4CLDv2kC-C31BwOt76NQYr91Q3US5Ew",
+                url_video: "https://www.youtube.com/embed/ki9oY-dBqp8"
+            }, {
+                title: "Sirocco",
+                presenter: "Linette Guinness",
+                url_image: "https://i.ytimg.com/an_webp/Ynawh8mGDSA/mqdefault_6s_480x270.webp?du=3000&sqp=CODljvEF&rs=AOn4CLCWUtBrYgo-r-PKDYn2JS5qSl0qKQ",
+                url_video: "https://www.youtube.com/embed/Ynawh8mGDSA"
+            }
+        ]
+    },
     footer: {
         email: {
             url: 'organizers@bizday.la',
