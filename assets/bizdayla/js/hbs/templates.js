@@ -326,7 +326,7 @@ Handlebars.registerPartial("speaker", Handlebars.template({"1":function(containe
 
   return "<section class=\"has-divider\">\r\n  <div class=\"divider flip-y\">\r\n    <img src=\"assets/img/dividers/divider-2.svg\" alt=\"\" data-inject-svg />\r\n  </div>\r\n"
     + ((stack1 = container.invokePartial(partials.page_title,depth0,{"name":"page_title","hash":{"text":"Organizers and Speakers","class":"bizday_speaker_page_title"},"data":data,"indent":"  ","helpers":helpers,"partials":partials,"decorators":container.decorators})) != null ? stack1 : "")
-    + ((stack1 = helpers.each.call(depth0 != null ? depth0 : (container.nullContext || {}),(depth0 != null ? depth0.speakers : depth0),{"name":"each","hash":{},"fn":container.program(2, data, 0),"inverse":container.noop,"data":data,"loc":{"start":{"line":7,"column":2},"end":{"line":37,"column":11}}})) != null ? stack1 : "")
+    + ((stack1 = helpers.each.call(depth0 != null ? depth0 : (container.nullContext || {}),(depth0 != null ? depth0.speakers : depth0),{"name":"each","hash":{},"fn":container.program(2, data, 0),"inverse":container.noop,"data":data,"loc":{"start":{"line":7,"column":2},"end":{"line":38,"column":11}}})) != null ? stack1 : "")
     + "</section>\r\n";
 },"2":function(container,depth0,helpers,partials,data) {
     var stack1, helper, alias1=depth0 != null ? depth0 : (container.nullContext || {}), alias2=container.hooks.helperMissing, alias3="function", alias4=container.escapeExpression;
@@ -343,10 +343,12 @@ Handlebars.registerPartial("speaker", Handlebars.template({"1":function(containe
     + alias4(((helper = (helper = helpers.firstName || (depth0 != null ? depth0.firstName : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"firstName","hash":{},"data":data,"loc":{"start":{"line":21,"column":15},"end":{"line":21,"column":28}}}) : helper)))
     + " "
     + alias4(((helper = (helper = helpers.lastName || (depth0 != null ? depth0.lastName : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"lastName","hash":{},"data":data,"loc":{"start":{"line":21,"column":29},"end":{"line":21,"column":41}}}) : helper)))
+    + "</div>\r\n          <div class=\"bizday_speaker_header_title mb-2\">"
+    + alias4(((helper = (helper = helpers.title || (depth0 != null ? depth0.title : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"title","hash":{},"data":data,"loc":{"start":{"line":22,"column":56},"end":{"line":22,"column":65}}}) : helper)))
     + "</div>\r\n        </div>\r\n        <div>\r\n"
-    + ((stack1 = helpers.each.call(alias1,(depth0 != null ? depth0.personalDescription : depth0),{"name":"each","hash":{},"fn":container.program(3, data, 0),"inverse":container.noop,"data":data,"loc":{"start":{"line":24,"column":10},"end":{"line":26,"column":19}}})) != null ? stack1 : "")
+    + ((stack1 = helpers.each.call(alias1,(depth0 != null ? depth0.personalDescription : depth0),{"name":"each","hash":{},"fn":container.program(3, data, 0),"inverse":container.noop,"data":data,"loc":{"start":{"line":25,"column":10},"end":{"line":27,"column":19}}})) != null ? stack1 : "")
     + "        </div>\r\n        <div>\r\n"
-    + ((stack1 = helpers.each.call(alias1,(depth0 != null ? depth0.talkDescription : depth0),{"name":"each","hash":{},"fn":container.program(3, data, 0),"inverse":container.noop,"data":data,"loc":{"start":{"line":29,"column":10},"end":{"line":31,"column":19}}})) != null ? stack1 : "")
+    + ((stack1 = helpers.each.call(alias1,(depth0 != null ? depth0.talkDescription : depth0),{"name":"each","hash":{},"fn":container.program(3, data, 0),"inverse":container.noop,"data":data,"loc":{"start":{"line":30,"column":10},"end":{"line":32,"column":19}}})) != null ? stack1 : "")
     + "        </div>\r\n"
     + ((stack1 = container.invokePartial(partials.socials,depth0,{"name":"socials","data":data,"indent":"        ","helpers":helpers,"partials":partials,"decorators":container.decorators})) != null ? stack1 : "")
     + "      </div>\r\n    </div>\r\n  </div>\r\n";
@@ -357,7 +359,7 @@ Handlebars.registerPartial("speaker", Handlebars.template({"1":function(containe
 },"compiler":[8,">= 4.3.0"],"main":function(container,depth0,helpers,partials,data) {
     var stack1;
 
-  return ((stack1 = helpers["with"].call(depth0 != null ? depth0 : (container.nullContext || {}),(depth0 != null ? depth0.speaker : depth0),{"name":"with","hash":{},"fn":container.program(1, data, 0),"inverse":container.noop,"data":data,"loc":{"start":{"line":1,"column":0},"end":{"line":39,"column":9}}})) != null ? stack1 : "");
+  return ((stack1 = helpers["with"].call(depth0 != null ? depth0 : (container.nullContext || {}),(depth0 != null ? depth0.speaker : depth0),{"name":"with","hash":{},"fn":container.program(1, data, 0),"inverse":container.noop,"data":data,"loc":{"start":{"line":1,"column":0},"end":{"line":40,"column":9}}})) != null ? stack1 : "");
 },"usePartial":true,"useData":true}));
 Handlebars.registerPartial("speakers", Handlebars.template({"1":function(container,depth0,helpers,partials,data,blockParams,depths) {
     var stack1, helper, alias1=depth0 != null ? depth0 : (container.nullContext || {});

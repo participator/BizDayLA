@@ -96,6 +96,9 @@ section.has-divider .bizday_speaker_container {
 .bizday_speaker_header {
     font-size: 1.88rem;
 }
+.bizday_speaker_header_title {
+    font-size: 1.2rem;
+}
 .bizday_speaker_description {
     font-size: 1.125rem;    
 }
