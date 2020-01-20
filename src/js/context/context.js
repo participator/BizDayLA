@@ -100,6 +100,52 @@ window.context = {
         url_speakers: 'speakers.html',
         speakers: [
             {
+                id: 'speaker_sw_ck',
+                firstName: 'Chef',
+                lastName: 'Kyndra',
+                title: 'Swift Cafe | Owner',
+                company: {
+                    has_site: true,
+                    description: '',
+                    name: 'Swift Cafe',
+                    site: 'https://swift-la.com/',
+                },
+                personalDescription: [
+                    'Chef Kyndra McCrary cultivated a deep love for cooking via her grandmother. A graduate of Le Cordon Bleu (Hollywood), her unique heritage of African, Irish, Panamanian, Jamaican & Native American has created a refined palate developed from a wide variety of ingredients and global travel.',
+                    'Chef Kyndra has cooked for Hollywood favorites such as Bill Handel, Halle Berry, Larenz Tate, Kendrick Lamar, YG, Tank & Sela Ward, as well as top execs from Oaktree Capital, Microsoft, Bing, Riveting Entertainment & PWC. As a resident of South Los Angeles, Kyndra strives to pour into her community by hiring local staff and working pro bono for community events. Her mission is to unite and educate people by exposing her clients to various cultures through the medium of food.'
+                ],
+                talkDescription: [],
+                image: 'assets/bizdayla/img/cropped_swift_chef_kyndra.png',
+                name_linkedin: '',
+                name_twitter: '',
+                name_instagram: '',
+                name_facebook: '',
+                url_github: {
+                    has: false,
+                    site: '',
+                },
+                url_facebook: {
+                    has: false,
+                    site: '',
+                },
+                url_instagram: {
+                    has: false,
+                    site: '',
+                },
+                url_linkedin: {
+                    has: false,
+                    site: 'https://www.linkedin.com/in/',
+                },
+                url_twitter: {
+                    has: false,
+                    site: 'https://twitter.com/',
+                },
+                website: {
+                    has: false,
+                    site: ''
+                }
+            },
+            {
                 id: 'speaker_vazell_vh',
                 firstName: 'Varell',
                 lastName: 'Hawkins',
@@ -520,19 +566,14 @@ window.context = {
             url: 'https://www.affluentsolution.com/'
         },
         {
-            image: 'assets/bizdayla/img/medley_logo.svg',
-            name: 'Medley',
-            url: 'https://www.medley-inc.com'
-        },
-        {
-            image: 'assets/bizdayla/img/vazell_logo.svg',
-            name: 'Vazell',
-            url: 'https://www.vazell.com'
-        },
-        {
             image: 'assets/bizdayla/img/bridgetown_partners_logo.svg',
             name: 'Bridgetown Partners',
             url: 'https://bridgetownpartners.com/'
+        },
+        {
+            image: 'assets/bizdayla/img/medley_logo.svg',
+            name: 'Medley',
+            url: 'https://www.medley-inc.com'
         },
         {
             image: 'assets/bizdayla/img/popup_cleanup_logo.svg',
@@ -541,10 +582,20 @@ window.context = {
             heightAdjust: 'bizday_sponsors_icon--height_adjust'
         },
         {
+            image: 'assets/bizdayla/img/swift_logo.svg',
+            name: 'Swift Cafe',
+            url: 'https://www.swift-la.com'
+        },
+        {
             image: 'assets/bizdayla/img/tutord_logo.png',
             name: 'TutorD',
             url: 'https://scholars.tutord.io/',
             heightAdjust: 'bizday_sponsors_icon--height_adjust'
+        },
+        {
+            image: 'assets/bizdayla/img/vazell_logo.svg',
+            name: 'Vazell',
+            url: 'https://www.vazell.com'
         }
     ],
     sponsors_venue: [
