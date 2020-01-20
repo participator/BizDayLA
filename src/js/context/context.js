@@ -328,6 +328,7 @@ window.context = {
                 id: 'speaker_medley_as',
                 firstName: 'Ashley',
                 lastName: 'Small',
+                title: 'Founder/CEO of Medley Inc.',
                 company: {
                     has_site: true,
                     description: '',
