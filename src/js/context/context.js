@@ -103,7 +103,7 @@ window.context = {
                 id: 'speaker_vazell_vh',
                 firstName: 'Varell',
                 lastName: 'Hawkins',
-                title: 'Vazell LLC | CEO',
+                title: 'Vazell LLC | Founder and CEO',
                 company: {
                     has_site: true,
                     description: '',
@@ -286,7 +286,7 @@ window.context = {
                 id: 'speaker_tutord_bb',
                 firstName: 'Brandon',
                 lastName: 'Bailey',
-                title: "Founder and CEO of TutorD and TutorD Scholars",
+                title: "TutorD and TutorD Scholars | Founder and CEO",
                 company: {
                     has_site: true,
                     description: '',
@@ -328,7 +328,7 @@ window.context = {
                 id: 'speaker_medley_as',
                 firstName: 'Ashley',
                 lastName: 'Small',
-                title: 'Founder/CEO of Medley Inc.',
+                title: 'Medley Inc. | Founder and CEO',
                 company: {
                     has_site: true,
                     description: '',
@@ -468,6 +468,7 @@ window.context = {
                 id: 'speaker_bp_rh',
                 firstName: 'Ray',
                 lastName: 'Hightower',
+                title: 'Bridgetown Partners | Founder and CEO',
                 company: {
                     has_site: true,
                     description: '',
