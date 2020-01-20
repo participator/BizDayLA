@@ -1,4 +1,6 @@
-node_modules
+node_modules/*
+!node_modules/gulp-gh-pages
+node_modules/gulp-gh-pages/node_modules
 .publish
 dist
 pages/assets/bizdayla
