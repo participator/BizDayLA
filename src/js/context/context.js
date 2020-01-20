@@ -354,12 +354,12 @@ window.context = {
                     site: 'https://www.facebook.com/',
                 },
                 url_instagram: {
-                    has: false,
-                    site: 'https://www.instagram.com/',
+                    has: true,
+                    site: 'https://www.instagram.com/dammitBrandon/',
                 },
                 url_linkedin: {
-                    has: false,
-                    site: 'https://www.linkedin.com/in/',
+                    has: true,
+                    site: 'https://www.linkedin.com/in/brandon-bailey-3732885b/',
                 },
                 url_twitter: {
                     has: false,
