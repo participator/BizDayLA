@@ -6,7 +6,7 @@
   typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports, require('aos'), require('jquery'), require('jquery-countdown'), require('scrollmonitor'), require('flickity'), require('ion-rangeslider'), require('isotope-layout'), require('jarallax'), require('plyr'), require('prismjs'), require('smooth-scroll'), require('@tanem/svg-injector'), require('twitter-fetcher'), require('typed.js'), require('smartwizard')) :
   typeof define === 'function' && define.amd ? define(['exports', 'aos', 'jquery', 'jquery-countdown', 'scrollmonitor', 'flickity', 'ion-rangeslider', 'isotope-layout', 'jarallax', 'plyr', 'prismjs', 'smooth-scroll', '@tanem/svg-injector', 'twitter-fetcher', 'typed.js', 'smartwizard'], factory) :
   (global = global || self, factory(global.theme = {}, global.AOS, global.jQuery, null, global.scrollMonitor, global.Flickity, null, global.Isotope, global.jarallax, global.Plyr, global.Prism, global.SmoothScroll, global.SVGInjector, global.twitterFetcher, global.Typed));
-}(this, function (exports, AOS, jQuery$1, jqueryCountdown, scrollMonitor, Flickity, ionRangeslider, Isotope$1, jarallax, Plyr, Prism, SmoothScroll, svgInjector, twitterFetcher, Typed) { 'use strict';
+}(this, (function (exports, AOS, jQuery$1, jqueryCountdown, scrollMonitor, Flickity, ionRangeslider, Isotope$1, jarallax, Plyr, Prism, SmoothScroll, svgInjector, twitterFetcher, Typed) { 'use strict';
 
   AOS = AOS && AOS.hasOwnProperty('default') ? AOS['default'] : AOS;
   jQuery$1 = jQuery$1 && jQuery$1.hasOwnProperty('default') ? jQuery$1['default'] : jQuery$1;
@@ -1203,7 +1203,7 @@
   }
 
   var flatpickr = createCommonjsModule(function (module, exports) {
-  /* flatpickr v4.6.2, @license MIT */
+  /* flatpickr v4.6.3, @license MIT */
   (function (global, factory) {
        module.exports = factory() ;
   }(commonjsGlobal, function () {
@@ -2538,6 +2538,9 @@
               return self.weekdayContainer;
           }
           function updateWeekdays() {
+              if (!self.weekdayContainer) {
+                  return;
+              }
               var firstDayOfWeek = self.l10n.firstDayOfWeek;
               var weekdays = self.l10n.weekdays.shorthand.slice();
               if (firstDayOfWeek > 0 && firstDayOfWeek < weekdays.length) {
@@ -2715,6 +2718,11 @@
                       return elem.contains(eventTarget_1);
                   });
                   if (lostFocus && isIgnored) {
+                      if (self.timeContainer !== undefined &&
+                          self.minuteElement !== undefined &&
+                          self.hourElement !== undefined) {
+                          updateTime();
+                      }
                       self.close();
                       if (self.config.mode === "range" && self.selectedDates.length === 1) {
                           self.clear(false);
@@ -2872,7 +2880,8 @@
                           e.preventDefault();
                           var delta = e.keyCode === 40 ? 1 : -1;
                           if ((self.daysContainer && e.target.$i !== undefined) ||
-                              e.target === self.input) {
+                              e.target === self.input ||
+                              e.target === self.altInput) {
                               if (e.ctrlKey) {
                                   e.stopPropagation();
                                   changeYear(self.currentYear - delta);
@@ -2915,8 +2924,6 @@
                               e.preventDefault();
                               self._input.focus();
                           }
-                          break;
-                      default:
                           break;
                   }
               }
@@ -3136,7 +3143,7 @@
                   set: minMaxDateSetter("max")
               });
               var minMaxTimeSetter = function (type) { return function (val) {
-                  self.config[type === "min" ? "_minTime" : "_maxTime"] = self.parseDate(val, "H:i");
+                  self.config[type === "min" ? "_minTime" : "_maxTime"] = self.parseDate(val, "H:i:S");
               }; };
               Object.defineProperty(self.config, "minTime", {
                   get: function () { return self.config._minTime; },
@@ -3219,7 +3226,7 @@
                   (configPosHorizontal != null && configPosHorizontal === "center"
                       ? (calendarWidth - inputBounds.width) / 2
                       : 0);
-              var right = window.document.body.offsetWidth - inputBounds.right;
+              var right = window.document.body.offsetWidth - (window.pageXOffset + inputBounds.right);
               var rightMost = left + calendarWidth > window.document.body.offsetWidth;
               var centerMost = right + calendarWidth > window.document.body.offsetWidth;
               toggleClass(self.calendarContainer, "rightMost", rightMost);
@@ -3390,8 +3397,6 @@
                           dates = inputDate
                               .split(self.l10n.rangeSeparator)
                               .map(function (date) { return self.parseDate(date, format); });
-                          break;
-                      default:
                           break;
                   }
               }
@@ -7599,5 +7604,5 @@
 
   Object.defineProperty(exports, '__esModule', { value: true });
 
-}));
+})));
 //# sourceMappingURL=theme.js.map
