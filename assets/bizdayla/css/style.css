@@ -168,7 +168,8 @@ a:focus {
     background-color: var(--primary-background);
     border-color: var(--primary-border);
 }
-.bizday_btn-primary:hover {
+.bizday_btn-primary:hover,
+.bizday_btn-primary:active.btn.btn-lg {
     background-color: var(--primary-background--hover);
     border-color: var(--primary-border--hover);
 }
@@ -176,7 +177,8 @@ a:focus {
     background-color: var(--secondary-background);
     border-color: var(--secondary-border);
 }
-.bizday_btn-secondary:hover {
+.bizday_btn-secondary:hover,
+.bizday_btn-secondary:active.btn.btn-lg {
     background-color: var(--secondary-background--hover);
     border-color: var(--secondary-border--hover);
 }
