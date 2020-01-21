@@ -65,34 +65,38 @@ window.context = {
         tab2_name: 'Virtual',
         events: [
             {
-                name: "Virtual",
+                name: "Virtual Sessions",
                 time: "9:00 AM - 5:00 PM",
-                description: "Video podcasts will be released here at 9 AM on January 23.",
+                description: "Video podcasts will be released on the BizDay.LA at 9 AM on January 23.",
                 link: {
-                    has_link: true,
+                    has_link: false,
                     title: "BizDay.LA Videos",
                     url: "#",
                 }
             },
             {
-                name: "Arrival",
+                name: "Welcome",
                 time: "6:30 PM - 7:00 PM",
-                description: "Arrive and network with your peers"
+                description: "Arrive at Hot & Cool, 4331 Degnan Blvd, Los Angeles, CA 90008.",
+                link: {
+                    has_link: true,
+                    url: 'https://goo.gl/maps/c1EZRpwsfZcW4oHc7'
+                }
             },
             {
                 name: "Lighting Talks",
                 time: "7:00 PM - 7:30 PM",
-                description: "Quick talks from our presenters"
+                description: "Join quick talks from our presenters."
             },
             {
                 name: "Networking Reception",
-                time: "7:30 PM - 9:00 PM",
-                description: "Network with your peers"
+                time: "7:30 PM - 8:45 PM",
+                description: "Network with your peers."
             },
             {
                 name: "Goodnight!",
-                time: "9:00 PM",
-                description: "Event ends"
+                time: "8:45 PM",
+                description: "Closing comments"
             }
         ]
     },
