@@ -199,7 +199,7 @@ window.context = {
                 company: {
                     has_site: false,
                     description: '',
-                    name: '',
+                    name: 'Business Strategist',
                     site: '',
                 },
                 personalDescription: [
@@ -222,12 +222,12 @@ window.context = {
                     site: 'https://www.instagram.com/',
                 },
                 url_linkedin: {
-                    has: false,
-                    site: 'https://www.linkedin.com/in/',
+                    has: true,
+                    site: 'https://www.linkedin.com/in/dawncomer',
                 },
                 url_twitter: {
-                    has: false,
-                    site: 'https://www.twitter.com/',
+                    has: true,
+                    site: 'https://twitter.com/lady_simone',
                 },
                 website: {
                     has: false,
@@ -238,6 +238,7 @@ window.context = {
                 id: 'speaker_as_jl',
                 firstName: 'Joseph',
                 lastName: 'Luckett',
+                title: '',
                 company: {
                     has_site: true,
                     description: 'Affluent Solution is an all in one software that provides businesses with marketing and advertising tools needed to thrive in a culture influenced by agile technological advancements. We give SMB’s the tools to plan and manage innovative digital marketing development strategies to deliver engaging new material, drive quality leads, and increase social engagement with a targeted demographic. We maximize key analytics to build organic promotional content pertinent to clients’ brands, and grow in the cloud.',
