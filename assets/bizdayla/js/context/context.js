@@ -90,12 +90,12 @@ window.context = {
             },
             {
                 name: "Networking Reception",
-                time: "7:30 PM - 9:00 PM",
+                time: "7:30 PM - 8:45 PM",
                 description: "Network with your peers."
             },
             {
                 name: "Goodnight!",
-                time: "9:00 PM",
+                time: "8:45 PM",
                 description: "Closing comments"
             }
         ]
