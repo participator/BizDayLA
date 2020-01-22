@@ -107,8 +107,9 @@ window.context = {
                 id: 'speaker_vazell_vh',
                 firstName: 'Varell',
                 lastName: 'Hawkins',
-                title: 'Vazell LLC | Founder and CEO',
+                title: 'Founder and CEO',
                 company: {
+                    has_company: true,
                     has_site: true,
                     description: '',
                     name: 'Vazell',
@@ -156,8 +157,9 @@ window.context = {
                 title: 'Business Strategist',
                 company: {
                     has_site: false,
+                    has_company: false,
                     description: '',
-                    name: 'Business Strategist',
+                    name: '',
                     site: '',
                 },
                 personalDescription: [
@@ -196,8 +198,9 @@ window.context = {
                 id: 'speaker_as_jl',
                 firstName: 'Joseph',
                 lastName: 'Luckett',
-                title: '',
+                title: 'Founder and CEO',
                 company: {
+                    has_company: true,
                     has_site: true,
                     description: 'Affluent Solution is an all in one software that provides businesses with marketing and advertising tools needed to thrive in a culture influenced by agile technological advancements. We give SMB’s the tools to plan and manage innovative digital marketing development strategies to deliver engaging new material, drive quality leads, and increase social engagement with a targeted demographic. We maximize key analytics to build organic promotional content pertinent to clients’ brands, and grow in the cloud.',
                     name: 'Affluent Solution',
@@ -248,8 +251,9 @@ window.context = {
                 id: 'speaker_popup_cleanup_kl',
                 firstName: 'Kenetia',
                 lastName: 'Lee',
-                title: 'PopUP CleanUP | Founder and CEO',
+                title: 'Founder and CEO',
                 company: {
+                    has_company: true,
                     has_site: true,
                     description: '',
                     name: 'PopUP CleanUP',
@@ -291,11 +295,12 @@ window.context = {
                 id: 'speaker_tutord_bb',
                 firstName: 'Brandon',
                 lastName: 'Bailey',
-                title: "TutorD and TutorD Scholars | Founder and CEO",
+                title: 'Founder and CEO',
                 company: {
+                    has_company: true,
                     has_site: true,
                     description: '',
-                    name: 'TutorD',
+                    name: 'TutorD and TutorD Scholars',
                     site: 'https://scholars.tutord.io/',
                 },
                 personalDescription: [
@@ -333,8 +338,9 @@ window.context = {
                 id: 'speaker_medley_as',
                 firstName: 'Ashley',
                 lastName: 'Small',
-                title: 'Medley Inc. | Founder and CEO',
+                title: 'Founder and CEO',
                 company: {
+                    has_company: true,
                     has_site: true,
                     description: '',
                     name: 'Medley Inc.',
@@ -376,7 +382,9 @@ window.context = {
                 id: 'speaker_dreamfree_me',
                 firstName: 'Michael',
                 lastName: 'Evans',
+                title: 'Founder and CEO',
                 company: {
+                    has_company: true,
                     has_site: false,
                     description: '',
                     name: 'Dreamfree',
@@ -426,7 +434,9 @@ window.context = {
                 id: 'speaker_3b-design-co_gp',
                 firstName: 'Georgette',
                 lastName: 'Perry',
+                title: 'Founder and CEO',
                 company: {
+                    has_company: true,
                     has_site: true,
                     description: '',
                     name: '3B Design Co.',
@@ -473,8 +483,9 @@ window.context = {
                 id: 'speaker_bp_rh',
                 firstName: 'Ray',
                 lastName: 'Hightower',
-                title: 'Bridgetown Partners | Founder and CEO',
+                title: 'Founder and CEO',
                 company: {
+                    has_company: true,
                     has_site: true,
                     description: '',
                     name: 'Bridgetown Partners',

@@ -19,7 +19,13 @@
       <div class="col-xl-5 col-md-6">
         <div class="bizday_speaker_header">
           <div>{{firstName}} {{lastName}}</div>
-          <div class="bizday_speaker_header_title mb-2">{{title}}</div>
+          <div class="bizday_speaker_header_title mb-2">
+            {{#if company.has_company}}
+              {{company.name }} | {{title}}
+            {{else}}
+              {{title}}
+            {{/if}}
+          </div>
         </div>
         <div>
           {{#each personalDescription}}
