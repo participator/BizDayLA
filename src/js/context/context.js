@@ -107,8 +107,9 @@ window.context = {
                 id: 'speaker_sw_ck',
                 firstName: 'Chef',
                 lastName: 'Kyndra',
-                title: 'Swift Cafe | Owner',
+                title: 'Owner',
                 company: {
+                    has_company: true,
                     has_site: true,
                     description: '',
                     name: 'Swift Cafe',
@@ -120,10 +121,6 @@ window.context = {
                 ],
                 talkDescription: [],
                 image: 'assets/bizdayla/img/cropped_swift_chef_kyndra.png',
-                name_linkedin: '',
-                name_twitter: '',
-                name_instagram: '',
-                name_facebook: '',
                 url_github: {
                     has: false,
                     site: '',
@@ -168,9 +165,6 @@ window.context = {
 
                 ],
                 image: 'assets/bizdayla/img/cropped_vazell_varell_hawkins.png',
-                name_github: 'participator',
-                name_linkedin: 'vjhawkins',
-                name_twitter: 'vjhawkins1',
                 url_github: {
                     has: true,
                     site: 'https://www.github.com/participator',
@@ -260,10 +254,6 @@ window.context = {
                     "With Reputation Management, you can keep on top of online activity affecting the reputation of a business, including reviews, listings, and social media, helping you make expert recommendations, and provide proof-of-performance."
                 ],
                 image: 'assets/bizdayla/img/cropped_as_joseph_luckett.png',
-                name_linkedin: '',
-                name_twitter: '',
-                name_instagram: '',
-                name_facebook: '',
                 url_github: {
                     has: false,
                     site: 'https://www.github.com/',
@@ -443,10 +433,6 @@ window.context = {
 
                 ],
                 image: 'assets/bizdayla/img/cropped_dreamfree_michael_evans_.png',
-                name_linkedin: '',
-                name_twitter: '',
-                name_instagram: '',
-                name_facebook: '',
                 url_github: {
                     has: false,
                     site: 'https://www.github.com/',
@@ -544,10 +530,6 @@ window.context = {
                     'Nine out of ten startups fail in the first year. Why? More important, what can we do to improve the odds? For answers, we might explore "The Four Steps to the Epiphany", a classic book of entrepreneurship and the original source of the term minimum viable product (MVP). This presentation will describe actions that leaders can take right now to raise the odds of startup success, including how and why to build an MVP.'
                 ],
                 image: 'assets/bizdayla/img/cropped_bridgetown_ray_hightower.png',
-                name_linkedin: '',
-                name_twitter: '',
-                name_instagram: '',
-                name_facebook: '',
                 url_github: {
                     has: true,
                     site: 'https://github.com/rayhightower',
