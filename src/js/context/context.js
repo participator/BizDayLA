@@ -681,6 +681,13 @@ window.context = {
                 url_image: "https://i.ytimg.com/vi/Zwuz5cbP_O8/hqdefault.jpg?sqp=-oaymwEZCNACELwBSFXyq4qpAwsIARUAAIhCGAFwAQ==&rs=AOn4CLDNsknq6TIN_DzJDVGjbS-iALfdKg",
                 url_video: "https://www.youtube.com/embed/Zwuz5cbP_O8"
             },
+            {
+                title: "Joseph Luckett, Founder & CEO, Affluent Solution Group",
+                is_interview: true,
+                interviewer: "Ray Hightower",
+                url_image: "https://i.ytimg.com/vi/hFVlFgCPjXA/hqdefault.jpg?sqp=-oaymwEZCNACELwBSFXyq4qpAwsIARUAAIhCGAFwAQ==&rs=AOn4CLBfQ4DizjnaEDnDCrgCTi3Hm71r7g",
+                url_video: "https://www.youtube.com/embed/hFVlFgCPjXA"
+            }
         ]
     },
     footer: {
