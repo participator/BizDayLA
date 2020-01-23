@@ -2,6 +2,10 @@ window.context = {
     ctaText: 'Register',
     orgName: 'BizDay',
     url_cta: 'https://www.eventbrite.com/e/bizdayla-tickets-85448796651',
+    banner: {
+        url: '/videos.html',
+        text: 'Click to view BizDay.LA interviews!'
+    },
     codeOfConduct: {
         email: 'organizers@bizdayla.com',
         feedback: 'If you have questions or comments regarding our code of conduct, please email us at',
@@ -669,6 +673,13 @@ window.context = {
                 interviewer: "Dawn Comer",
                 url_image: "https://i.ytimg.com/vi/34Slnjs2J9s/hqdefault.jpg?sqp=-oaymwEZCNACELwBSFXyq4qpAwsIARUAAIhCGAFwAQ==&rs=AOn4CLCvPHfRpHnc4a7nHqcy8s_4WE-iFw",
                 url_video: "https://www.youtube.com/embed/34Slnjs2J9s"
+            },
+            {
+                title: "Kenetia Lee, CEO of PopUP CleanUP",
+                is_interview: true,
+                interviewer: "Ashley Small",
+                url_image: "https://i.ytimg.com/vi/Zwuz5cbP_O8/hqdefault.jpg?sqp=-oaymwEZCNACELwBSFXyq4qpAwsIARUAAIhCGAFwAQ==&rs=AOn4CLDNsknq6TIN_DzJDVGjbS-iALfdKg",
+                url_video: "https://www.youtube.com/embed/Zwuz5cbP_O8"
             },
         ]
     },

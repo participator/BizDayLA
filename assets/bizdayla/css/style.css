@@ -49,6 +49,26 @@
     background-color: var(--nav_blue);
     color: var(--white);
 }
+.bizday_banner {
+    position: fixed;
+    text-align: center;
+    background: var(--primary-2);
+    width: 100%;
+    z-index: 9999;
+    padding: 0;
+    top: 4em;
+}
+.bizday_banner_not_found {
+    position: fixed;
+    text-align: center;
+    background: var(--primary-2);
+    width: 100%;
+    z-index: 9999;
+    padding: 0;
+}
+.bizday_banner_link {
+    color: white;
+}
 .bizday_hero {
     background-color: var(--hero_blue)!important;
 }
@@ -156,9 +176,6 @@ section.bizday_videos {
     align-items: center;
     flex-direction: column;
 }
-.bizday_videos_player {
-
-}
 .bizday_videos_player_viewer {
     height: 400px;
     width: 600px;
@@ -204,7 +221,7 @@ a:focus {
 }
 .divider.flip-y {
     padding: 0;
-    height: 70px;
+    height: 100px;
 }
 .bizday_btn-primary {
     background-color: var(--primary-background);
