@@ -104,6 +104,48 @@ window.context = {
         url_speakers: 'speakers.html',
         speakers: [
             {
+                id: 'speaker_hc_tj',
+                firstName: 'Tony',
+                lastName: 'Jolly',
+                title: 'Owner',
+                company: {
+                    has_company: true,
+                    has_site: true,
+                    description: '',
+                    name: 'Hot & Cool Cafe',
+                    site: 'https://hotandcoolcafe.com/',
+                },
+                personalDescription: [
+                    "Tony Jolly's goal is to provide crop-to-cup coffee experiences for coffee lovers & novices alike. Hot and Cool Cafe is the embodiment of Tony's vision. Tony is a 20+ year veteran of the coffee industry, with experience in coffeehouse management, marketing & advertising, and general operations. He has worked with coffee farmers in Ethiopia and coffee sellers across the USA. Through Hot and Cool Cafe, Tony and his team have built a creative space that feels like a home away from home. Visit soon!",
+                ],
+                talkDescription: [],
+                image: 'assets/bizdayla/img/cropped_hot_and_cool_cafe_tony_jolly.png',
+                url_github: {
+                    has: false,
+                    site: '',
+                },
+                url_facebook: {
+                    has: false,
+                    site: '',
+                },
+                url_instagram: {
+                    has: false,
+                    site: '',
+                },
+                url_linkedin: {
+                    has: false,
+                    site: 'https://www.linkedin.com/in/',
+                },
+                url_twitter: {
+                    has: false,
+                    site: 'https://twitter.com/',
+                },
+                website: {
+                    has: false,
+                    site: ''
+                }
+            },
+            {
                 id: 'speaker_sw_ck',
                 firstName: 'Chef',
                 lastName: 'Kyndra',
