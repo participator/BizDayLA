@@ -176,9 +176,6 @@ section.bizday_videos {
     align-items: center;
     flex-direction: column;
 }
-.bizday_videos_player {
-
-}
 .bizday_videos_player_viewer {
     height: 400px;
     width: 600px;
@@ -224,7 +221,7 @@ a:focus {
 }
 .divider.flip-y {
     padding: 0;
-    height: 70px;
+    height: 100px;
 }
 .bizday_btn-primary {
     background-color: var(--primary-background);
