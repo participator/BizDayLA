@@ -50,13 +50,21 @@
     color: var(--white);
 }
 .bizday_banner {
-    padding: 0.5em;
-    position: relative;
+    position: fixed;
     text-align: center;
-    top: 70px;
     background: var(--primary-2);
     width: 100%;
-    z-index: 3;
+    z-index: 9999;
+    padding: 0;
+    top: 4em;
+}
+.bizday_banner_not_found {
+    position: fixed;
+    text-align: center;
+    background: var(--primary-2);
+    width: 100%;
+    z-index: 9999;
+    padding: 0;
 }
 .bizday_banner_link {
     color: white;
