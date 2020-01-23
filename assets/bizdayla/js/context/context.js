@@ -663,6 +663,13 @@ window.context = {
                 url_image: "https://i.ytimg.com/vi/GdYMm3ag1hk/hqdefault.jpg?sqp=-oaymwEZCNACELwBSFXyq4qpAwsIARUAAIhCGAFwAQ==&rs=AOn4CLAfxwh9PkqZctx-biuC0uoJbnGGjw",
                 url_video: "https://www.youtube.com/embed/GdYMm3ag1hk"
             },
+            {
+                title: "Brandon Bailey, Founder & CEO, TutorD and TutorD Scholars",
+                is_interview: true,
+                interviewer: "Dawn Comer",
+                url_image: "https://i.ytimg.com/vi/34Slnjs2J9s/hqdefault.jpg?sqp=-oaymwEZCNACELwBSFXyq4qpAwsIARUAAIhCGAFwAQ==&rs=AOn4CLCvPHfRpHnc4a7nHqcy8s_4WE-iFw",
+                url_video: "https://www.youtube.com/embed/34Slnjs2J9s"
+            },
         ]
     },
     footer: {
