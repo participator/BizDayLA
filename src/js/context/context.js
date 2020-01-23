@@ -480,10 +480,6 @@ window.context = {
                     'Nine out of ten startups fail in the first year. Why? More important, what can we do to improve the odds? For answers, we might explore "The Four Steps to the Epiphany", a classic book of entrepreneurship and the original source of the term minimum viable product (MVP). This presentation will describe actions that leaders can take right now to raise the odds of startup success, including how and why to build an MVP.'
                 ],
                 image: 'assets/bizdayla/img/cropped_bridgetown_ray_hightower.png',
-                name_linkedin: '',
-                name_twitter: '',
-                name_instagram: '',
-                name_facebook: '',
                 url_github: {
                     has: true,
                     site: 'https://github.com/rayhightower',
@@ -562,32 +558,38 @@ window.context = {
     video: {
         header: "sollicitudin mi sit amet",
         url_initial_video: "https://www.youtube.com/embed/Up0zcet90oI",
-        videos: [{
+        videos: [
+            {
                 title: "They Might Be Giants",
                 presenter: "Vasily Chree",
                 url_image: "https://i.ytimg.com/an_webp/YJR-OeKzBtk/mqdefault_6s.webp?du=3000&sqp=CMr5jvEF&rs=AOn4CLAdLYANSQbE8qQ3YQNcLoFjiUYsUA",
                 url_video: "https://www.youtube.com/embed/YJR-OeKzBtk"
-            }, {
+            }, 
+            {
                 title: "British Intelligence",
                 presenter: "Paula Gawen",
                 url_image: "https://i.ytimg.com/an_webp/fYotx1Np908/mqdefault_6s_480x270.webp?du=3000&sqp=CLrXjvEF&rs=AOn4CLAwRIi2XkeoyesGiorvl5veSsICBA",
                 url_video: "https://www.youtube.com/embed/fYotx1Np908"
-            }, {
+            },
+            {
                 title: "Swing",
                 presenter: "Cassie O'Cannovane",
                 url_image: "https://i.ytimg.com/an_webp/YlHMo6tUpFY/mqdefault_6s_480x270.webp?du=3000&sqp=CNiNj_EF&rs=AOn4CLBDZwMQgri8ncTDTyiFV78dPVXjSw",
                 url_video: "https://www.youtube.com/embed/YlHMo6tUpFY"
-            }, {
+            },
+            {
                 title: "Baxter",
                 presenter: "Ricki Coltart",
                 url_image: "https://i.ytimg.com/an_webp/4mbwLP-NM1M/mqdefault_6s.webp?du=3000&sqp=COaGj_EF&rs=AOn4CLAjsH9OldJlSQLLVsfH5RqCuLloSg",
                 url_video: "https://www.youtube.com/embed/4mbwLP-NM1M"
-            }, {
+            },
+            {
                 title: "Thirteen Days",
                 presenter: "Ivonne Marson",
                 url_image: "https://i.ytimg.com/an_webp/ki9oY-dBqp8/mqdefault_6s.webp?du=3000&sqp=CK_2jvEF&rs=AOn4CLDv2kC-C31BwOt76NQYr91Q3US5Ew",
                 url_video: "https://www.youtube.com/embed/ki9oY-dBqp8"
-            }, {
+            },
+            {
                 title: "Sirocco",
                 presenter: "Linette Guinness",
                 url_image: "https://i.ytimg.com/an_webp/Ynawh8mGDSA/mqdefault_6s_480x270.webp?du=3000&sqp=CODljvEF&rs=AOn4CLCWUtBrYgo-r-PKDYn2JS5qSl0qKQ",

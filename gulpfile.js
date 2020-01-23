@@ -230,7 +230,7 @@ gulp.task('bizdayla_js_context', () => {
 });
 
 // Copy custom js to pages
-gulp.task('bizdayla_js_context', () => {
+gulp.task('bizdayla_js_custom', () => {
   return gulp.src(paths.src.bizdayla_js_custom)
     .pipe(gulp.dest(paths.pages.bizdayla_js_custom))
 });
@@ -533,6 +533,6 @@ gulp.task('watch', function (done) {
 
 });
 
-gulp.task('default', gulp.series('clean:dist', 'deps', gulp.series('src_html_to_pages_html', 'src_img_to_pages_img', 'bizdayla_css', 'bizdayla_favicon', 'bizdayla_fonts', 'bizdayla_js_context', 'bizdayla_js_hbs','sass', 'sass-min', 'bootstrapjs', 'mrarejs'), gulp.parallel('html', 'copy-assets'), gulp.series('configs', 'serve', 'watch')));
+gulp.task('default', gulp.series('clean:dist', 'deps', gulp.series('src_html_to_pages_html', 'src_img_to_pages_img', 'bizdayla_css', 'bizdayla_favicon', 'bizdayla_fonts', 'bizdayla_js_custom', 'bizdayla_js_context', 'bizdayla_js_hbs','sass', 'sass-min', 'bootstrapjs', 'mrarejs'), gulp.parallel('html', 'copy-assets'), gulp.series('configs', 'serve', 'watch')));
 
-gulp.task('build', gulp.series('clean:dist', 'deps', gulp.series('src_html_to_pages_html', 'src_img_to_pages_img', 'bizdayla_css', 'bizdayla_favicon',  'bizdayla_fonts', 'bizdayla_js_context', 'bizdayla_js_hbs', 'sass', 'sass-min', 'bootstrapjs', 'mrarejs'), gulp.parallel('html', 'copy-assets'), gulp.series('configs', 'deploy')));
+gulp.task('build', gulp.series('clean:dist', 'deps', gulp.series('src_html_to_pages_html', 'src_img_to_pages_img', 'bizdayla_css', 'bizdayla_favicon',  'bizdayla_fonts', 'bizdayla_js_custom', 'bizdayla_js_context', 'bizdayla_js_hbs', 'sass', 'sass-min', 'bootstrapjs', 'mrarejs'), gulp.parallel('html', 'copy-assets'), gulp.series('configs', 'deploy')));
