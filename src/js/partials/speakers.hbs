@@ -13,6 +13,7 @@
         <div>
             <h5 class="mb-0">{{firstName}} {{lastName}}</h5>
               <h6 class="mb-1">
+                {{#if company.has_company}}
                 {{#with company}}
                   {{#if has_site}}
                     <a class="bizday_speakers_company_website_icon" href="{{site}}">
@@ -23,6 +24,9 @@
                     <span>{{name}}</span>
                   {{/if}}
                 {{/with}}
+                {{else}}
+                  <span>{{title}}</span>
+                {{/if}}
               </h6>
             {{> socials}}
         </div>

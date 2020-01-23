@@ -65,34 +65,42 @@ window.context = {
         tab2_name: 'Virtual',
         events: [
             {
-                name: "Virtual",
+                name: "Virtual Sessions",
                 time: "9:00 AM - 5:00 PM",
-                description: "Video podcasts will be released here at 9 AM on January 23.",
+                description: "Video podcasts will be released on the BizDay.LA at 9 AM on January 23.",
                 link: {
-                    has_link: true,
+                    has_link: false,
                     title: "BizDay.LA Videos",
+<<<<<<< HEAD
                     url: "videos.html",
+=======
+                    url: "#",
+>>>>>>> master
                 }
             },
             {
-                name: "Arrival",
+                name: "Welcome",
                 time: "6:30 PM - 7:00 PM",
-                description: "Arrive and network with your peers"
+                description: "Arrive at Hot & Cool, 4331 Degnan Blvd, Los Angeles, CA 90008.",
+                link: {
+                    has_link: true,
+                    url: 'https://goo.gl/maps/c1EZRpwsfZcW4oHc7'
+                }
             },
             {
                 name: "Lighting Talks",
                 time: "7:00 PM - 7:30 PM",
-                description: "Quick talks from our presenters"
+                description: "Join quick talks from our presenters."
             },
             {
                 name: "Networking Reception",
-                time: "7:30 PM - 9:00 PM",
-                description: "Network with your peers"
+                time: "7:30 PM - 8:45 PM",
+                description: "Network with your peers."
             },
             {
                 name: "Goodnight!",
-                time: "9:00 PM",
-                description: "Event ends"
+                time: "8:45 PM",
+                description: "Closing comments"
             }
         ]
     },
@@ -100,11 +108,101 @@ window.context = {
         url_speakers: 'speakers.html',
         speakers: [
             {
+                id: 'speaker_hc_tj',
+                firstName: 'Tony',
+                lastName: 'Jolly',
+                title: 'Owner',
+                company: {
+                    has_company: true,
+                    has_site: true,
+                    description: '',
+                    name: 'Hot & Cool Cafe',
+                    site: 'https://hotandcoolcafe.com/',
+                },
+                personalDescription: [
+                    "Tony Jolly's goal is to provide crop-to-cup coffee experiences for coffee lovers & novices alike. Hot and Cool Cafe is the embodiment of Tony's vision. Tony is a 20+ year veteran of the coffee industry, with experience in coffeehouse management, marketing & advertising, and general operations. He has worked with coffee farmers in Ethiopia and coffee sellers across the USA. Through Hot and Cool Cafe, Tony and his team have built a creative space that feels like a home away from home. Visit soon!",
+                ],
+                talkDescription: [],
+                image: 'assets/bizdayla/img/cropped_hot_and_cool_cafe_tony_jolly.png',
+                url_github: {
+                    has: false,
+                    site: '',
+                },
+                url_facebook: {
+                    has: false,
+                    site: '',
+                },
+                url_instagram: {
+                    has: false,
+                    site: '',
+                },
+                url_linkedin: {
+                    has: false,
+                    site: 'https://www.linkedin.com/in/',
+                },
+                url_twitter: {
+                    has: false,
+                    site: 'https://twitter.com/',
+                },
+                website: {
+                    has: false,
+                    site: ''
+                }
+            },
+            {
+                id: 'speaker_sw_ck',
+                firstName: 'Chef',
+                lastName: 'Kyndra',
+                title: 'Owner',
+                company: {
+                    has_company: true,
+                    has_site: true,
+                    description: '',
+                    name: 'Swift Cafe',
+                    site: 'https://swift-la.com/',
+                },
+                personalDescription: [
+                    'Chef Kyndra McCrary cultivated a deep love for cooking via her grandmother. A graduate of Le Cordon Bleu (Hollywood), her unique heritage of African, Irish, Panamanian, Jamaican & Native American has created a refined palate developed from a wide variety of ingredients and global travel.',
+                    'Chef Kyndra has cooked for Hollywood favorites such as Bill Handel, Halle Berry, Larenz Tate, Kendrick Lamar, YG, Tank & Sela Ward, as well as top execs from Oaktree Capital, Microsoft, Bing, Riveting Entertainment & PWC. As a resident of South Los Angeles, Kyndra strives to pour into her community by hiring local staff and working pro bono for community events. Her mission is to unite and educate people by exposing her clients to various cultures through the medium of food.'
+                ],
+                talkDescription: [],
+                image: 'assets/bizdayla/img/cropped_swift_chef_kyndra.png',
+                url_github: {
+                    has: false,
+                    site: '',
+                },
+                url_facebook: {
+                    has: false,
+                    site: '',
+                },
+                url_instagram: {
+                    has: false,
+                    site: '',
+                },
+                url_linkedin: {
+                    has: false,
+                    site: 'https://www.linkedin.com/in/',
+                },
+                url_twitter: {
+                    has: false,
+                    site: 'https://twitter.com/',
+                },
+                website: {
+                    has: false,
+                    site: ''
+                }
+            },
+            {
                 id: 'speaker_vazell_vh',
                 firstName: 'Varell',
                 lastName: 'Hawkins',
+<<<<<<< HEAD
                 title: 'Vazell LLC | CEO',
+=======
+                title: 'Founder and CEO',
+>>>>>>> master
                 company: {
+                    has_company: true,
                     has_site: true,
                     description: '',
                     name: 'Vazell',
@@ -117,9 +215,6 @@ window.context = {
 
                 ],
                 image: 'assets/bizdayla/img/cropped_vazell_varell_hawkins.png',
-                name_github: 'participator',
-                name_linkedin: 'vjhawkins',
-                name_twitter: 'vjhawkins1',
                 url_github: {
                     has: true,
                     site: 'https://www.github.com/participator',
@@ -152,6 +247,7 @@ window.context = {
                 title: 'Business Strategist',
                 company: {
                     has_site: false,
+                    has_company: false,
                     description: '',
                     name: '',
                     site: '',
@@ -176,12 +272,12 @@ window.context = {
                     site: 'https://www.instagram.com/',
                 },
                 url_linkedin: {
-                    has: false,
-                    site: 'https://www.linkedin.com/in/',
+                    has: true,
+                    site: 'https://www.linkedin.com/in/dawncomer',
                 },
                 url_twitter: {
-                    has: false,
-                    site: 'https://www.twitter.com/',
+                    has: true,
+                    site: 'https://twitter.com/lady_simone',
                 },
                 website: {
                     has: false,
@@ -192,7 +288,9 @@ window.context = {
                 id: 'speaker_as_jl',
                 firstName: 'Joseph',
                 lastName: 'Luckett',
+                title: 'Founder and CEO',
                 company: {
+                    has_company: true,
                     has_site: true,
                     description: 'Affluent Solution is an all in one software that provides businesses with marketing and advertising tools needed to thrive in a culture influenced by agile technological advancements. We give SMB’s the tools to plan and manage innovative digital marketing development strategies to deliver engaging new material, drive quality leads, and increase social engagement with a targeted demographic. We maximize key analytics to build organic promotional content pertinent to clients’ brands, and grow in the cloud.',
                     name: 'Affluent Solution',
@@ -206,10 +304,6 @@ window.context = {
                     "With Reputation Management, you can keep on top of online activity affecting the reputation of a business, including reviews, listings, and social media, helping you make expert recommendations, and provide proof-of-performance."
                 ],
                 image: 'assets/bizdayla/img/cropped_as_joseph_luckett.png',
-                name_linkedin: '',
-                name_twitter: '',
-                name_instagram: '',
-                name_facebook: '',
                 url_github: {
                     has: false,
                     site: 'https://www.github.com/',
@@ -243,8 +337,13 @@ window.context = {
                 id: 'speaker_popup_cleanup_kl',
                 firstName: 'Kenetia',
                 lastName: 'Lee',
+<<<<<<< HEAD
                 title: 'PopUP CleanUP | Founder and CEO',
+=======
+                title: 'Founder and CEO',
+>>>>>>> master
                 company: {
+                    has_company: true,
                     has_site: true,
                     description: '',
                     name: 'PopUP CleanUP',
@@ -286,11 +385,16 @@ window.context = {
                 id: 'speaker_tutord_bb',
                 firstName: 'Brandon',
                 lastName: 'Bailey',
+<<<<<<< HEAD
                 title: "Founder and CEO of TutorD and TutorD Scholars",
+=======
+                title: 'Founder and CEO',
+>>>>>>> master
                 company: {
+                    has_company: true,
                     has_site: true,
                     description: '',
-                    name: 'TutorD',
+                    name: 'TutorD and TutorD Scholars',
                     site: 'https://scholars.tutord.io/',
                 },
                 personalDescription: [
@@ -328,7 +432,9 @@ window.context = {
                 id: 'speaker_medley_as',
                 firstName: 'Ashley',
                 lastName: 'Small',
+                title: 'Founder and CEO',
                 company: {
+                    has_company: true,
                     has_site: true,
                     description: '',
                     name: 'Medley Inc.',
@@ -370,7 +476,9 @@ window.context = {
                 id: 'speaker_dreamfree_me',
                 firstName: 'Michael',
                 lastName: 'Evans',
+                title: 'Founder and CEO',
                 company: {
+                    has_company: true,
                     has_site: false,
                     description: '',
                     name: 'Dreamfree',
@@ -383,10 +491,6 @@ window.context = {
 
                 ],
                 image: 'assets/bizdayla/img/cropped_dreamfree_michael_evans_.png',
-                name_linkedin: '',
-                name_twitter: '',
-                name_instagram: '',
-                name_facebook: '',
                 url_github: {
                     has: false,
                     site: 'https://www.github.com/',
@@ -420,7 +524,12 @@ window.context = {
                 id: 'speaker_3b-design-co_gp',
                 firstName: 'Gette',
                 lastName: 'Demi',
+<<<<<<< HEAD
+=======
+                title: 'Founder and CEO',
+>>>>>>> master
                 company: {
+                    has_company: true,
                     has_site: true,
                     description: '',
                     name: '3B Design Co.',
@@ -467,7 +576,9 @@ window.context = {
                 id: 'speaker_bp_rh',
                 firstName: 'Ray',
                 lastName: 'Hightower',
+                title: 'Founder and CEO',
                 company: {
+                    has_company: true,
                     has_site: true,
                     description: '',
                     name: 'Bridgetown Partners',
@@ -514,19 +625,14 @@ window.context = {
             url: 'https://www.affluentsolution.com/'
         },
         {
-            image: 'assets/bizdayla/img/medley_logo.svg',
-            name: 'Medley',
-            url: 'https://www.medley-inc.com'
-        },
-        {
-            image: 'assets/bizdayla/img/vazell_logo.svg',
-            name: 'Vazell',
-            url: 'https://www.vazell.com'
-        },
-        {
             image: 'assets/bizdayla/img/bridgetown_partners_logo.svg',
             name: 'Bridgetown Partners',
             url: 'https://bridgetownpartners.com/'
+        },
+        {
+            image: 'assets/bizdayla/img/medley_logo.svg',
+            name: 'Medley',
+            url: 'https://www.medley-inc.com'
         },
         {
             image: 'assets/bizdayla/img/popup_cleanup_logo.svg',
@@ -535,10 +641,20 @@ window.context = {
             heightAdjust: 'bizday_sponsors_icon--height_adjust'
         },
         {
+            image: 'assets/bizdayla/img/swift_logo.svg',
+            name: 'Swift Cafe',
+            url: 'https://www.swift-la.com'
+        },
+        {
             image: 'assets/bizdayla/img/tutord_logo.png',
             name: 'TutorD',
             url: 'https://scholars.tutord.io/',
             heightAdjust: 'bizday_sponsors_icon--height_adjust'
+        },
+        {
+            image: 'assets/bizdayla/img/vazell_logo.svg',
+            name: 'Vazell',
+            url: 'https://www.vazell.com'
         }
     ],
     sponsors_venue: [
