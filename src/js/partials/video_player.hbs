@@ -1,0 +1,20 @@
+{{#with video}}
+<section class="container mx-auto bizday_videos">
+    <h1 class="bizday_videos_page_title">{{header}}</h1>
+    <div class="bizday_videos_player">
+        <iframe class="bizday_videos_player_viewer" name="video_player_viewer" width="560" height="315" src="{{url_initial_video}}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+    <h2 class="bizday_videos_secondary_title">Select a Video</h2>
+    <div class="bizday_videos_items">
+        {{#each videos}}
+        <a class="bizday_videos_item col-lg-2 col-md-3 col-sm-1" href="{{url_video}}" target="video_player_viewer">
+            <img class="bizday_videos_item_title" src="{{url_image}}" alt="">
+            <p class="bizday_videos_item_title">{{title}}</p>
+            {{#if is_interview}}
+            <p class="bizday_videos_item_interviewer">Interviewed by {{interviewer}}</p>
+            {{/if}}
+        </a>
+        {{/each}}
+    </div>
+</section>
+{{/with}}

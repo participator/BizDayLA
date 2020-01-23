@@ -1,17 +1,20 @@
 {{#with footer}}
 <footer class="pb-4 bg-primary-3 text-light" id="footer">
   <div class="container">
-    <div class="row mb-1">
-      <div class="col-6 col-lg text-center">
-        <h5>Contact</h5>
-        <ul class="list-unstyled">
-          <li class="mb-3 d-flex justify-content-center">
-            <img class="icon" src="assets/img/icons/theme/communication/mail.svg" alt="" data-inject-svg />
-            <div class="ml-3">
-              <a href="mailto:{{email}}">{{email}}</a>
-            </div>
-          </li>
-        </ul>
+    <div class="row mb-3">
+      <div class="col-lg text-center">
+        {{#with codeOfConduct}}
+        <a href="{{url}}">
+          {{title}}
+        </a>
+        {{/with}}
+      </div>
+    </div>
+    <div class="row mb-4">
+      <div class="col-lg text-center">
+      {{#with email}}
+        <a href="mailto:{{url}}">{{title}}</a>
+      {{/with}}
       </div>
     </div>
     <div class="row justify-content-center mb-2">

@@ -73,9 +73,9 @@ window.context = {
                 time: "9:00 AM - 5:00 PM",
                 description: "Video podcasts will be released on the BizDay.LA at 9 AM on January 23.",
                 link: {
-                    has_link: false,
+                    has_link: true,
                     title: "BizDay.LA Videos",
-                    url: "#",
+                    url: "videos.html",
                 }
             },
             {
@@ -656,6 +656,26 @@ window.context = {
             url: 'http://www.themetaphorclub.com'
         }        
     ],
+    video: {
+        header: "Our Speaker Videos",
+        url_initial_video: "https://www.youtube.com/embed/GdYMm3ag1hk",
+        videos: [
+            {
+                title: "Chef Kyndra, Owner of Swift Cafe",
+                is_interview: true,
+                interviewer: "Ray Hightower",
+                url_image: "https://i.ytimg.com/vi/GdYMm3ag1hk/hqdefault.jpg?sqp=-oaymwEZCNACELwBSFXyq4qpAwsIARUAAIhCGAFwAQ==&rs=AOn4CLAfxwh9PkqZctx-biuC0uoJbnGGjw",
+                url_video: "https://www.youtube.com/embed/GdYMm3ag1hk"
+            },
+            {
+                title: "Brandon Bailey, Founder & CEO, TutorD and TutorD Scholars",
+                is_interview: true,
+                interviewer: "Dawn Comer",
+                url_image: "https://i.ytimg.com/vi/34Slnjs2J9s/hqdefault.jpg?sqp=-oaymwEZCNACELwBSFXyq4qpAwsIARUAAIhCGAFwAQ==&rs=AOn4CLCvPHfRpHnc4a7nHqcy8s_4WE-iFw",
+                url_video: "https://www.youtube.com/embed/34Slnjs2J9s"
+            },
+        ]
+    },
     footer: {
         email: {
             url: 'organizers@bizday.la',
