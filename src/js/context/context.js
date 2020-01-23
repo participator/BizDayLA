@@ -556,45 +556,16 @@ window.context = {
         }        
     ],
     video: {
-        header: "sollicitudin mi sit amet",
-        url_initial_video: "https://www.youtube.com/embed/Up0zcet90oI",
+        header: "Our Speaker Videos",
+        url_initial_video: "https://www.youtube.com/embed/GdYMm3ag1hk",
         videos: [
             {
-                title: "They Might Be Giants",
-                presenter: "Vasily Chree",
-                url_image: "https://i.ytimg.com/an_webp/YJR-OeKzBtk/mqdefault_6s.webp?du=3000&sqp=CMr5jvEF&rs=AOn4CLAdLYANSQbE8qQ3YQNcLoFjiUYsUA",
-                url_video: "https://www.youtube.com/embed/YJR-OeKzBtk"
-            }, 
-            {
-                title: "British Intelligence",
-                presenter: "Paula Gawen",
-                url_image: "https://i.ytimg.com/an_webp/fYotx1Np908/mqdefault_6s_480x270.webp?du=3000&sqp=CLrXjvEF&rs=AOn4CLAwRIi2XkeoyesGiorvl5veSsICBA",
-                url_video: "https://www.youtube.com/embed/fYotx1Np908"
+                title: "Chef Kyndra, Owner of Swift Cafe",
+                is_interview: true,
+                interviewer: "Ray Hightower",
+                url_image: "https://i.ytimg.com/vi/GdYMm3ag1hk/hqdefault.jpg?sqp=-oaymwEZCNACELwBSFXyq4qpAwsIARUAAIhCGAFwAQ==&rs=AOn4CLAfxwh9PkqZctx-biuC0uoJbnGGjw",
+                url_video: "https://www.youtube.com/embed/GdYMm3ag1hk"
             },
-            {
-                title: "Swing",
-                presenter: "Cassie O'Cannovane",
-                url_image: "https://i.ytimg.com/an_webp/YlHMo6tUpFY/mqdefault_6s_480x270.webp?du=3000&sqp=CNiNj_EF&rs=AOn4CLBDZwMQgri8ncTDTyiFV78dPVXjSw",
-                url_video: "https://www.youtube.com/embed/YlHMo6tUpFY"
-            },
-            {
-                title: "Baxter",
-                presenter: "Ricki Coltart",
-                url_image: "https://i.ytimg.com/an_webp/4mbwLP-NM1M/mqdefault_6s.webp?du=3000&sqp=COaGj_EF&rs=AOn4CLAjsH9OldJlSQLLVsfH5RqCuLloSg",
-                url_video: "https://www.youtube.com/embed/4mbwLP-NM1M"
-            },
-            {
-                title: "Thirteen Days",
-                presenter: "Ivonne Marson",
-                url_image: "https://i.ytimg.com/an_webp/ki9oY-dBqp8/mqdefault_6s.webp?du=3000&sqp=CK_2jvEF&rs=AOn4CLDv2kC-C31BwOt76NQYr91Q3US5Ew",
-                url_video: "https://www.youtube.com/embed/ki9oY-dBqp8"
-            },
-            {
-                title: "Sirocco",
-                presenter: "Linette Guinness",
-                url_image: "https://i.ytimg.com/an_webp/Ynawh8mGDSA/mqdefault_6s_480x270.webp?du=3000&sqp=CODljvEF&rs=AOn4CLCWUtBrYgo-r-PKDYn2JS5qSl0qKQ",
-                url_video: "https://www.youtube.com/embed/Ynawh8mGDSA"
-            }
         ]
     },
     footer: {

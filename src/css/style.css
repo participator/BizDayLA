@@ -13,7 +13,7 @@
     --primary-border--hover: #c33523;
     --secondary-background: #2A2A72;
     --secondary-border: #2A2A72;
-    --secondary-background--hover: #202056;
+    --secondary-background--hover: #3837A0;
     --secondary-border--hover: #1c1c4d;
     --white: #ffffff;
 }
@@ -160,10 +160,15 @@ section.bizday_videos {
     height: 400px;
     width: 600px;
 }
+.bizday_videos_secondary_title {
+    margin-top: 1em;
+}
 .bizday_videos_items {
     display: flex;
     justify-content: flex-start;
     flex-wrap: wrap;
+    text-align: center;
+    width: 100%;
 }
 .bizday_videos_item {
     margin: 0.5em;
@@ -177,6 +182,12 @@ section.bizday_videos {
 .bizday_videos_item--active {
     background-color: var(--secondary-background--hover);
     color: var(--white);
+}
+.bizday_videos_item_title {
+    margin-bottom: 0.5rem;
+}
+.bizday_videos_item_interviewer {
+    font-size: 0.8em;
 }
 /** General */
 a:hover,
