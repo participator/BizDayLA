@@ -49,6 +49,18 @@
     background-color: var(--nav_blue);
     color: var(--white);
 }
+.bizday_banner {
+    padding: 0.5em;
+    position: relative;
+    text-align: center;
+    top: 70px;
+    background: var(--primary-2);
+    width: 100%;
+    z-index: 3;
+}
+.bizday_banner_link {
+    color: white;
+}
 .bizday_hero {
     background-color: var(--hero_blue)!important;
 }
