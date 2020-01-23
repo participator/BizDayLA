@@ -69,13 +69,9 @@ window.context = {
                 time: "9:00 AM - 5:00 PM",
                 description: "Video podcasts will be released on the BizDay.LA at 9 AM on January 23.",
                 link: {
-                    has_link: false,
+                    has_link: true,
                     title: "BizDay.LA Videos",
-<<<<<<< HEAD
                     url: "videos.html",
-=======
-                    url: "#",
->>>>>>> master
                 }
             },
             {
@@ -196,11 +192,7 @@ window.context = {
                 id: 'speaker_vazell_vh',
                 firstName: 'Varell',
                 lastName: 'Hawkins',
-<<<<<<< HEAD
-                title: 'Vazell LLC | CEO',
-=======
                 title: 'Founder and CEO',
->>>>>>> master
                 company: {
                     has_company: true,
                     has_site: true,
@@ -337,11 +329,7 @@ window.context = {
                 id: 'speaker_popup_cleanup_kl',
                 firstName: 'Kenetia',
                 lastName: 'Lee',
-<<<<<<< HEAD
-                title: 'PopUP CleanUP | Founder and CEO',
-=======
                 title: 'Founder and CEO',
->>>>>>> master
                 company: {
                     has_company: true,
                     has_site: true,
@@ -385,11 +373,7 @@ window.context = {
                 id: 'speaker_tutord_bb',
                 firstName: 'Brandon',
                 lastName: 'Bailey',
-<<<<<<< HEAD
-                title: "Founder and CEO of TutorD and TutorD Scholars",
-=======
                 title: 'Founder and CEO',
->>>>>>> master
                 company: {
                     has_company: true,
                     has_site: true,
@@ -524,10 +508,7 @@ window.context = {
                 id: 'speaker_3b-design-co_gp',
                 firstName: 'Gette',
                 lastName: 'Demi',
-<<<<<<< HEAD
-=======
                 title: 'Founder and CEO',
->>>>>>> master
                 company: {
                     has_company: true,
                     has_site: true,
