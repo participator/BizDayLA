@@ -687,6 +687,13 @@ window.context = {
                 interviewer: "Ray Hightower",
                 url_image: "https://i.ytimg.com/vi/hFVlFgCPjXA/hqdefault.jpg?sqp=-oaymwEZCNACELwBSFXyq4qpAwsIARUAAIhCGAFwAQ==&rs=AOn4CLBfQ4DizjnaEDnDCrgCTi3Hm71r7g",
                 url_video: "https://www.youtube.com/embed/hFVlFgCPjXA"
+            },
+            {
+                title: "Dawn Comer, Business Strategist",
+                is_interview: true,
+                interviewer: "Ashley Small",
+                url_image: "https://i.ytimg.com/vi/zd5iF3oG8I8/hqdefault.jpg?sqp=-oaymwEZCNACELwBSFXyq4qpAwsIARUAAIhCGAFwAQ==&rs=AOn4CLDJ9y80H_p8sEITR7vuXvNHJ9eQ8g",
+                url_video: "https://www.youtube.com/embed/zd5iF3oG8I8"
             }
         ]
     },
