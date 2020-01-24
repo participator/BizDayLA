@@ -658,7 +658,9 @@ window.context = {
     ],
     video: {
         header: "Our Speaker Videos",
-        url_initial_video: "https://www.youtube.com/embed/GdYMm3ag1hk",
+        url_initial_video: function() {
+            return this.videos[Math.floor(Math.random() * this.videos.length)].url_video;
+        },
         videos: [
             {
                 title: "Chef Kyndra, Owner of Swift Cafe",
