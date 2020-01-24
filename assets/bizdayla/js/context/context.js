@@ -694,6 +694,27 @@ window.context = {
                 interviewer: "Ashley Small",
                 url_image: "https://i.ytimg.com/vi/zd5iF3oG8I8/hqdefault.jpg?sqp=-oaymwEZCNACELwBSFXyq4qpAwsIARUAAIhCGAFwAQ==&rs=AOn4CLDJ9y80H_p8sEITR7vuXvNHJ9eQ8g",
                 url_video: "https://www.youtube.com/embed/zd5iF3oG8I8"
+            },
+            {
+                title: "Mike Evans, CEO of Dreamfree",
+                is_interview: true,
+                interviewer: "Dawn Comer",
+                url_image: "https://i.ytimg.com/vi/U206F5QWFWc/hqdefault.jpg?sqp=-oaymwEZCNACELwBSFXyq4qpAwsIARUAAIhCGAFwAQ==&rs=AOn4CLCA43XrjnBtccwEGnTDWm80HaRzVQ",
+                url_video: "https://www.youtube.com/embed/U206F5QWFWc"
+            },
+            {
+                title: "Gette Demi, Founder & CEO of 3B Design Co.",
+                is_interview: true,
+                interviewer: "Ray Hightower",
+                url_image: "https://i.ytimg.com/vi/5zPVWO2eNA4/hqdefault.jpg?sqp=-oaymwEZCNACELwBSFXyq4qpAwsIARUAAIhCGAFwAQ==&rs=AOn4CLD_O4HJshVurl4N1SKcP7cMX7n-TQ",
+                url_video: "https://www.youtube.com/embed/5zPVWO2eNA4"
+            },
+            {
+                title: "Tony Jolly, Owner of Hot and Cool Cafe",
+                is_interview: true,
+                interviewer: "Ashley Small",
+                url_image: "https://i.ytimg.com/vi/7BcpILlwWd4/hqdefault.jpg?sqp=-oaymwEZCNACELwBSFXyq4qpAwsIARUAAIhCGAFwAQ==&rs=AOn4CLAtJ3s9rwPSfy6qHRtzD4sHFu0R8w",
+                url_video: "https://www.youtube.com/embed/7BcpILlwWd4"
             }
         ]
     },
