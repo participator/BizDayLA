@@ -4,7 +4,7 @@ window.context = {
     url_cta: 'https://www.eventbrite.com/e/bizdayla-tickets-85448796651',
     banner: {
         url: 'videos.html',
-        text: 'Click to view BizDay.LA interviews that are being released throughout today!'
+        text: 'Click here to view BizDay.LA interviews!'
     },
     codeOfConduct: {
         email: 'organizers@bizdayla.com',
