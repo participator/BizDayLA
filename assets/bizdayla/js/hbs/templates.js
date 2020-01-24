@@ -115,13 +115,6 @@ this["Bizdayla"]["templates"]["Speaker"] = Handlebars.template({"compiler":[8,">
     + ((stack1 = container.invokePartial(partials.arrow_up,depth0,{"name":"arrow_up","data":data,"helpers":helpers,"partials":partials,"decorators":container.decorators})) != null ? stack1 : "")
     + container.escapeExpression((helpers.scriptLoaderFromArray||(depth0 && depth0.scriptLoaderFromArray)||container.hooks.helperMissing).call(depth0 != null ? depth0 : (container.nullContext || {}),((stack1 = ((stack1 = (depth0 != null ? depth0.helper : depth0)) != null ? stack1.scriptLoaderFromArray : stack1)) != null ? stack1.arr : stack1),{"name":"scriptLoaderFromArray","hash":{},"data":data,"loc":{"start":{"line":7,"column":0},"end":{"line":7,"column":58}}}));
 },"usePartial":true,"useData":true});
-Handlebars.registerPartial("divider", Handlebars.template({"compiler":[8,">= 4.3.0"],"main":function(container,depth0,helpers,partials,data) {
-    var helper;
-
-  return "<hr class="
-    + container.escapeExpression(((helper = (helper = helpers.hr_style || (depth0 != null ? depth0.hr_style : depth0)) != null ? helper : container.hooks.helperMissing),(typeof helper === "function" ? helper.call(depth0 != null ? depth0 : (container.nullContext || {}),{"name":"hr_style","hash":{},"data":data,"loc":{"start":{"line":1,"column":10},"end":{"line":1,"column":22}}}) : helper)))
-    + ">";
-},"useData":true}));
 this["Bizdayla"]["templates"]["Videos"] = Handlebars.template({"compiler":[8,">= 4.3.0"],"main":function(container,depth0,helpers,partials,data) {
     var stack1;
 
@@ -132,6 +125,13 @@ this["Bizdayla"]["templates"]["Videos"] = Handlebars.template({"compiler":[8,">=
     + ((stack1 = container.invokePartial(partials.arrow_up,depth0,{"name":"arrow_up","data":data,"helpers":helpers,"partials":partials,"decorators":container.decorators})) != null ? stack1 : "")
     + container.escapeExpression((helpers.scriptLoaderFromArray||(depth0 && depth0.scriptLoaderFromArray)||container.hooks.helperMissing).call(depth0 != null ? depth0 : (container.nullContext || {}),((stack1 = ((stack1 = (depth0 != null ? depth0.helper : depth0)) != null ? stack1.scriptLoaderFromArray : stack1)) != null ? stack1.arr : stack1),{"name":"scriptLoaderFromArray","hash":{},"data":data,"loc":{"start":{"line":6,"column":0},"end":{"line":6,"column":58}}}));
 },"usePartial":true,"useData":true});
+Handlebars.registerPartial("divider", Handlebars.template({"compiler":[8,">= 4.3.0"],"main":function(container,depth0,helpers,partials,data) {
+    var helper;
+
+  return "<hr class="
+    + container.escapeExpression(((helper = (helper = helpers.hr_style || (depth0 != null ? depth0.hr_style : depth0)) != null ? helper : container.hooks.helperMissing),(typeof helper === "function" ? helper.call(depth0 != null ? depth0 : (container.nullContext || {}),{"name":"hr_style","hash":{},"data":data,"loc":{"start":{"line":1,"column":10},"end":{"line":1,"column":22}}}) : helper)))
+    + ">";
+},"useData":true}));
 Handlebars.registerPartial("footer", Handlebars.template({"1":function(container,depth0,helpers,partials,data,blockParams,depths) {
     var stack1, helper, alias1=depth0 != null ? depth0 : (container.nullContext || {}), alias2=container.hooks.helperMissing, alias3="function", alias4=container.escapeExpression, alias5=container.lambda;
 
