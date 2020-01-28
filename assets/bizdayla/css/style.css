@@ -213,7 +213,7 @@ section.bizday_videos {
     color: var(--white);
 }
 .bizday_videos_item.bizday_videos_item--active {
-    background-color: var(--secondary-background--hover);
+    background-color: var(--hero_blue);
     color: var(--white);
 }
 .bizday_videos_item_title {
