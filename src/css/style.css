@@ -11,10 +11,10 @@
     --primary-border: #dc3545;;
     --primary-background--hover: #c33523;
     --primary-border--hover: #c33523;
-    --secondary-background: #2A2A72;
-    --secondary-border: #2A2A72;
-    --secondary-background--hover: #3837A0;
-    --secondary-border--hover: #1c1c4d;
+    --secondary-background: #3837A0;
+    --secondary-border: #3837A0;
+    --secondary-background--hover: #2A2A72;
+    --secondary-border--hover: #2A2A72;
     --white: #ffffff;
 }
 .bizday_header_nav .navbar-brand {
@@ -177,12 +177,17 @@ section.bizday_videos {
     flex-direction: column;
 }
 .bizday_videos_player {
+    background-color: var(--nav_blue);
     max-width: 80%;
     min-width: 50%;
 }
 .bizday_videos_player_viewer {
     height: 400px;
     width: 600px;
+}
+.bizday_videos_player_subscribe {
+    background-color: var(--nav_blue);
+    padding: 0.5em 0.5em;
 }
 #___ytsubscribe_0 {
     display: block!important;
@@ -207,7 +212,7 @@ section.bizday_videos {
     background-color: var(--secondary-background);
     color: var(--white);
 }
-.bizday_videos_item--active {
+.bizday_videos_item.bizday_videos_item--active {
     background-color: var(--secondary-background--hover);
     color: var(--white);
 }
