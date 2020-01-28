@@ -717,6 +717,13 @@ window.context = {
                 interviewer: "Ashley Small",
                 url_image: "https://i.ytimg.com/vi/7BcpILlwWd4/hqdefault.jpg?sqp=-oaymwEZCNACELwBSFXyq4qpAwsIARUAAIhCGAFwAQ==&rs=AOn4CLAtJ3s9rwPSfy6qHRtzD4sHFu0R8w",
                 url_video: "https://www.youtube.com/embed/7BcpILlwWd4"
+            },
+            {
+                title: "Ashley Small, Founder & CEO of Medley Inc",
+                is_interview: true,
+                interviewer: "Ray Hightower",
+                url_image: "https://i.ytimg.com/vi/FtlKxQpWddM/hqdefault.jpg?sqp=-oaymwEZCNACELwBSFXyq4qpAwsIARUAAIhCGAFwAQ==&rs=AOn4CLAOViCam7L7MUDOvZHjX_XYcaPTnA",
+                url_video: "https://www.youtube.com/embed/FtlKxQpWddM"
             }
         ]
     },
