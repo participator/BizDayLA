@@ -176,9 +176,17 @@ section.bizday_videos {
     align-items: center;
     flex-direction: column;
 }
+.bizday_videos_player {
+    max-width: 80%;
+    min-width: 50%;
+}
 .bizday_videos_player_viewer {
     height: 400px;
     width: 600px;
+}
+#___ytsubscribe_0 {
+    display: block!important;
+    margin: 0 0 0 auto!important;
 }
 .bizday_videos_secondary_title {
     margin-top: 1em;
