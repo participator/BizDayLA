@@ -5,9 +5,11 @@
       <div class="col-md-8 mb-3 mb-md-0 mx-auto text-center">
         <h2 class="h1">{{header}}</h2>
         <h3 class="sub_header">{{sub_header}}</h3>
-        <ul class="text-left">
-        {{#each paragraphs}}
-            <li class="lead"><strong>{{label}}:</strong> {{text}}</li>
+      </div>
+      <div class="col-lg-10 ml-auto mr-auto">
+        <ul class="d-flex flex-wrap justify-content-center text-left p-0">
+        {{#each cards}}
+            {{> card_topic image_url=image_url image_alt_text=image_alt_text title=title description=description}}
         {{/each}}
         </ul>
       </div>
