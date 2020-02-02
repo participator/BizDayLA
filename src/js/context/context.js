@@ -24,6 +24,11 @@ window.context = {
     description: {
         header: 'BizDay.LA is an exciting virtual and in-person event for current and aspiring business owners.',
         sub_header: 'Join your business peers for a full-day of presentations and discussions focused on growing your business. Topics such as...',
+        thankYouMessage: 'Thank you for participating in our recent event.  Check out the video recordings from the speakers.',
+        cta_video: {
+            ctaText: 'Watch Speaker Videos',
+            url_cta: 'videos.html'
+        },
         cards: [
             {
                 description: 'How can leaders grow a company when critical talent is so tough to procure?',

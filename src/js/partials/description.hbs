@@ -13,6 +13,12 @@
         {{/each}}
         </ul>
       </div>
+      <div class="col-md-8 mt-6 mb-3 mb-md-0 mx-auto text-center">
+        <h3 class="bizday_description_thankYouMessage">{{thankYouMessage}}</h3>
+        {{#with cta_video}}
+        {{> call_to_action class="btn btn-primary btn-lg bizday_btn-secondary" url_cta=url_cta ctaText=ctaText }}
+        {{/with}}
+      </div>
     </div>
   </div>
 </section>
