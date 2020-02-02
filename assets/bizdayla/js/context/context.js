@@ -24,34 +24,53 @@ window.context = {
     description: {
         header: 'BizDay.LA is an exciting virtual and in-person event for current and aspiring business owners.',
         sub_header: 'Join your business peers for a full-day of presentations and discussions focused on growing your business. Topics such as...',
-        paragraphs: [
+        thankYouMessage: 'Thank you for participating in our recent event.  Check out the video recordings from the speakers.',
+        cta_video: {
+            ctaText: 'Watch Speaker Videos',
+            url_cta: 'videos.html'
+        },
+        cards: [
             {
-                label: 'Hiring',
-                text: 'How can leaders grow a company when critical talent is so tough to procure?'
+                description: 'How can leaders grow a company when critical talent is so tough to procure?',
+                image_alt_text: ' ',
+                image_url: 'https://via.placeholder.com/150',
+                title: 'Hiring',
             },
             {
-                label: 'Technology',
-                text: 'Should you hire a team of in-house software developers?'
+                description: 'Should you hire a team of in-house software developers?',
+                image_alt_text: ' ',
+                image_url: 'https://via.placeholder.com/150',
+                title: 'Technology',
             },
             {
-                label: 'Growth strategies',
-                text: 'You already have a successful business. How do you make it bigger?'
+                description: 'You already have a successful business. How do you make it bigger?',
+                image_alt_text: ' ',
+                image_url: 'https://via.placeholder.com/150',
+                title: 'Growth strategies',
             },
             {
-                label: 'Exit strategies',
-                text: 'You’re running a large, successful enterprise. How do you extract value so you can move on to your next venture?'
+                description: 'You’re running a large, successful enterprise. How do you extract value so you can move on to your next venture?',
+                image_alt_text: ' ',
+                image_url: 'https://via.placeholder.com/150',
+                title: 'Exit strategies',
             },
             {
-                label: 'Investment strategies',
-                text: 'You just sold a business. What’s next for your career?'
+                description: 'You just sold a business. What’s next for your career?',
+                image_alt_text: ' ',
+                image_url: 'https://via.placeholder.com/150',
+                title: 'Investment strategies',
             },
             {
-                label: 'Startup strategies',
-                text: 'You have an idea for a great startup. What should you do first?'
+                description: 'You have an idea for a great startup. What should you do first?',
+                image_alt_text: ' ',
+                image_url: 'https://via.placeholder.com/150',
+                title: 'Startup strategies',
             },
             {
-                label: 'Marketing',
-                text: 'You have a great product. How do you get the market to buy it?'
+                description: 'You have a great product. How do you get the market to buy it?',
+                image_alt_text: ' ',
+                image_url: 'https://via.placeholder.com/150',
+                title: 'Marketing',
             },
         ]
     },
