@@ -9,7 +9,7 @@
                     <img class="bizday_hero_logo" src={{logoPath}} alt="BizDay.LA logo" />
                 </h1>
                 <p class="lead mb-4">{{location}}</p>
-                <a href="{{../url_cta}}" class="btn btn-primary btn-lg bizday_btn-primary">{{../ctaText}}</a>
+                {{> call_to_action class="btn btn-primary btn-lg bizday_btn-primary" ctaText=../ctaText url_cta=../url_cta}}
             </div>
         </div>
     </div>
