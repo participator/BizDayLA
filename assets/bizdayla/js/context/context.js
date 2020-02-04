@@ -33,43 +33,43 @@ window.context = {
             {
                 description: 'How can leaders grow a company when critical talent is so tough to procure?',
                 image_alt_text: ' ',
-                image_url: 'https://via.placeholder.com/150',
+                image_url: 'assets/bizdayla/img/icons/hiring.svg',
                 title: 'Hiring',
             },
             {
                 description: 'Should you hire a team of in-house software developers?',
                 image_alt_text: ' ',
-                image_url: 'https://via.placeholder.com/150',
+                image_url: 'assets/bizdayla/img/icons/technology.svg',
                 title: 'Technology',
             },
             {
                 description: 'You already have a successful business. How do you make it bigger?',
                 image_alt_text: ' ',
-                image_url: 'https://via.placeholder.com/150',
+                image_url: 'assets/bizdayla/img/icons/growth.svg',
                 title: 'Growth strategies',
             },
             {
                 description: 'You’re running a large, successful enterprise. How do you extract value so you can move on to your next venture?',
                 image_alt_text: ' ',
-                image_url: 'https://via.placeholder.com/150',
+                image_url: 'assets/bizdayla/img/icons/exit.svg',
                 title: 'Exit strategies',
             },
             {
                 description: 'You just sold a business. What’s next for your career?',
                 image_alt_text: ' ',
-                image_url: 'https://via.placeholder.com/150',
+                image_url: 'assets/bizdayla/img/icons/investment.svg',
                 title: 'Investment strategies',
             },
             {
                 description: 'You have an idea for a great startup. What should you do first?',
                 image_alt_text: ' ',
-                image_url: 'https://via.placeholder.com/150',
+                image_url: 'assets/bizdayla/img/icons/startup.svg',
                 title: 'Startup strategies',
             },
             {
                 description: 'You have a great product. How do you get the market to buy it?',
                 image_alt_text: ' ',
-                image_url: 'https://via.placeholder.com/150',
+                image_url: 'assets/bizdayla/img/icons/marketing.svg',
                 title: 'Marketing',
             },
         ]
@@ -631,7 +631,8 @@ window.context = {
         {
             image: 'assets/bizdayla/img/bridgetown_partners_logo.svg',
             name: 'Bridgetown Partners',
-            url: 'https://bridgetownpartners.com/'
+            url: 'https://bridgetownpartners.com/',
+            heightAdjust: 'bizday_sponsors_icon--height_adjust_smaller'
         },
         {
             image: 'assets/bizdayla/img/medley_logo.svg',
@@ -642,7 +643,7 @@ window.context = {
             image: 'assets/bizdayla/img/popup_cleanup_logo.svg',
             name: 'PopUP CleanUP',
             url: 'https://www.popupcleanup.com/',
-            heightAdjust: 'bizday_sponsors_icon--height_adjust'
+            heightAdjust: 'bizday_sponsors_icon--height_adjust_bigger'
         },
         {
             image: 'assets/bizdayla/img/swift_logo.svg',
@@ -652,13 +653,13 @@ window.context = {
         {
             image: 'assets/bizdayla/img/tutord_logo.png',
             name: 'TutorD',
-            url: 'https://scholars.tutord.io/',
-            heightAdjust: 'bizday_sponsors_icon--height_adjust'
+            url: 'https://scholars.tutord.io/'
         },
         {
             image: 'assets/bizdayla/img/vazell_logo.svg',
             name: 'Vazell',
-            url: 'https://www.vazell.com'
+            url: 'https://www.vazell.com',
+            heightAdjust: 'bizday_sponsors_icon--height_adjust_smaller'
         }
     ],
     sponsors_venue: [
@@ -681,6 +682,13 @@ window.context = {
             return this.videos[Math.floor(Math.random() * this.videos.length)].url_video;
         },
         videos: [
+            {
+                title: "Tony Jolly, Owner of Hot and Cool Cafe",
+                is_interview: true,
+                interviewer: "Ashley Small",
+                url_image: "https://i.ytimg.com/vi/RMwM619MaEE/hqdefault.jpg?sqp=-oaymwEZCNACELwBSFXyq4qpAwsIARUAAIhCGAFwAQ==&rs=AOn4CLBu4l3KbSdlT4llo4ajDSXhxZwg-A",
+                url_video: "https://www.youtube.com/embed/RMwM619MaEE"
+            },
             {
                 title: "Chef Kyndra, Owner of Swift Cafe",
                 is_interview: true,
@@ -731,11 +739,17 @@ window.context = {
                 url_video: "https://www.youtube.com/embed/5zPVWO2eNA4"
             },
             {
-                title: "Tony Jolly, Owner of Hot and Cool Cafe",
+                title: "Vazell - Do I Need A Website?",
+                is_interview: false,
+                url_image: "https://i.ytimg.com/vi/h1eHHbNgD9o/hqdefault.jpg?sqp=-oaymwEZCNACELwBSFXyq4qpAwsIARUAAIhCGAFwAQ==&rs=AOn4CLByZXS-E-nu7QLg74ik79OgUNfwWwhttps://i.ytimg.com/vi/5zPVWO2eNA4/hqdefault.jpg?sqp=-oaymwEZCNACELwBSFXyq4qpAwsIARUAAIhCGAFwAQ==&rs=AOn4CLD_O4HJshVurl4N1SKcP7cMX7n-TQ",
+                url_video: "https://www.youtube.com/embed/h1eHHbNgD9o"
+            },
+            {
+                title: "Varell Hawkins, Founder & CEO, Vazell",
                 is_interview: true,
                 interviewer: "Ashley Small",
-                url_image: "https://i.ytimg.com/vi/7BcpILlwWd4/hqdefault.jpg?sqp=-oaymwEZCNACELwBSFXyq4qpAwsIARUAAIhCGAFwAQ==&rs=AOn4CLAtJ3s9rwPSfy6qHRtzD4sHFu0R8w",
-                url_video: "https://www.youtube.com/embed/7BcpILlwWd4"
+                url_image: "https://i.ytimg.com/vi/I8YNZFKCrmw/hqdefault.jpg?time=1580802808388&sqp=CKjE5PEF&rs=AOn4CLAhEI3oTEIXGqtdWHJ0kbCzMyLOzQ",
+                url_video: "https://www.youtube.com/embed/I8YNZFKCrmw"
             },
             {
                 title: "Ashley Small, Founder & CEO of Medley Inc",
@@ -743,6 +757,13 @@ window.context = {
                 interviewer: "Ray Hightower",
                 url_image: "https://i.ytimg.com/vi/FtlKxQpWddM/hqdefault.jpg?sqp=-oaymwEZCNACELwBSFXyq4qpAwsIARUAAIhCGAFwAQ==&rs=AOn4CLAOViCam7L7MUDOvZHjX_XYcaPTnA",
                 url_video: "https://www.youtube.com/embed/FtlKxQpWddM"
+            },
+            {
+                title: "Ray Hightower, Founder & CEO of Bridgetown Partners",
+                is_interview: true,
+                interviewer: "Ray Hightower",
+                url_image: "https://i.ytimg.com/vi/NRKeoRGoksI/hqdefault.jpg?sqp=-oaymwEZCNACELwBSFXyq4qpAwsIARUAAIhCGAFwAQ==&rs=AOn4CLArWr9lRVbQci2N8TYzkja8lLYoDQ",
+                url_video: "https://www.youtube.com/embed/NRKeoRGoksI"
             }
         ]
     },

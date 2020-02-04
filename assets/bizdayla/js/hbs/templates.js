@@ -497,7 +497,7 @@ Handlebars.registerPartial("sponsors", Handlebars.template({"1":function(contain
 },"compiler":[8,">= 4.3.0"],"main":function(container,depth0,helpers,partials,data) {
     var stack1;
 
-  return "<section class=\"text-dark has-divider\">\r\n  <div class=\"container\">\r\n    <div class=\"row justify-content-between\">\r\n      <div class=\"col-md-12 text-center\">\r\n        <h4 class=\"text-uppercase mb-4 bizday_sponsors_by_text\">Sponsors</h4>\r\n        <ul class=\"d-flex flex-wrap list-unstyled justify-content-start\">\r\n"
+  return "<section class=\"text-dark has-divider\">\r\n  <div class=\"container\">\r\n    <div class=\"row justify-content-between\">\r\n      <div class=\"col-md-12 text-center\">\r\n        <h4 class=\"text-uppercase mb-4 bizday_sponsors_by_text\">Sponsors</h4>\r\n        <ul class=\"d-flex flex-wrap list-unstyled justify-content-start align-items-center\">\r\n"
     + ((stack1 = helpers.each.call(depth0 != null ? depth0 : (container.nullContext || {}),(depth0 != null ? depth0.sponsors : depth0),{"name":"each","hash":{},"fn":container.program(1, data, 0),"inverse":container.noop,"data":data,"loc":{"start":{"line":7,"column":12},"end":{"line":13,"column":21}}})) != null ? stack1 : "")
     + "        </ul>\r\n      </div>\r\n    </div>\r\n  </div>\r\n</section>";
 },"useData":true}));
