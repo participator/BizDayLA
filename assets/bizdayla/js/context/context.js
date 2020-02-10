@@ -745,7 +745,7 @@ window.context = {
                 url_video: "https://www.youtube.com/embed/h1eHHbNgD9o"
             },
             {
-                title: "Varell Hawkins, Founder & CEO, Vazell",
+                title: "Varell Hawkins, Founder & CEO of Vazell",
                 is_interview: true,
                 interviewer: "Ashley Small",
                 url_image: "https://i.ytimg.com/vi/I8YNZFKCrmw/hqdefault.jpg?time=1580802808388&sqp=CKjE5PEF&rs=AOn4CLAhEI3oTEIXGqtdWHJ0kbCzMyLOzQ",
@@ -761,7 +761,7 @@ window.context = {
             {
                 title: "Ray Hightower, Founder & CEO of Bridgetown Partners",
                 is_interview: true,
-                interviewer: "Ray Hightower",
+                interviewer: "Dawn Comer",
                 url_image: "https://i.ytimg.com/vi/NRKeoRGoksI/hqdefault.jpg?sqp=-oaymwEZCNACELwBSFXyq4qpAwsIARUAAIhCGAFwAQ==&rs=AOn4CLArWr9lRVbQci2N8TYzkja8lLYoDQ",
                 url_video: "https://www.youtube.com/embed/NRKeoRGoksI"
             }
